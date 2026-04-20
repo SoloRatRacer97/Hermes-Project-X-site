@@ -38,6 +38,13 @@ export type GalleryImage = {
   alt: string;
 };
 
+export type BuildMeta = {
+  clientId: string;
+  companyName: string;
+  generatedAt: string;
+  profileSchemaDate: string;
+};
+
 export const siteConfig = {
   businessName: "Captain Decks",
   tagline: "Local deck and pergola builders",
@@ -152,4 +159,10 @@ export const siteConfig = {
     instagram: "",
     google: "https://captaindecks.com/",
   },
+  buildMeta: {
+    clientId: "captain-decks",
+    companyName: "Captain Decks",
+    generatedAt: "2026-04-20T16:55:28.046Z",
+    profileSchemaDate: "2026-04-20",
+  } as BuildMeta,
 };
