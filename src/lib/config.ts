@@ -134,7 +134,7 @@ export const siteConfig = {
   guaranteeText: "We work with you to ensure complete satisfaction with your deck or pergola project",
   guaranteePoints: ["Expert installation and craftsmanship","Quality materials and construction","Professional project management"],
   serviceOptions: ["Custom Deck Construction", "Pergola Installation", "Deck Replacement", "Railing Services"],
-  formWebhookUrl: "",
+  formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/",
   formSource: "captain-decks",
   badges: ["Family Owned","San Diego Local","Quality Construction"],
   footerYear: new Date().getFullYear(),
