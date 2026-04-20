@@ -162,7 +162,7 @@ export const siteConfig = {
   buildMeta: {
     clientId: "captain-decks",
     companyName: "Captain Decks",
-    generatedAt: "2026-04-20T16:55:28.046Z",
+    generatedAt: "2026-04-20T17:01:19.801Z",
     profileSchemaDate: "2026-04-20",
   } as BuildMeta,
 };
