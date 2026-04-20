@@ -152,7 +152,6 @@ interface FormState {
   submitting: boolean;
   status: "idle" | "success" | "error";
   errorMessage: string;
-  requestId: string;
 }
 
 // ── Star Rating ─────────────────────────────────────────────────────
@@ -333,7 +332,6 @@ function ContactForm() {
     submitting: false,
     status: "idle",
     errorMessage: "",
-    requestId: "",
   });
 
   const set = (key: keyof FormState, value: string | boolean) =>
@@ -365,28 +363,18 @@ function ContactForm() {
     };
 
     try {
-      const res = await fetch("/api/lead", {
+      const res = await fetch(siteConfig.formWebhookUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      const body = await res.json().catch(() => ({}));
-      if (!res.ok || !body.ok) {
-        throw new Error(body.error || "Submission failed");
-      }
-      setForm((prev) => ({
-        ...prev,
-        status: "success",
-        submitting: false,
-        requestId: String(body.requestId || ""),
-      }));
-    } catch (error) {
+      if (!res.ok) throw new Error("Submission failed");
+      setForm((prev) => ({ ...prev, status: "success", submitting: false }));
+    } catch {
       setForm((prev) => ({
         ...prev,
         status: "error",
-        errorMessage: error instanceof Error && error.message
-          ? error.message
-          : "Something went wrong. Please try again or call us directly.",
+        errorMessage: "Something went wrong. Please try again or call us directly.",
         submitting: false,
       }));
     }
@@ -409,9 +397,6 @@ function ContactForm() {
           <p className="text-sm text-primary-foreground/80 text-center max-w-xs">
             We received your request. We&apos;ll be in touch shortly.
           </p>
-          {form.requestId ? (
-            <p className="text-xs text-primary-foreground/60 text-center">Reference: {form.requestId}</p>
-          ) : null}
           <Button
             variant="outline"
             className="mt-3 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
@@ -428,7 +413,6 @@ function ContactForm() {
                 submitting: false,
                 status: "idle",
                 errorMessage: "",
-                requestId: "",
               })
             }
           >
