@@ -6,10 +6,10 @@
   --color-primary: hsl(210 53% 15%);
   --color-primary-foreground: hsl(0 0% 100%);
 
-  --color-accent: hsl(29 96% 57%);
+  --color-accent: hsl(25 100% 50%);
   --color-accent-foreground: hsl(0 0% 100%);
 
-  --color-background: hsl(49 100% 50%);
+  --color-background: hsl(0 0% 100%);
   --color-foreground: hsl(225 21% 11%);
   --color-card: hsl(0 0% 100%);
   --color-card-foreground: hsl(225 21% 11%);
