@@ -203,7 +203,7 @@ export const siteConfig = {
   buildMeta: {
     clientId: "west-coast-deck",
     companyName: "West Coast Deck",
-    generatedAt: "2026-04-21T13:55:18.833Z",
+    generatedAt: "2026-04-21T13:57:00.229Z",
     profileSchemaDate: "2026-04-20",
   } as BuildMeta,
 };
