@@ -9,12 +9,12 @@
   --color-accent: hsl(44 100% 49%);
   --color-accent-foreground: hsl(0 0% 100%);
 
-  --color-background: hsl(0 0% 100%);
-  --color-foreground: hsl(221 88% 25%);
+  --color-background: hsl(210 9% 22%);
+  --color-foreground: hsl(158 100% 41%);
   --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(221 88% 25%);
+  --color-card-foreground: hsl(158 100% 41%);
   --color-popover: hsl(0 0% 100%);
-  --color-popover-foreground: hsl(221 88% 25%);
+  --color-popover-foreground: hsl(158 100% 41%);
 
   --color-secondary: hsl(202 80% 59%);
   --color-secondary-foreground: hsl(0 0% 100%);
