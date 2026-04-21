@@ -3,20 +3,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: hsl(196 100% 50%);
+  --color-primary: hsl(48 96% 53%);
   --color-primary-foreground: hsl(0 0% 100%);
 
-  --color-accent: hsl(29 96% 57%);
+  --color-accent: hsl(44 100% 49%);
   --color-accent-foreground: hsl(0 0% 100%);
 
-  --color-background: hsl(0 0% 100%);
-  --color-foreground: hsl(212 100% 16%);
+  --color-background: hsl(52 100% 50%);
+  --color-foreground: hsl(213 9% 45%);
   --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(212 100% 16%);
+  --color-card-foreground: hsl(213 9% 45%);
   --color-popover: hsl(0 0% 100%);
-  --color-popover-foreground: hsl(212 100% 16%);
+  --color-popover-foreground: hsl(213 9% 45%);
 
-  --color-secondary: hsl(196 100% 63%);
+  --color-secondary: hsl(48 96% 65%);
   --color-secondary-foreground: hsl(0 0% 100%);
   --color-muted: hsl(190 20% 93%);
   --color-muted-foreground: hsl(215 15% 40%);
@@ -24,9 +24,9 @@
   --color-destructive: hsl(0 84% 60%);
   --color-destructive-foreground: hsl(0 0% 100%);
 
-  --color-border: hsl(206 8% 63%);
-  --color-input: hsl(206 8% 63%);
-  --color-ring: hsl(196 100% 50%);
+  --color-border: hsl(213 9% 45%);
+  --color-input: hsl(213 9% 45%);
+  --color-ring: hsl(48 96% 53%);
 
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
