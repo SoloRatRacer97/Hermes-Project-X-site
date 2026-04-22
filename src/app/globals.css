@@ -6,15 +6,15 @@
   --color-primary: hsl(7 100% 70%);
   --color-primary-foreground: hsl(0 0% 100%);
 
-  --color-accent: hsl(7 100% 70%);
+  --color-accent: hsl(6 100% 75%);
   --color-accent-foreground: hsl(0 0% 100%);
 
   --color-background: hsl(0 0% 100%);
-  --color-foreground: hsl(0 0% 10%);
+  --color-foreground: hsl(217 33% 17%);
   --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(0 0% 10%);
+  --color-card-foreground: hsl(217 33% 17%);
   --color-popover: hsl(0 0% 100%);
-  --color-popover-foreground: hsl(0 0% 10%);
+  --color-popover-foreground: hsl(217 33% 17%);
 
   --color-secondary: hsl(7 100% 77%);
   --color-secondary-foreground: hsl(0 0% 100%);
@@ -24,8 +24,8 @@
   --color-destructive: hsl(0 84% 60%);
   --color-destructive-foreground: hsl(0 0% 100%);
 
-  --color-border: hsl(6 100% 75%);
-  --color-input: hsl(6 100% 75%);
+  --color-border: hsl(12 18% 89%);
+  --color-input: hsl(12 18% 89%);
   --color-ring: hsl(7 100% 70%);
 
   --radius-sm: 0.25rem;
