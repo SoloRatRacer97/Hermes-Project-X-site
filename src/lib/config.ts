@@ -202,7 +202,7 @@ export const siteConfig = {
   buildMeta: {
     clientId: "miami-mister-sparky",
     companyName: "Mister Sparky",
-    generatedAt: "2026-04-21T22:56:08.471Z",
+    generatedAt: "2026-04-22T13:37:17.887Z",
     profileSchemaDate: "2026-04-20",
   } as BuildMeta,
 };
