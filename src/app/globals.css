@@ -6,15 +6,15 @@
   --color-primary: hsl(206 62% 45%);
   --color-primary-foreground: hsl(0 0% 100%);
 
-  --color-accent: hsl(11 90% 40%);
+  --color-accent: hsl(25 100% 50%);
   --color-accent-foreground: hsl(0 0% 100%);
 
-  --color-background: hsl(0 0% 100%);
-  --color-foreground: hsl(206 100% 16%);
+  --color-background: hsl(206 63% 33%);
+  --color-foreground: hsl(206 89% 28%);
   --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(206 100% 16%);
+  --color-card-foreground: hsl(206 89% 28%);
   --color-popover: hsl(0 0% 100%);
-  --color-popover-foreground: hsl(206 100% 16%);
+  --color-popover-foreground: hsl(206 89% 28%);
 
   --color-secondary: hsl(206 51% 59%);
   --color-secondary-foreground: hsl(0 0% 100%);
