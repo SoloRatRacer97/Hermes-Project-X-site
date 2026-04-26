@@ -5,38 +5,38 @@
 
 @theme {
   /* ── Brand primary color ── */
-  --color-primary: hsl(206 89% 28%);
+  --color-primary: hsl(210 9% 22%);
   --color-primary-foreground: hsl(0 0% 100%);
 
   /* ── Accent / warm accent ── */
-  --color-accent: hsl(206 62% 45%);
-  --color-accent-foreground: hsl(206 89% 28%);
+  --color-accent: hsl(25 100% 50%);
+  --color-accent-foreground: hsl(210 9% 22%);
 
   /* ── Warm accent (used for secondary CTAs, highlights) ── */
-  --color-warm-accent: hsl(54 100% 48%);
+  --color-warm-accent: hsl(44 100% 49%);
 
   /* ── Surfaces ── */
-  --color-background: hsl(0 0% 95%);
-  --color-foreground: hsl(206 89% 28%);
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(210 9% 22%);
   --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(206 89% 28%);
+  --color-card-foreground: hsl(210 9% 22%);
   --color-popover: hsl(0 0% 100%);
-  --color-popover-foreground: hsl(206 89% 28%);
+  --color-popover-foreground: hsl(210 9% 22%);
 
   /* ── Secondary & muted ── */
-  --color-secondary: hsl(0 0% 90%);
-  --color-secondary-foreground: hsl(206 89% 28%);
-  --color-muted: hsl(0 0% 90%);
-  --color-muted-foreground: hsl(206 89% 28% / 0.6);
+  --color-secondary: hsl(207 17% 72%);
+  --color-secondary-foreground: hsl(210 9% 22%);
+  --color-muted: hsl(207 17% 72%);
+  --color-muted-foreground: hsl(210 9% 22% / 0.6);
 
   /* ── Destructive stays red ── */
   --color-destructive: hsl(0 84% 60%);
   --color-destructive-foreground: hsl(0 0% 100%);
 
   /* ── Borders & inputs ── */
-  --color-border: hsl(0 0% 90%);
-  --color-input: hsl(0 0% 90%);
-  --color-ring: hsl(206 89% 28%);
+  --color-border: hsl(207 17% 72%);
+  --color-input: hsl(207 17% 72%);
+  --color-ring: hsl(210 9% 22%);
 
   /* ── Radii ── */
   --radius-sm: 0.25rem;

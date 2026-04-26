@@ -40,31 +40,31 @@ export interface GalleryImage {
 }
 
 export const siteConfig = {
-  businessName: 'Energy Stars Heating & Cooling',
-  tagline: 'Energy Stars Heating & Cooling — Air Conditioning',
-  phone: '(618) 477-8337',
-  phoneRaw: '16184778337',
-  email: '',
-  city: 'St. Louis',
-  state: 'IL',
-  address: 'St. Louis, IL',
-  serviceAreaNote: 'Serving Metro East & St. Louis area',
-  establishedYear: 2010,
+  businessName: 'Smoky Hill Roofing',
+  tagline: 'Smoky Hill Roofing — Roof Installation & Replacement',
+  phone: '(303) 944-3861',
+  phoneRaw: '13039443861',
+  email: 'sales@smokyhillroofing.com',
+  city: 'Denver',
+  state: 'CO',
+  address: '900 N Sherman St',
+  serviceAreaNote: 'Serving Denver metro area and surrounding communities',
+  establishedYear: 2020,
   footerYear: 2026,
   googleMapsEmbedUrl: '',
 
-  heroTitle: 'Professional Air Conditioning in St. Louis',
-  heroSubtitle: 'Trusted Energy Stars Heating & Cooling serving St. Louis. Call today for a free estimate.',
+  heroTitle: 'Professional Roof Installation & Replacement in Denver',
+  heroSubtitle: 'Trusted Smoky Hill Roofing serving Denver. Call today for a free estimate.',
   heroCta: 'Get a Free Estimate',
   heroImageUrl: '',
-  heroImageAlt: 'Energy Stars Heating & Cooling professional service',
+  heroImageAlt: 'Smoky Hill Roofing professional service',
 
   aboutHeadline: 'Why Homeowners Trust Us',
   aboutPoints: [
   {
     icon: 'ShieldCheck',
     title: 'Licensed & Insured',
-    description: 'Energy Stars Heating & Cooling is fully licensed and insured for your protection.',
+    description: 'Smoky Hill Roofing is fully licensed and insured for your protection.',
   },
   {
     icon: 'Clock',
@@ -74,28 +74,34 @@ export const siteConfig = {
   {
     icon: 'Award',
     title: 'Years of Experience',
-    description: 'Serving the St. Louis area since 2010.',
+    description: 'Serving the Denver area since 2020.',
   }
   ] as AboutPoint[],
 
   services: [
   {
-    icon: '❄️',
-    title: 'Air Conditioning',
-    description: 'Professional AC installation, repair, and maintenance services',
-    features: ['AC Installation', 'AC Repair', 'AC Maintenance', 'Emergency Service'],
-  },
-  {
-    icon: '🔥',
-    title: 'Heating Systems',
-    description: 'Complete heating solutions for your home and business',
-    features: ['Furnace Installation', 'Furnace Repair', 'Heat Pump Service', 'Boiler Service'],
+    icon: '🏠',
+    title: 'Roof Installation & Replacement',
+    description: 'Complete roof replacement and new installations for residential and commercial properties in Denver, CO.',
+    features: ['New roof installations', 'Complete roof replacements', 'Material selection guidance', 'Professional installation'],
   },
   {
     icon: '🔧',
-    title: 'HVAC Maintenance',
-    description: 'Regular maintenance to keep your systems running efficiently',
-    features: ['Seasonal Tune-ups', 'Filter Replacement', 'System Inspection', 'Preventive Maintenance'],
+    title: 'Roof Repair Services',
+    description: 'Expert roof repair services to fix leaks, damage, and wear to extend your roof\'s lifespan.',
+    features: ['Leak repairs', 'Shingle replacement', 'Flashing repairs', 'Emergency repairs'],
+  },
+  {
+    icon: '⛈️',
+    title: 'Storm Damage Restoration',
+    description: 'Fast response storm damage repairs to restore your roof after hail, wind, or weather damage.',
+    features: ['Storm damage assessment', 'Insurance claim assistance', 'Emergency tarping', 'Complete restoration'],
+  },
+  {
+    icon: '🏢',
+    title: 'Commercial Roofing',
+    description: 'Professional commercial roofing services for businesses throughout the Denver area.',
+    features: ['Commercial installations', 'Flat roof systems', 'Maintenance programs', 'Business scheduling'],
   }
   ] as ServiceItem[],
 
@@ -105,36 +111,36 @@ export const siteConfig = {
 
   pricingTiers: [
   {
-    name: 'Air Conditioning',
+    name: 'Roof Installation & Replacement',
     price: 'Free Estimate',
     priceUnit: '',
-    description: 'Professional AC installation, repair, and maintenance services',
-    features: ['AC Installation', 'AC Repair', 'AC Maintenance', 'Emergency Service'],
+    description: 'Complete roof replacement and new installations for residential and commercial properties in Denver, CO.',
+    features: ['New roof installations', 'Complete roof replacements', 'Material selection guidance', 'Professional installation'],
     highlighted: true,
     cta: 'Get Free Estimate',
   },
   {
-    name: 'Heating Systems',
+    name: 'Roof Repair Services',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Complete heating solutions for your home and business',
-    features: ['Furnace Installation', 'Furnace Repair', 'Heat Pump Service', 'Boiler Service'],
+    description: 'Expert roof repair services to fix leaks, damage, and wear to extend your roof\'s lifespan.',
+    features: ['Leak repairs', 'Shingle replacement', 'Flashing repairs', 'Emergency repairs'],
     highlighted: false,
     cta: 'Contact Us',
   },
   {
-    name: 'HVAC Maintenance',
+    name: 'Storm Damage Restoration',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Regular maintenance to keep your systems running efficiently',
-    features: ['Seasonal Tune-ups', 'Filter Replacement', 'System Inspection', 'Preventive Maintenance'],
+    description: 'Fast response storm damage repairs to restore your roof after hail, wind, or weather damage.',
+    features: ['Storm damage assessment', 'Insurance claim assistance', 'Emergency tarping', 'Complete restoration'],
     highlighted: false,
     cta: 'Contact Us',
   }
   ] as PricingTier[],
 
   guaranteeHeadline: 'Our Guarantee',
-  guaranteeText: 'At Energy Stars Heating & Cooling, we stand behind every job. If you are not 100% satisfied, we will make it right.',
+  guaranteeText: 'At Smoky Hill Roofing, we stand behind every job. If you are not 100% satisfied, we will make it right.',
   guaranteePoints: [
 'Quality workmanship guaranteed', 'Transparent pricing with no hidden fees', 'Friendly, professional service every time'
   ] as string[],
@@ -147,11 +153,11 @@ export const siteConfig = {
   googleReviewCount: 100,
 
   serviceOptions: [
-'Air Conditioning', 'Heating Systems', 'HVAC Maintenance', 'Other'
+'Roof Installation & Replacement', 'Roof Repair Services', 'Storm Damage Restoration', 'Commercial Roofing', 'Other'
   ] as string[],
 
   formWebhookUrl: 'https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/',
-  formSource: 'energy-stars-heating-cooling',
+  formSource: 'smoky-hill-roofing',
 
   badges: [
 'Licensed & Insured', 'Free Estimates', '5-Star Rated', 'Locally Owned'
@@ -164,7 +170,7 @@ export const siteConfig = {
   } as Record<string, string>,
 
   footerLinks: {
-    services: ['Air Conditioning', 'Heating Systems', 'HVAC Maintenance'] as string[],
+    services: ['Roof Installation & Replacement', 'Roof Repair Services', 'Storm Damage Restoration', 'Commercial Roofing'] as string[],
     company: [
     { label: 'About Us', href: '#about' },
     { label: 'Contact', href: '#contact' },
@@ -173,16 +179,16 @@ export const siteConfig = {
   },
 
   brand: {
-    primary: '#084F85',
-    accent: '#2B7BB9',
-    warmAccent: '#F7DE00',
-    border: '#E6E6E6',
-    canvas: '#F3F3F3',
+    primary: '#32373C',
+    accent: '#FF6900',
+    warmAccent: '#FCB900',
+    border: '#ABB8C3',
+    canvas: '#FFFFFF',
     // HSL values for Tailwind CSS variables
-    primaryHsl: '206 89% 28%',
-    accentHsl: '206 62% 45%',
-    warmAccentHsl: '54 100% 48%',
-    borderHsl: '0 0% 90%',
-    canvasHsl: '0 0% 95%',
+    primaryHsl: '210 9% 22%',
+    accentHsl: '25 100% 50%',
+    warmAccentHsl: '44 100% 49%',
+    borderHsl: '207 17% 72%',
+    canvasHsl: '0 0% 100%',
   },
 };
