@@ -40,31 +40,31 @@ export interface GalleryImage {
 }
 
 export const siteConfig = {
-  businessName: 'Smoky Hill Roofing',
-  tagline: 'Smoky Hill Roofing — Roof Installation',
+  businessName: 'Smokyhillroofing',
+  tagline: 'Smokyhillroofing — General Service',
   phone: '(303) 944-3861',
   phoneRaw: '13039443861',
-  email: 'sales@smokyhillroofing.com',
-  city: 'Denver',
-  state: 'CO',
-  address: '900 N Sherman St',
-  serviceAreaNote: 'Serving Denver, CO and surrounding metro areas',
+  email: 'Sales@SmokyHillRoofing.com',
+  city: '',
+  state: '',
+  address: '',
+  serviceAreaNote: '',
   establishedYear: 2010,
   footerYear: 2026,
   googleMapsEmbedUrl: '',
 
-  heroTitle: 'Professional Roof Installation in Denver',
-  heroSubtitle: 'Trusted Smoky Hill Roofing serving Denver. Call today for a free estimate.',
+  heroTitle: 'Professional General Service in Your Area',
+  heroSubtitle: 'Trusted Smokyhillroofing serving homeowners. Call today for a free estimate.',
   heroCta: 'Get a Free Estimate',
   heroImageUrl: '',
-  heroImageAlt: 'Smoky Hill Roofing professional service',
+  heroImageAlt: 'Smokyhillroofing professional service',
 
   aboutHeadline: 'Why Homeowners Trust Us',
   aboutPoints: [
   {
     icon: 'ShieldCheck',
     title: 'Licensed & Insured',
-    description: 'Smoky Hill Roofing is fully licensed and insured for your protection.',
+    description: 'Smokyhillroofing is fully licensed and insured for your protection.',
   },
   {
     icon: 'Clock',
@@ -74,34 +74,16 @@ export const siteConfig = {
   {
     icon: 'Award',
     title: 'Years of Experience',
-    description: 'Serving the Denver area since 2010.',
+    description: 'Serving the local area since 2010.',
   }
   ] as AboutPoint[],
 
   services: [
   {
-    icon: '🏠',
-    title: 'Roof Installation',
-    description: 'Professional new roof installations for residential and commercial properties in Denver',
-    features: ['New construction roofing', 'Complete roof systems', 'Quality materials', 'Professional installation'],
-  },
-  {
-    icon: '🔧',
-    title: 'Roof Repair',
-    description: 'Expert roof repair services for leaks, damage, and maintenance issues',
-    features: ['Emergency repairs', 'Leak detection and fixes', 'Preventive maintenance', 'Quick response'],
-  },
-  {
-    icon: '🏗️',
-    title: 'Roof Replacement',
-    description: 'Complete roof replacement services with high-quality materials and workmanship',
-    features: ['Full tear-off and replacement', 'Premium materials', 'Warranty coverage', 'Professional crew'],
-  },
-  {
-    icon: '⛈️',
-    title: 'Storm Damage Repair',
-    description: 'Specialized storm damage assessment and repair services for weather-related roofing issues',
-    features: ['Storm damage assessment', 'Insurance claim assistance', 'Emergency response', 'Fast repairs'],
+    icon: 'Wrench',
+    title: 'General Service',
+    description: 'Professional service.',
+    features: ['Free estimate'],
   }
   ] as ServiceItem[],
 
@@ -111,36 +93,18 @@ export const siteConfig = {
 
   pricingTiers: [
   {
-    name: 'Roof Installation',
+    name: 'General Service',
     price: 'Free Estimate',
     priceUnit: '',
-    description: 'Professional new roof installations for residential and commercial properties in Denver',
-    features: ['New construction roofing', 'Complete roof systems', 'Quality materials', 'Professional installation'],
+    description: 'Professional service.',
+    features: ['Free estimate'],
     highlighted: true,
     cta: 'Get Free Estimate',
-  },
-  {
-    name: 'Roof Repair',
-    price: 'Call for Pricing',
-    priceUnit: '',
-    description: 'Expert roof repair services for leaks, damage, and maintenance issues',
-    features: ['Emergency repairs', 'Leak detection and fixes', 'Preventive maintenance', 'Quick response'],
-    highlighted: false,
-    cta: 'Contact Us',
-  },
-  {
-    name: 'Roof Replacement',
-    price: 'Call for Pricing',
-    priceUnit: '',
-    description: 'Complete roof replacement services with high-quality materials and workmanship',
-    features: ['Full tear-off and replacement', 'Premium materials', 'Warranty coverage', 'Professional crew'],
-    highlighted: false,
-    cta: 'Contact Us',
   }
   ] as PricingTier[],
 
   guaranteeHeadline: 'Our Guarantee',
-  guaranteeText: 'At Smoky Hill Roofing, we stand behind every job. If you are not 100% satisfied, we will make it right.',
+  guaranteeText: 'At Smokyhillroofing, we stand behind every job. If you are not 100% satisfied, we will make it right.',
   guaranteePoints: [
 'Quality workmanship guaranteed', 'Transparent pricing with no hidden fees', 'Friendly, professional service every time'
   ] as string[],
@@ -153,11 +117,11 @@ export const siteConfig = {
   googleReviewCount: 100,
 
   serviceOptions: [
-'Roof Installation', 'Roof Repair', 'Roof Replacement', 'Storm Damage Repair', 'Other'
+'General Service', 'Other'
   ] as string[],
 
   formWebhookUrl: 'https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/',
-  formSource: 'smoky-hill-roofing',
+  formSource: 'smokyhillroofing',
 
   badges: [
 'Licensed & Insured', 'Free Estimates', '5-Star Rated', 'Locally Owned'
@@ -170,7 +134,7 @@ export const siteConfig = {
   } as Record<string, string>,
 
   footerLinks: {
-    services: ['Roof Installation', 'Roof Repair', 'Roof Replacement', 'Storm Damage Repair'] as string[],
+    services: ['General Service'] as string[],
     company: [
     { label: 'About Us', href: '#about' },
     { label: 'Contact', href: '#contact' },
@@ -179,23 +143,23 @@ export const siteConfig = {
   },
 
   brand: {
-    primary: '#32373C',
-    primaryForeground: '#FFFFFF',
-    accent: '#0693E3',
-    accentForeground: '#0B1220',
-    warmAccent: '#FCB900',
-    warmAccentForeground: '#32373C',
-    border: '#ABB8C3',
-    canvas: '#FFFFFF',
-    foreground: '#32373C',
-    primaryHsl: '210 9% 22%',
-    primaryForegroundHsl: '0 0% 100%',
-    accentHsl: '202 95% 46%',
-    accentForegroundHsl: '220 49% 8%',
-    warmAccentHsl: '44 100% 49%',
-    warmAccentForegroundHsl: '210 9% 22%',
-    borderHsl: '207 17% 72%',
-    canvasHsl: '0 0% 100%',
-    foregroundHsl: '210 9% 22%',
+    primary: '#FF6900',
+    primaryForeground: '#0B1220',
+    accent: '#32373C',
+    accentForeground: '#FFFFFF',
+    warmAccent: '#CF2E2E',
+    warmAccentForeground: '#FFFFFF',
+    border: '#FCB900',
+    canvas: '#0693E3',
+    foreground: '#0B1220',
+    primaryHsl: '25 100% 50%',
+    primaryForegroundHsl: '220 49% 8%',
+    accentHsl: '210 9% 22%',
+    accentForegroundHsl: '0 0% 100%',
+    warmAccentHsl: '0 64% 50%',
+    warmAccentForegroundHsl: '0 0% 100%',
+    borderHsl: '44 100% 49%',
+    canvasHsl: '202 95% 46%',
+    foregroundHsl: '220 49% 8%',
   },
 };
