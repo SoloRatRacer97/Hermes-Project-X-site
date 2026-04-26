@@ -41,19 +41,19 @@ export interface GalleryImage {
 
 export const siteConfig = {
   businessName: 'Smoky Hill Roofing',
-  tagline: 'Smoky Hill Roofing — Roof Installation & Replacement',
+  tagline: 'Smoky Hill Roofing — Roof Replacement',
   phone: '(303) 944-3861',
   phoneRaw: '13039443861',
   email: 'sales@smokyhillroofing.com',
   city: 'Denver',
   state: 'CO',
   address: '900 N Sherman St',
-  serviceAreaNote: 'Serving Denver metro area and surrounding communities',
-  establishedYear: 2020,
+  serviceAreaNote: 'Denver metro area and surrounding Colorado communities',
+  establishedYear: 2010,
   footerYear: 2026,
   googleMapsEmbedUrl: '',
 
-  heroTitle: 'Professional Roof Installation & Replacement in Denver',
+  heroTitle: 'Professional Roof Replacement in Denver',
   heroSubtitle: 'Trusted Smoky Hill Roofing serving Denver. Call today for a free estimate.',
   heroCta: 'Get a Free Estimate',
   heroImageUrl: '',
@@ -74,34 +74,34 @@ export const siteConfig = {
   {
     icon: 'Award',
     title: 'Years of Experience',
-    description: 'Serving the Denver area since 2020.',
+    description: 'Serving the Denver area since 2010.',
   }
   ] as AboutPoint[],
 
   services: [
   {
     icon: '🏠',
-    title: 'Roof Installation & Replacement',
-    description: 'Complete roof replacement and new installations for residential and commercial properties in Denver, CO.',
-    features: ['New roof installations', 'Complete roof replacements', 'Material selection guidance', 'Professional installation'],
+    title: 'Roof Replacement',
+    description: 'Complete roof replacement services for residential and commercial properties in Denver',
+    features: ['Full tear-off and replacement', 'New material installation', 'Cleanup and disposal included', 'Free estimates'],
   },
   {
     icon: '🔧',
-    title: 'Roof Repair Services',
-    description: 'Expert roof repair services to fix leaks, damage, and wear to extend your roof\'s lifespan.',
-    features: ['Leak repairs', 'Shingle replacement', 'Flashing repairs', 'Emergency repairs'],
+    title: 'Roof Repair',
+    description: 'Professional roof repair services for all types of roofing issues and damage',
+    features: ['Leak repair', 'Missing shingle replacement', 'Emergency repairs', 'Storm damage assessment'],
   },
   {
     icon: '⛈️',
     title: 'Storm Damage Restoration',
-    description: 'Fast response storm damage repairs to restore your roof after hail, wind, or weather damage.',
-    features: ['Storm damage assessment', 'Insurance claim assistance', 'Emergency tarping', 'Complete restoration'],
+    description: 'Expert storm damage assessment and comprehensive restoration services',
+    features: ['Insurance claim assistance', 'Emergency tarping', 'Hail damage repair', 'Wind damage restoration'],
   },
   {
-    icon: '🏢',
-    title: 'Commercial Roofing',
-    description: 'Professional commercial roofing services for businesses throughout the Denver area.',
-    features: ['Commercial installations', 'Flat roof systems', 'Maintenance programs', 'Business scheduling'],
+    icon: '🏗️',
+    title: 'New Roof Installation',
+    description: 'Professional installation of new roofing systems for new construction and additions',
+    features: ['Residential installation', 'Commercial installation', 'Multiple material options', 'Warranty included'],
   }
   ] as ServiceItem[],
 
@@ -111,20 +111,20 @@ export const siteConfig = {
 
   pricingTiers: [
   {
-    name: 'Roof Installation & Replacement',
+    name: 'Roof Replacement',
     price: 'Free Estimate',
     priceUnit: '',
-    description: 'Complete roof replacement and new installations for residential and commercial properties in Denver, CO.',
-    features: ['New roof installations', 'Complete roof replacements', 'Material selection guidance', 'Professional installation'],
+    description: 'Complete roof replacement services for residential and commercial properties in Denver',
+    features: ['Full tear-off and replacement', 'New material installation', 'Cleanup and disposal included', 'Free estimates'],
     highlighted: true,
     cta: 'Get Free Estimate',
   },
   {
-    name: 'Roof Repair Services',
+    name: 'Roof Repair',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Expert roof repair services to fix leaks, damage, and wear to extend your roof\'s lifespan.',
-    features: ['Leak repairs', 'Shingle replacement', 'Flashing repairs', 'Emergency repairs'],
+    description: 'Professional roof repair services for all types of roofing issues and damage',
+    features: ['Leak repair', 'Missing shingle replacement', 'Emergency repairs', 'Storm damage assessment'],
     highlighted: false,
     cta: 'Contact Us',
   },
@@ -132,8 +132,8 @@ export const siteConfig = {
     name: 'Storm Damage Restoration',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Fast response storm damage repairs to restore your roof after hail, wind, or weather damage.',
-    features: ['Storm damage assessment', 'Insurance claim assistance', 'Emergency tarping', 'Complete restoration'],
+    description: 'Expert storm damage assessment and comprehensive restoration services',
+    features: ['Insurance claim assistance', 'Emergency tarping', 'Hail damage repair', 'Wind damage restoration'],
     highlighted: false,
     cta: 'Contact Us',
   }
@@ -153,7 +153,7 @@ export const siteConfig = {
   googleReviewCount: 100,
 
   serviceOptions: [
-'Roof Installation & Replacement', 'Roof Repair Services', 'Storm Damage Restoration', 'Commercial Roofing', 'Other'
+'Roof Replacement', 'Roof Repair', 'Storm Damage Restoration', 'New Roof Installation', 'Other'
   ] as string[],
 
   formWebhookUrl: 'https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/',
@@ -170,7 +170,7 @@ export const siteConfig = {
   } as Record<string, string>,
 
   footerLinks: {
-    services: ['Roof Installation & Replacement', 'Roof Repair Services', 'Storm Damage Restoration', 'Commercial Roofing'] as string[],
+    services: ['Roof Replacement', 'Roof Repair', 'Storm Damage Restoration', 'New Roof Installation'] as string[],
     company: [
     { label: 'About Us', href: '#about' },
     { label: 'Contact', href: '#contact' },
