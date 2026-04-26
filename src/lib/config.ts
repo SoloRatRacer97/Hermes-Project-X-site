@@ -48,7 +48,7 @@ export const siteConfig = {
   city: 'Denver',
   state: 'CO',
   address: '900 N Sherman St',
-  serviceAreaNote: 'Denver metro area and surrounding Colorado communities',
+  serviceAreaNote: 'Serving Denver and surrounding areas',
   establishedYear: 2010,
   footerYear: 2026,
   googleMapsEmbedUrl: '',
@@ -82,26 +82,26 @@ export const siteConfig = {
   {
     icon: '🏠',
     title: 'Roof Replacement',
-    description: 'Complete roof replacement services for residential and commercial properties in Denver',
-    features: ['Full tear-off and replacement', 'New material installation', 'Cleanup and disposal included', 'Free estimates'],
+    description: 'Complete roof replacement services for residential and commercial properties',
+    features: ['Full tear-off', 'New installation', 'Material selection', 'Warranty included'],
   },
   {
     icon: '🔧',
     title: 'Roof Repair',
-    description: 'Professional roof repair services for all types of roofing issues and damage',
-    features: ['Leak repair', 'Missing shingle replacement', 'Emergency repairs', 'Storm damage assessment'],
+    description: 'Professional roof repair services for storm damage and general maintenance',
+    features: ['Leak repair', 'Shingle replacement', 'Emergency service', 'Same-day estimates'],
   },
   {
     icon: '⛈️',
-    title: 'Storm Damage Restoration',
-    description: 'Expert storm damage assessment and comprehensive restoration services',
-    features: ['Insurance claim assistance', 'Emergency tarping', 'Hail damage repair', 'Wind damage restoration'],
+    title: 'Storm Damage Repair',
+    description: 'Specialized storm damage assessment and repair services',
+    features: ['Insurance claims assistance', 'Emergency tarping', 'Hail damage repair', 'Wind damage restoration'],
   },
   {
     icon: '🏗️',
-    title: 'New Roof Installation',
-    description: 'Professional installation of new roofing systems for new construction and additions',
-    features: ['Residential installation', 'Commercial installation', 'Multiple material options', 'Warranty included'],
+    title: 'New Construction',
+    description: 'New roof installation for residential and commercial construction projects',
+    features: ['Custom design', 'Material consultation', 'Code compliance', 'Project management'],
   }
   ] as ServiceItem[],
 
@@ -114,8 +114,8 @@ export const siteConfig = {
     name: 'Roof Replacement',
     price: 'Free Estimate',
     priceUnit: '',
-    description: 'Complete roof replacement services for residential and commercial properties in Denver',
-    features: ['Full tear-off and replacement', 'New material installation', 'Cleanup and disposal included', 'Free estimates'],
+    description: 'Complete roof replacement services for residential and commercial properties',
+    features: ['Full tear-off', 'New installation', 'Material selection', 'Warranty included'],
     highlighted: true,
     cta: 'Get Free Estimate',
   },
@@ -123,17 +123,17 @@ export const siteConfig = {
     name: 'Roof Repair',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Professional roof repair services for all types of roofing issues and damage',
-    features: ['Leak repair', 'Missing shingle replacement', 'Emergency repairs', 'Storm damage assessment'],
+    description: 'Professional roof repair services for storm damage and general maintenance',
+    features: ['Leak repair', 'Shingle replacement', 'Emergency service', 'Same-day estimates'],
     highlighted: false,
     cta: 'Contact Us',
   },
   {
-    name: 'Storm Damage Restoration',
+    name: 'Storm Damage Repair',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Expert storm damage assessment and comprehensive restoration services',
-    features: ['Insurance claim assistance', 'Emergency tarping', 'Hail damage repair', 'Wind damage restoration'],
+    description: 'Specialized storm damage assessment and repair services',
+    features: ['Insurance claims assistance', 'Emergency tarping', 'Hail damage repair', 'Wind damage restoration'],
     highlighted: false,
     cta: 'Contact Us',
   }
@@ -153,7 +153,7 @@ export const siteConfig = {
   googleReviewCount: 100,
 
   serviceOptions: [
-'Roof Replacement', 'Roof Repair', 'Storm Damage Restoration', 'New Roof Installation', 'Other'
+'Residential roofing', 'Commercial roofing', 'Emergency repairs', 'Insurance claims'
   ] as string[],
 
   formWebhookUrl: 'https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/',
@@ -170,7 +170,7 @@ export const siteConfig = {
   } as Record<string, string>,
 
   footerLinks: {
-    services: ['Roof Replacement', 'Roof Repair', 'Storm Damage Restoration', 'New Roof Installation'] as string[],
+    services: ['Roof Replacement', 'Roof Repair', 'Storm Damage Repair', 'New Construction'] as string[],
     company: [
     { label: 'About Us', href: '#about' },
     { label: 'Contact', href: '#contact' },
@@ -180,15 +180,22 @@ export const siteConfig = {
 
   brand: {
     primary: '#32373C',
+    primaryForeground: '#FFFFFF',
     accent: '#FF6900',
+    accentForeground: '#0B1220',
     warmAccent: '#FCB900',
+    warmAccentForeground: '#32373C',
     border: '#ABB8C3',
     canvas: '#FFFFFF',
-    // HSL values for Tailwind CSS variables
+    foreground: '#32373C',
     primaryHsl: '210 9% 22%',
+    primaryForegroundHsl: '0 0% 100%',
     accentHsl: '25 100% 50%',
+    accentForegroundHsl: '220 49% 8%',
     warmAccentHsl: '44 100% 49%',
+    warmAccentForegroundHsl: '210 9% 22%',
     borderHsl: '207 17% 72%',
     canvasHsl: '0 0% 100%',
+    foregroundHsl: '210 9% 22%',
   },
 };

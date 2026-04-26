@@ -26,6 +26,9 @@ import {
   ArrowRight,
   Globe,
   Camera,
+  Sparkles,
+  CalendarCheck,
+  Building2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -82,7 +85,32 @@ const iconMap: Record<string, LucideIcon> = {
   Globe,
   Camera,
   ArrowRight,
+  Sparkles,
+  CalendarCheck,
+  Building2,
 };
+
+function businessInitials(name: string) {
+  const initials = name
+    .split(/[^A-Za-z0-9]+/)
+    .filter(Boolean)
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase();
+  return initials.slice(0, 2) || "PX";
+}
+
+function formatPrice(tier: PricingTier) {
+  const raw = String(tier.price || "").trim();
+  if (!raw) return { value: "Free Estimate", unit: "" };
+  if (/^\$?\d/.test(raw)) {
+    return {
+      value: raw.startsWith("$") ? raw : `$${raw}`,
+      unit: tier.priceUnit || "",
+    };
+  }
+  return { value: raw, unit: tier.priceUnit || "" };
+}
 
 // ── Animation helpers ────────────────────────────────────────────────
 function FadeIn({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
@@ -93,22 +121,6 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
       ref={ref}
       initial={{ opacity: 0, y: 30 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.5, delay, ease: "easeOut" }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
-}
-
-function SlideIn({ children, delay = 0, direction = "left", className = "" }: { children: React.ReactNode; delay?: number; direction?: "left" | "right"; className?: string }) {
-  const ref = React.useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-60px" });
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, x: direction === "left" ? -60 : 60 }}
-      animate={inView ? { opacity: 1, x: 0 } : {}}
       transition={{ duration: 0.5, delay, ease: "easeOut" }}
       className={className}
     >
@@ -185,10 +197,14 @@ function ServiceCard({ icon, title, description, backgroundImage, features }: Se
           <Card className="group relative h-full overflow-hidden border-0 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
             {/* Background image */}
             <div className="relative h-36 overflow-hidden">
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                style={{ backgroundImage: `url(${backgroundImage})` }}
-              />
+              {backgroundImage ? (
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  style={{ backgroundImage: `url(${backgroundImage})` }}
+                />
+              ) : (
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,var(--color-accent),transparent_32%),linear-gradient(135deg,var(--color-primary),var(--color-background))] opacity-90 transition-transform duration-500 group-hover:scale-110" />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-card via-card/70 to-transparent" />
               {/* Icon overlay */}
               <div className="absolute top-3 left-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-md transition-all group-hover:bg-accent group-hover:text-accent-foreground">
@@ -273,6 +289,7 @@ function ReviewCard({ name, location, rating, text, avatar }: ReviewItem) {
 
 // ── Pricing Card ─────────────────────────────────────────────────────
 function PricingCard({ tier }: { tier: PricingTier }) {
+  const price = formatPrice(tier);
   return (
     <motion.div variants={staggerItem} className="flex">
       <Card className={`relative border-0 shadow-sm transition-all duration-200 hover:shadow-lg flex flex-col w-full ${
@@ -288,8 +305,8 @@ function PricingCard({ tier }: { tier: PricingTier }) {
         <CardHeader className="pb-2 pt-6">
           <p className="text-sm font-medium text-muted-foreground">{tier.name}</p>
           <div className="flex items-baseline gap-1 mt-1">
-            <span className="text-4xl font-bold tracking-tight">${tier.price}</span>
-            <span className="text-sm text-muted-foreground">/visit</span>
+            <span className="text-4xl font-bold tracking-tight">{price.value}</span>
+            {price.unit ? <span className="text-sm text-muted-foreground">{price.unit}</span> : null}
           </div>
           <p className="text-sm text-muted-foreground mt-1">{tier.description}</p>
         </CardHeader>
@@ -534,19 +551,19 @@ function ContactForm() {
 // ── Nav ──────────────────────────────────────────────────────────────
 function Nav() {
   const links = ["Services", "Pricing", "Reviews", "Gallery", "Contact"];
+  const initials = businessInitials(siteConfig.businessName);
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-primary text-primary-foreground">
+    <header className="sticky top-0 z-50 w-full border-b border-primary-foreground/15 bg-primary/95 text-primary-foreground shadow-sm backdrop-blur">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-6">
         <a href="#" className="flex items-center gap-2 text-lg font-bold tracking-tight">
-          {/* Fake logo mark */}
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-accent-foreground text-sm font-black">
-            P
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-accent-foreground text-sm font-black shadow-sm shadow-accent/25">
+            {initials}
           </div>
           {siteConfig.businessName}
         </a>
         <nav className="hidden sm:flex items-center gap-6 text-sm">
           {links.map((l) => (
-            <a key={l} href={`#${l.toLowerCase()}`} className="text-primary-foreground/70 transition-colors hover:text-primary-foreground">
+            <a key={l} href={`#${l.toLowerCase()}`} className="text-primary-foreground/85 transition-colors hover:text-primary-foreground">
               {l}
             </a>
           ))}
@@ -570,7 +587,7 @@ function Nav() {
             <SheetTitle className="sr-only">Navigation</SheetTitle>
             <nav className="mt-8 flex flex-col gap-4 text-lg">
               {links.map((l) => (
-                <a key={l} href={`#${l.toLowerCase()}`} className="text-primary-foreground/70 transition-colors hover:text-primary-foreground">
+                <a key={l} href={`#${l.toLowerCase()}`} className="text-primary-foreground/85 transition-colors hover:text-primary-foreground">
                   {l}
                 </a>
               ))}
@@ -589,51 +606,99 @@ function Nav() {
 
 // ── Hero with background image ──────────────────────────────────────
 function Hero() {
+  const initials = businessInitials(siteConfig.businessName);
+  const primaryService = siteConfig.services[0]?.title || "Home Services";
   return (
-    <section className="relative overflow-hidden min-h-[520px] sm:min-h-[600px] flex items-center">
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${siteConfig.heroImageUrl})` }} />
-      <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/70" />
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 2px, white 2px, white 4px)`,
+    <section className="relative flex min-h-[620px] items-center overflow-hidden bg-primary text-primary-foreground">
+      {siteConfig.heroImageUrl ? (
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-45" style={{ backgroundImage: `url(${siteConfig.heroImageUrl})` }} />
+      ) : null}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,var(--color-accent),transparent_28%),linear-gradient(120deg,var(--color-primary)_0%,var(--color-primary)_58%,var(--color-background)_160%)]" />
+      <div className="absolute inset-y-0 right-0 hidden w-1/2 skew-x-[-10deg] bg-primary-foreground/8 lg:block" />
+      <div className="absolute inset-0 opacity-[0.06]" style={{
+        backgroundImage: `linear-gradient(90deg, white 1px, transparent 1px), linear-gradient(0deg, white 1px, transparent 1px)`,
+        backgroundSize: "44px 44px",
       }} />
-      <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 py-20 sm:py-28 text-primary-foreground">
-        <FadeIn>
-          <Badge className="mb-4 text-xs tracking-wide uppercase bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20 hover:bg-primary-foreground/20">
-            {siteConfig.serviceAreaNote}
-          </Badge>
-        </FadeIn>
-        <FadeIn delay={0.1}>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight max-w-2xl">
-            {siteConfig.heroTitle}
-          </h1>
-        </FadeIn>
-        <FadeIn delay={0.2}>
-          <p className="mt-5 text-lg sm:text-xl text-primary-foreground/80 max-w-xl leading-relaxed">
-            {siteConfig.heroSubtitle}
-          </p>
-        </FadeIn>
-        <FadeIn delay={0.3}>
-          <div className="mt-6 flex flex-wrap gap-3">
-            {siteConfig.badges.map((b) => (
-              <Badge key={b} variant="outline" className="text-xs font-medium border-primary-foreground/25 text-primary-foreground/90 hover:bg-primary-foreground/10">
-                {b}
-              </Badge>
-            ))}
-          </div>
-        </FadeIn>
-        <FadeIn delay={0.4}>
-          <div className="mt-10 flex flex-wrap items-center gap-4">
-            <a href="#contact" className="inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-xl h-12 px-8 text-base font-semibold bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg shadow-accent/20 transition-all">
-              {siteConfig.heroCta}
-              <ChevronRight className="ml-1 h-4 w-4" />
-            </a>
-            <a
-              href={`tel:${siteConfig.phoneRaw}`}
-              className="inline-flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors border border-primary-foreground/25 rounded-xl h-10 px-5 hover:bg-primary-foreground/10"
-            >
-              <Phone className="h-4 w-4" />
-              {siteConfig.phone}
-            </a>
+
+      <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 px-4 py-20 sm:px-6 sm:py-28 lg:grid-cols-[1.1fr_0.9fr]">
+        <div>
+          <FadeIn>
+            <Badge className="mb-4 border-primary-foreground/25 bg-primary-foreground/12 text-xs uppercase tracking-wide text-primary-foreground hover:bg-primary-foreground/18">
+              <Sparkles className="mr-1 h-3.5 w-3.5" />
+              {siteConfig.serviceAreaNote || `${siteConfig.city}, ${siteConfig.state}`}
+            </Badge>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <h1 className="max-w-3xl text-4xl font-black leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
+              {siteConfig.heroTitle}
+            </h1>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/90 sm:text-xl">
+              {siteConfig.heroSubtitle}
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.3}>
+            <div className="mt-7 flex flex-wrap gap-3">
+              {siteConfig.badges.map((b) => (
+                <Badge key={b} variant="outline" className="border-primary-foreground/30 bg-primary-foreground/10 text-xs font-medium text-primary-foreground hover:bg-primary-foreground/16">
+                  {b}
+                </Badge>
+              ))}
+            </div>
+          </FadeIn>
+          <FadeIn delay={0.4}>
+            <div className="mt-10 flex flex-wrap items-center gap-4">
+              <a href="#contact" className="inline-flex h-12 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl bg-accent px-8 text-base font-semibold text-accent-foreground shadow-lg shadow-accent/25 transition-all hover:-translate-y-0.5 hover:bg-accent/90">
+                {siteConfig.heroCta}
+                <ChevronRight className="ml-1 h-4 w-4" />
+              </a>
+              <a
+                href={`tel:${siteConfig.phoneRaw}`}
+                className="inline-flex h-11 items-center gap-2 rounded-xl border border-primary-foreground/30 bg-primary-foreground/10 px-5 text-sm text-primary-foreground transition-colors hover:bg-primary-foreground/16"
+              >
+                <Phone className="h-4 w-4" />
+                {siteConfig.phone}
+              </a>
+            </div>
+          </FadeIn>
+        </div>
+
+        <FadeIn delay={0.25} className="hidden lg:block">
+          <div className="relative rounded-[2rem] border border-primary-foreground/20 bg-card/95 p-6 text-card-foreground shadow-2xl shadow-black/20 backdrop-blur">
+            <div className="absolute -left-5 -top-5 flex h-16 w-16 rotate-[-8deg] items-center justify-center rounded-2xl bg-accent text-xl font-black text-accent-foreground shadow-lg shadow-accent/25">
+              {initials}
+            </div>
+            <div className="ml-14">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">Now Booking</p>
+              <h2 className="mt-2 text-2xl font-bold leading-tight">{primaryService}</h2>
+            </div>
+            <div className="mt-8 grid gap-4">
+              <div className="flex items-start gap-3 rounded-2xl bg-muted/50 p-4">
+                <CalendarCheck className="mt-0.5 h-5 w-5 text-accent" />
+                <div>
+                  <p className="font-semibold">Fast estimate follow-up</p>
+                  <p className="text-sm text-muted-foreground">Send the form and the office team can text or call back quickly.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 rounded-2xl bg-muted/50 p-4">
+                <Building2 className="mt-0.5 h-5 w-5 text-accent" />
+                <div>
+                  <p className="font-semibold">Local service area</p>
+                  <p className="text-sm text-muted-foreground">{siteConfig.city}, {siteConfig.state} and nearby neighborhoods.</p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-6 rounded-2xl bg-primary p-4 text-primary-foreground">
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-sm text-primary-foreground/85">Google rating</p>
+                  <p className="text-3xl font-black">{siteConfig.googleReviewAvg}</p>
+                </div>
+                <Stars count={5} />
+              </div>
+              <p className="mt-2 text-xs text-primary-foreground/85">Based on {siteConfig.googleReviewCount} customer reviews</p>
+            </div>
           </div>
         </FadeIn>
       </div>
@@ -912,6 +977,8 @@ function Contact() {
 
 // ── Comprehensive Footer ─────────────────────────────────────────────
 function Footer() {
+  const initials = businessInitials(siteConfig.businessName);
+  const socialEntries = Object.entries(siteConfig.socialLinks).filter(([, url]) => Boolean(url));
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-12">
@@ -920,21 +987,21 @@ function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-accent-foreground text-sm font-black">
-                P
+                {initials}
               </div>
               <span className="text-lg font-bold">{siteConfig.businessName}</span>
             </div>
-            <p className="text-sm text-primary-foreground/60 leading-relaxed max-w-xs">
+            <p className="text-sm text-primary-foreground/85 leading-relaxed max-w-xs">
               {siteConfig.tagline} Serving {siteConfig.city}, {siteConfig.state} since {siteConfig.establishedYear}.
             </p>
             <div className="flex gap-3">
-              {Object.entries(siteConfig.socialLinks).map(([name, url]) => {
+              {socialEntries.map(([name, url]) => {
                 const Icon = name === "facebook" ? Globe : name === "instagram" ? Camera : BadgeCheck;
                 return (
                   <a
                     key={name}
                     href={url}
-                    className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 hover:bg-accent hover:text-accent-foreground transition-all"
+                    className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/90 hover:bg-accent hover:text-accent-foreground transition-all"
                     aria-label={name}
                   >
                     <Icon className="h-4 w-4" />
@@ -950,7 +1017,7 @@ function Footer() {
             <ul className="space-y-2">
               {siteConfig.footerLinks.services.map((s) => (
                 <li key={s}>
-                  <a href="#services" className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                  <a href="#services" className="text-sm text-primary-foreground/85 hover:text-primary-foreground transition-colors">
                     {s}
                   </a>
                 </li>
@@ -964,7 +1031,7 @@ function Footer() {
             <ul className="space-y-2">
               {siteConfig.footerLinks.company.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                  <a href={link.href} className="text-sm text-primary-foreground/85 hover:text-primary-foreground transition-colors">
                     {link.label}
                   </a>
                 </li>
@@ -975,7 +1042,7 @@ function Footer() {
           {/* Getting in Touch + Mini Map */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold">Getting in Touch</h3>
-            <div className="space-y-2 text-sm text-primary-foreground/60">
+            <div className="space-y-2 text-sm text-primary-foreground/85">
               <a href={`tel:${siteConfig.phoneRaw}`} className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
                 <Phone className="h-3.5 w-3.5 shrink-0" />
                 {siteConfig.phone}
@@ -990,31 +1057,33 @@ function Footer() {
               </div>
             </div>
             {/* Embedded Map */}
-            <div className="overflow-hidden rounded-lg h-32">
-              <iframe
-                src={siteConfig.googleMapsEmbedUrl}
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Business location map"
-              />
-            </div>
+            {siteConfig.googleMapsEmbedUrl ? (
+              <div className="overflow-hidden rounded-lg h-32">
+                <iframe
+                  src={siteConfig.googleMapsEmbedUrl}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Business location map"
+                />
+              </div>
+            ) : null}
           </div>
         </div>
 
         <div className="my-8 h-px bg-primary-foreground/10" />
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-primary-foreground/40">
+          <p className="text-xs text-primary-foreground/75">
             &copy; {siteConfig.footerYear} {siteConfig.businessName}. All rights reserved.
           </p>
-          <div className="flex items-center gap-4 text-xs text-primary-foreground/40">
-            <a href="#" className="hover:text-primary-foreground/70 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary-foreground/70 transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-primary-foreground/70 transition-colors">Sitemap</a>
+          <div className="flex items-center gap-4 text-xs text-primary-foreground/75">
+            <a href="#" className="hover:text-primary-foreground transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-primary-foreground transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-primary-foreground transition-colors">Sitemap</a>
           </div>
         </div>
       </div>

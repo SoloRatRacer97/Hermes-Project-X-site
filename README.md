@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hermes Project X Template
 
-## Getting Started
+Reusable Next.js landing page template for `hopper-hermes projectx <url>`.
 
-First, run the development server:
+This repo contains only the landing-page template. Hermes Core owns scraping, profile rendering, contrast validation, deploy orchestration, env generation, and runtime deployment.
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Rendering Flow
 
-## Learn More
+Hermes Core copies this template into the generated Project X source repo, renders `src/lib/config.ts` and `src/app/globals.css` from the scraped client profile, validates color contrast, then builds and deploys the rendered site.
 
-To learn more about Next.js, take a look at the following resources:
+Core entrypoint:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+bash scripts/hopper-hermes projectx <url>
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contrast Contract
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Generated brand palettes must pass the Project X landing contrast gate before deployment. The gate lives in Hermes Core at `scripts/projectx/landing-contrast.js` and currently enforces WCAG AA normal text contrast for core foreground/background pairs.
