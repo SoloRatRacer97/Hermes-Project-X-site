@@ -40,8 +40,8 @@ export interface GalleryImage {
 }
 
 export const siteConfig = {
-  businessName: 'Smokyhillroofing',
-  tagline: 'Smokyhillroofing — General Service',
+  businessName: 'Best Roofing Contractors in Denver CO',
+  tagline: 'Best Roofing Contractors in Denver CO — General Service',
   phone: '(303) 944-3861',
   phoneRaw: '13039443861',
   email: 'Sales@SmokyHillRoofing.com',
@@ -54,17 +54,17 @@ export const siteConfig = {
   googleMapsEmbedUrl: '',
 
   heroTitle: 'Professional General Service in Your Area',
-  heroSubtitle: 'Trusted Smokyhillroofing serving homeowners. Call today for a free estimate.',
+  heroSubtitle: 'Trusted Best Roofing Contractors in Denver CO serving homeowners. Call today for a free estimate.',
   heroCta: 'Get a Free Estimate',
   heroImageUrl: '',
-  heroImageAlt: 'Smokyhillroofing professional service',
+  heroImageAlt: 'Best Roofing Contractors in Denver CO professional service',
 
   aboutHeadline: 'Why Homeowners Trust Us',
   aboutPoints: [
   {
     icon: 'ShieldCheck',
     title: 'Licensed & Insured',
-    description: 'Smokyhillroofing is fully licensed and insured for your protection.',
+    description: 'Best Roofing Contractors in Denver CO is fully licensed and insured for your protection.',
   },
   {
     icon: 'Clock',
@@ -104,7 +104,7 @@ export const siteConfig = {
   ] as PricingTier[],
 
   guaranteeHeadline: 'Our Guarantee',
-  guaranteeText: 'At Smokyhillroofing, we stand behind every job. If you are not 100% satisfied, we will make it right.',
+  guaranteeText: 'At Best Roofing Contractors in Denver CO, we stand behind every job. If you are not 100% satisfied, we will make it right.',
   guaranteePoints: [
 'Quality workmanship guaranteed', 'Transparent pricing with no hidden fees', 'Friendly, professional service every time'
   ] as string[],
