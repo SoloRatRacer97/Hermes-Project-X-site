@@ -41,19 +41,19 @@ export interface GalleryImage {
 
 export const siteConfig = {
   businessName: 'Smoky Hill Roofing',
-  tagline: 'Smoky Hill Roofing — Roof Replacement',
+  tagline: 'Smoky Hill Roofing — Roof Installation',
   phone: '(303) 944-3861',
   phoneRaw: '13039443861',
   email: 'sales@smokyhillroofing.com',
   city: 'Denver',
   state: 'CO',
   address: '900 N Sherman St',
-  serviceAreaNote: 'Serving Denver and surrounding areas',
+  serviceAreaNote: 'Serving Denver, CO and surrounding metro areas',
   establishedYear: 2010,
   footerYear: 2026,
   googleMapsEmbedUrl: '',
 
-  heroTitle: 'Professional Roof Replacement in Denver',
+  heroTitle: 'Professional Roof Installation in Denver',
   heroSubtitle: 'Trusted Smoky Hill Roofing serving Denver. Call today for a free estimate.',
   heroCta: 'Get a Free Estimate',
   heroImageUrl: '',
@@ -81,27 +81,27 @@ export const siteConfig = {
   services: [
   {
     icon: '🏠',
-    title: 'Roof Replacement',
-    description: 'Complete roof replacement services for residential and commercial properties',
-    features: ['Full tear-off', 'New installation', 'Material selection', 'Warranty included'],
+    title: 'Roof Installation',
+    description: 'Professional new roof installations for residential and commercial properties in Denver',
+    features: ['New construction roofing', 'Complete roof systems', 'Quality materials', 'Professional installation'],
   },
   {
     icon: '🔧',
     title: 'Roof Repair',
-    description: 'Professional roof repair services for storm damage and general maintenance',
-    features: ['Leak repair', 'Shingle replacement', 'Emergency service', 'Same-day estimates'],
+    description: 'Expert roof repair services for leaks, damage, and maintenance issues',
+    features: ['Emergency repairs', 'Leak detection and fixes', 'Preventive maintenance', 'Quick response'],
+  },
+  {
+    icon: '🏗️',
+    title: 'Roof Replacement',
+    description: 'Complete roof replacement services with high-quality materials and workmanship',
+    features: ['Full tear-off and replacement', 'Premium materials', 'Warranty coverage', 'Professional crew'],
   },
   {
     icon: '⛈️',
     title: 'Storm Damage Repair',
-    description: 'Specialized storm damage assessment and repair services',
-    features: ['Insurance claims assistance', 'Emergency tarping', 'Hail damage repair', 'Wind damage restoration'],
-  },
-  {
-    icon: '🏗️',
-    title: 'New Construction',
-    description: 'New roof installation for residential and commercial construction projects',
-    features: ['Custom design', 'Material consultation', 'Code compliance', 'Project management'],
+    description: 'Specialized storm damage assessment and repair services for weather-related roofing issues',
+    features: ['Storm damage assessment', 'Insurance claim assistance', 'Emergency response', 'Fast repairs'],
   }
   ] as ServiceItem[],
 
@@ -111,11 +111,11 @@ export const siteConfig = {
 
   pricingTiers: [
   {
-    name: 'Roof Replacement',
+    name: 'Roof Installation',
     price: 'Free Estimate',
     priceUnit: '',
-    description: 'Complete roof replacement services for residential and commercial properties',
-    features: ['Full tear-off', 'New installation', 'Material selection', 'Warranty included'],
+    description: 'Professional new roof installations for residential and commercial properties in Denver',
+    features: ['New construction roofing', 'Complete roof systems', 'Quality materials', 'Professional installation'],
     highlighted: true,
     cta: 'Get Free Estimate',
   },
@@ -123,17 +123,17 @@ export const siteConfig = {
     name: 'Roof Repair',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Professional roof repair services for storm damage and general maintenance',
-    features: ['Leak repair', 'Shingle replacement', 'Emergency service', 'Same-day estimates'],
+    description: 'Expert roof repair services for leaks, damage, and maintenance issues',
+    features: ['Emergency repairs', 'Leak detection and fixes', 'Preventive maintenance', 'Quick response'],
     highlighted: false,
     cta: 'Contact Us',
   },
   {
-    name: 'Storm Damage Repair',
+    name: 'Roof Replacement',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Specialized storm damage assessment and repair services',
-    features: ['Insurance claims assistance', 'Emergency tarping', 'Hail damage repair', 'Wind damage restoration'],
+    description: 'Complete roof replacement services with high-quality materials and workmanship',
+    features: ['Full tear-off and replacement', 'Premium materials', 'Warranty coverage', 'Professional crew'],
     highlighted: false,
     cta: 'Contact Us',
   }
@@ -153,7 +153,7 @@ export const siteConfig = {
   googleReviewCount: 100,
 
   serviceOptions: [
-'Residential roofing', 'Commercial roofing', 'Emergency repairs', 'Insurance claims'
+'Roof Installation', 'Roof Repair', 'Roof Replacement', 'Storm Damage Repair', 'Other'
   ] as string[],
 
   formWebhookUrl: 'https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/',
@@ -164,13 +164,13 @@ export const siteConfig = {
   ] as string[],
 
   socialLinks: {
-    Google: '',
-    Yelp: '',
-    Facebook: ''
+    'Google': '',
+    'Yelp': '',
+    'Facebook': ''
   } as Record<string, string>,
 
   footerLinks: {
-    services: ['Roof Replacement', 'Roof Repair', 'Storm Damage Repair', 'New Construction'] as string[],
+    services: ['Roof Installation', 'Roof Repair', 'Roof Replacement', 'Storm Damage Repair'] as string[],
     company: [
     { label: 'About Us', href: '#about' },
     { label: 'Contact', href: '#contact' },
@@ -181,7 +181,7 @@ export const siteConfig = {
   brand: {
     primary: '#32373C',
     primaryForeground: '#FFFFFF',
-    accent: '#FF6900',
+    accent: '#0693E3',
     accentForeground: '#0B1220',
     warmAccent: '#FCB900',
     warmAccentForeground: '#32373C',
@@ -190,7 +190,7 @@ export const siteConfig = {
     foreground: '#32373C',
     primaryHsl: '210 9% 22%',
     primaryForegroundHsl: '0 0% 100%',
-    accentHsl: '25 100% 50%',
+    accentHsl: '202 95% 46%',
     accentForegroundHsl: '220 49% 8%',
     warmAccentHsl: '44 100% 49%',
     warmAccentForegroundHsl: '210 9% 22%',
