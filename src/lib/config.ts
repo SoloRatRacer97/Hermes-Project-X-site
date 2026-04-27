@@ -48,7 +48,7 @@ export const siteConfig = {
   city: 'Seattle',
   state: 'WA',
   address: 'Seattle, WA',
-  serviceAreaNote: 'Serving the Seattle area',
+  serviceAreaNote: 'Serving Seattle and surrounding areas',
   establishedYear: 2010,
   footerYear: 2026,
   googleMapsEmbedUrl: '',
@@ -82,32 +82,38 @@ export const siteConfig = {
   {
     icon: 'Home',
     title: 'Roof Replacement',
-    description: 'Complete roof installation with new materials and lifetime warranties.',
-    features: ['Asphalt shingle roofing', 'Metal roofing installation', 'Cedar shake roofing', '50-year warranty available'],
+    description: 'Complete roof replacement with premium materials and professional installation for residential and commercial properties.',
+    features: ['Asphalt Shingle Roofing', 'Cedar Shake & Wood Shingles', 'Metal Roofing', 'Tile Roofing', 'Flat Roofing'],
   },
   {
     icon: 'Wrench',
     title: 'Roof Repair',
-    description: 'Professional roof repairs for leaks, damaged shingles, and wear issues.',
-    features: ['Leak repair', 'Shingle replacement', 'Emergency repairs', 'Free inspections'],
-  },
-  {
-    icon: 'CloudRain',
-    title: 'Storm Damage Repair',
-    description: 'Rapid response storm damage assessment and repair services.',
-    features: ['Insurance claim assistance', 'Emergency tarping', 'Hail damage repair', 'Wind damage restoration'],
+    description: 'Expert roof repair services to fix leaks, damaged shingles, and structural issues.',
+    features: ['Storm Damage Repair', 'Leak Repair', 'Shingle Replacement', 'Emergency Repairs'],
   },
   {
     icon: 'Search',
     title: 'Roof Inspection',
-    description: 'Comprehensive roof inspections for maintenance and damage assessment.',
-    features: ['Free estimates', 'Detailed inspection reports', 'Maintenance planning', 'Pre-purchase inspections'],
+    description: 'Comprehensive roof inspections to assess condition and identify potential issues.',
+    features: ['Free Roof Inspections', 'Storm Damage Assessment', 'Maintenance Planning', 'Insurance Claims Support'],
   },
   {
-    icon: 'Layers',
+    icon: 'Shield',
+    title: 'Siding Installation',
+    description: 'Professional siding installation and repair to protect and enhance your home\'s exterior.',
+    features: ['Vinyl Siding', 'Fiber Cement Siding', 'Siding Repair', 'Siding Replacement'],
+  },
+  {
+    icon: 'Square',
+    title: 'Window Installation',
+    description: 'Energy-efficient window installation and replacement services for improved comfort and savings.',
+    features: ['Window Replacement', 'Energy Efficient Windows', 'Window Repair'],
+  },
+  {
+    icon: 'CloudRain',
     title: 'Gutter Services',
-    description: 'Complete gutter installation, repair, and maintenance solutions.',
-    features: ['Gutter installation', 'Gutter cleaning', 'Fascia repair', 'Gutter dome installation'],
+    description: 'Complete gutter installation, repair, and maintenance to protect your home from water damage.',
+    features: ['Gutter Installation', 'Gutter Repair', 'Gutter Domes', 'Fascia Repair'],
   }
   ] as ServiceItem[],
 
@@ -120,8 +126,8 @@ export const siteConfig = {
     name: 'Roof Replacement',
     price: 'Free Estimate',
     priceUnit: '',
-    description: 'Complete roof installation with new materials and lifetime warranties.',
-    features: ['Asphalt shingle roofing', 'Metal roofing installation', 'Cedar shake roofing', '50-year warranty available'],
+    description: 'Complete roof replacement with premium materials and professional installation for residential and commercial properties.',
+    features: ['Asphalt Shingle Roofing', 'Cedar Shake & Wood Shingles', 'Metal Roofing', 'Tile Roofing', 'Flat Roofing'],
     highlighted: true,
     cta: 'Get Free Estimate',
   },
@@ -129,17 +135,17 @@ export const siteConfig = {
     name: 'Roof Repair',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Professional roof repairs for leaks, damaged shingles, and wear issues.',
-    features: ['Leak repair', 'Shingle replacement', 'Emergency repairs', 'Free inspections'],
+    description: 'Expert roof repair services to fix leaks, damaged shingles, and structural issues.',
+    features: ['Storm Damage Repair', 'Leak Repair', 'Shingle Replacement', 'Emergency Repairs'],
     highlighted: false,
     cta: 'Contact Us',
   },
   {
-    name: 'Storm Damage Repair',
+    name: 'Roof Inspection',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Rapid response storm damage assessment and repair services.',
-    features: ['Insurance claim assistance', 'Emergency tarping', 'Hail damage repair', 'Wind damage restoration'],
+    description: 'Comprehensive roof inspections to assess condition and identify potential issues.',
+    features: ['Free Roof Inspections', 'Storm Damage Assessment', 'Maintenance Planning', 'Insurance Claims Support'],
     highlighted: false,
     cta: 'Contact Us',
   }
@@ -159,7 +165,7 @@ export const siteConfig = {
   googleReviewCount: 100,
 
   serviceOptions: [
-'Roof Replacement', 'Roof Repair', 'Storm Damage Repair', 'Roof Inspection', 'Gutter Services', 'Window Installation', 'Siding Installation', 'Other'
+'Roof Replacement', 'Roof Repair', 'Roof Inspection', 'Siding Installation', 'Window Installation', 'Gutter Services', 'Other'
   ] as string[],
 
   formWebhookUrl: 'https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/',
@@ -176,7 +182,7 @@ export const siteConfig = {
   } as Record<string, string>,
 
   footerLinks: {
-    services: ['Roof Replacement', 'Roof Repair', 'Storm Damage Repair', 'Roof Inspection', 'Gutter Services'] as string[],
+    services: ['Roof Replacement', 'Roof Repair', 'Roof Inspection', 'Siding Installation', 'Window Installation', 'Gutter Services'] as string[],
     company: [
     { label: 'About Us', href: '#about' },
     { label: 'Contact', href: '#contact' },
@@ -185,23 +191,23 @@ export const siteConfig = {
   },
 
   brand: {
-    primary: '#4F759B',
+    primary: '#4A5565',
     primaryForeground: '#FFFFFF',
-    accent: '#003366',
-    accentForeground: '#FFFFFF',
+    accent: '#0693E3',
+    accentForeground: '#0B1220',
     warmAccent: '#C7AC43',
     warmAccentForeground: '#0B1220',
-    border: '#4A5565',
+    border: '#9E9E9E',
     canvas: '#F4F8FD',
-    foreground: '#4F759B',
-    primaryHsl: '210 32% 46%',
+    foreground: '#4A5565',
+    primaryHsl: '216 15% 34%',
     primaryForegroundHsl: '0 0% 100%',
-    accentHsl: '210 100% 20%',
-    accentForegroundHsl: '0 0% 100%',
+    accentHsl: '202 95% 46%',
+    accentForegroundHsl: '220 49% 8%',
     warmAccentHsl: '48 54% 52%',
     warmAccentForegroundHsl: '220 49% 8%',
-    borderHsl: '216 15% 34%',
+    borderHsl: '0 0% 62%',
     canvasHsl: '213 69% 97%',
-    foregroundHsl: '210 32% 46%',
+    foregroundHsl: '216 15% 34%',
   },
 };
