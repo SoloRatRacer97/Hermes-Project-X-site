@@ -40,31 +40,31 @@ export interface GalleryImage {
 }
 
 export const siteConfig = {
-  businessName: 'Best Roofing Contractors in Denver CO',
-  tagline: 'Best Roofing Contractors in Denver CO — General Service',
-  phone: '(303) 944-3861',
-  phoneRaw: '13039443861',
-  email: 'Sales@SmokyHillRoofing.com',
-  city: '',
-  state: '',
-  address: '',
-  serviceAreaNote: '',
+  businessName: 'Forever Roofing',
+  tagline: 'Forever Roofing — Roof Replacement',
+  phone: '(206) 261-3683',
+  phoneRaw: '12062613683',
+  email: 'info@foreverroofing.net',
+  city: 'Seattle',
+  state: 'WA',
+  address: 'Seattle, WA',
+  serviceAreaNote: 'Serving the Seattle area',
   establishedYear: 2010,
   footerYear: 2026,
   googleMapsEmbedUrl: '',
 
-  heroTitle: 'Professional General Service in Your Area',
-  heroSubtitle: 'Trusted Best Roofing Contractors in Denver CO serving homeowners. Call today for a free estimate.',
+  heroTitle: 'Professional Roof Replacement in Seattle',
+  heroSubtitle: 'Trusted Forever Roofing serving Seattle. Call today for a free estimate.',
   heroCta: 'Get a Free Estimate',
   heroImageUrl: '',
-  heroImageAlt: 'Best Roofing Contractors in Denver CO professional service',
+  heroImageAlt: 'Forever Roofing professional service',
 
   aboutHeadline: 'Why Homeowners Trust Us',
   aboutPoints: [
   {
     icon: 'ShieldCheck',
     title: 'Licensed & Insured',
-    description: 'Best Roofing Contractors in Denver CO is fully licensed and insured for your protection.',
+    description: 'Forever Roofing is fully licensed and insured for your protection.',
   },
   {
     icon: 'Clock',
@@ -74,16 +74,40 @@ export const siteConfig = {
   {
     icon: 'Award',
     title: 'Years of Experience',
-    description: 'Serving the local area since 2010.',
+    description: 'Serving the Seattle area since 2010.',
   }
   ] as AboutPoint[],
 
   services: [
   {
+    icon: 'Home',
+    title: 'Roof Replacement',
+    description: 'Complete roof installation with new materials and lifetime warranties.',
+    features: ['Asphalt shingle roofing', 'Metal roofing installation', 'Cedar shake roofing', '50-year warranty available'],
+  },
+  {
     icon: 'Wrench',
-    title: 'General Service',
-    description: 'Professional service.',
-    features: ['Free estimate'],
+    title: 'Roof Repair',
+    description: 'Professional roof repairs for leaks, damaged shingles, and wear issues.',
+    features: ['Leak repair', 'Shingle replacement', 'Emergency repairs', 'Free inspections'],
+  },
+  {
+    icon: 'CloudRain',
+    title: 'Storm Damage Repair',
+    description: 'Rapid response storm damage assessment and repair services.',
+    features: ['Insurance claim assistance', 'Emergency tarping', 'Hail damage repair', 'Wind damage restoration'],
+  },
+  {
+    icon: 'Search',
+    title: 'Roof Inspection',
+    description: 'Comprehensive roof inspections for maintenance and damage assessment.',
+    features: ['Free estimates', 'Detailed inspection reports', 'Maintenance planning', 'Pre-purchase inspections'],
+  },
+  {
+    icon: 'Layers',
+    title: 'Gutter Services',
+    description: 'Complete gutter installation, repair, and maintenance solutions.',
+    features: ['Gutter installation', 'Gutter cleaning', 'Fascia repair', 'Gutter dome installation'],
   }
   ] as ServiceItem[],
 
@@ -93,18 +117,36 @@ export const siteConfig = {
 
   pricingTiers: [
   {
-    name: 'General Service',
+    name: 'Roof Replacement',
     price: 'Free Estimate',
     priceUnit: '',
-    description: 'Professional service.',
-    features: ['Free estimate'],
+    description: 'Complete roof installation with new materials and lifetime warranties.',
+    features: ['Asphalt shingle roofing', 'Metal roofing installation', 'Cedar shake roofing', '50-year warranty available'],
     highlighted: true,
     cta: 'Get Free Estimate',
+  },
+  {
+    name: 'Roof Repair',
+    price: 'Call for Pricing',
+    priceUnit: '',
+    description: 'Professional roof repairs for leaks, damaged shingles, and wear issues.',
+    features: ['Leak repair', 'Shingle replacement', 'Emergency repairs', 'Free inspections'],
+    highlighted: false,
+    cta: 'Contact Us',
+  },
+  {
+    name: 'Storm Damage Repair',
+    price: 'Call for Pricing',
+    priceUnit: '',
+    description: 'Rapid response storm damage assessment and repair services.',
+    features: ['Insurance claim assistance', 'Emergency tarping', 'Hail damage repair', 'Wind damage restoration'],
+    highlighted: false,
+    cta: 'Contact Us',
   }
   ] as PricingTier[],
 
   guaranteeHeadline: 'Our Guarantee',
-  guaranteeText: 'At Best Roofing Contractors in Denver CO, we stand behind every job. If you are not 100% satisfied, we will make it right.',
+  guaranteeText: 'At Forever Roofing, we stand behind every job. If you are not 100% satisfied, we will make it right.',
   guaranteePoints: [
 'Quality workmanship guaranteed', 'Transparent pricing with no hidden fees', 'Friendly, professional service every time'
   ] as string[],
@@ -117,11 +159,11 @@ export const siteConfig = {
   googleReviewCount: 100,
 
   serviceOptions: [
-'General Service', 'Other'
+'Roof Replacement', 'Roof Repair', 'Storm Damage Repair', 'Roof Inspection', 'Gutter Services', 'Window Installation', 'Siding Installation', 'Other'
   ] as string[],
 
   formWebhookUrl: 'https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/',
-  formSource: 'smokyhillroofing',
+  formSource: 'forever-roofing',
 
   badges: [
 'Licensed & Insured', 'Free Estimates', '5-Star Rated', 'Locally Owned'
@@ -134,7 +176,7 @@ export const siteConfig = {
   } as Record<string, string>,
 
   footerLinks: {
-    services: ['General Service'] as string[],
+    services: ['Roof Replacement', 'Roof Repair', 'Storm Damage Repair', 'Roof Inspection', 'Gutter Services'] as string[],
     company: [
     { label: 'About Us', href: '#about' },
     { label: 'Contact', href: '#contact' },
@@ -143,23 +185,23 @@ export const siteConfig = {
   },
 
   brand: {
-    primary: '#FF6900',
-    primaryForeground: '#0B1220',
-    accent: '#32373C',
+    primary: '#4F759B',
+    primaryForeground: '#FFFFFF',
+    accent: '#003366',
     accentForeground: '#FFFFFF',
-    warmAccent: '#CF2E2E',
-    warmAccentForeground: '#FFFFFF',
-    border: '#FCB900',
-    canvas: '#0693E3',
-    foreground: '#0B1220',
-    primaryHsl: '25 100% 50%',
-    primaryForegroundHsl: '220 49% 8%',
-    accentHsl: '210 9% 22%',
+    warmAccent: '#C7AC43',
+    warmAccentForeground: '#0B1220',
+    border: '#4A5565',
+    canvas: '#F4F8FD',
+    foreground: '#4F759B',
+    primaryHsl: '210 32% 46%',
+    primaryForegroundHsl: '0 0% 100%',
+    accentHsl: '210 100% 20%',
     accentForegroundHsl: '0 0% 100%',
-    warmAccentHsl: '0 64% 50%',
-    warmAccentForegroundHsl: '0 0% 100%',
-    borderHsl: '44 100% 49%',
-    canvasHsl: '202 95% 46%',
-    foregroundHsl: '220 49% 8%',
+    warmAccentHsl: '48 54% 52%',
+    warmAccentForegroundHsl: '220 49% 8%',
+    borderHsl: '216 15% 34%',
+    canvasHsl: '213 69% 97%',
+    foregroundHsl: '210 32% 46%',
   },
 };
