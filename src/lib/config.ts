@@ -40,80 +40,73 @@ export interface GalleryImage {
 }
 
 export const siteConfig = {
-  businessName: 'Forever Roofing',
-  tagline: 'Forever Roofing — Roof Replacement',
-  phone: '(206) 261-3683',
-  phoneRaw: '12062613683',
-  email: 'info@foreverroofing.net',
-  city: 'Seattle',
-  state: 'WA',
-  address: 'Seattle, WA',
-  serviceAreaNote: 'Serving Seattle and surrounding areas',
-  establishedYear: 2010,
+  businessName: 'North Star Permanent Lighting',
+  tagline: 'North Star Permanent Lighting — Permanent Outdoor Lighting',
+  phone: '(516) 400-4316',
+  phoneRaw: '15164004316',
+  email: 'info@northstarholidaylights.com',
+  city: 'Long Island',
+  state: 'NY',
+  address: 'Long Island, NY',
+  serviceAreaNote: 'Serving Long Island and surrounding areas for holiday and outdoor lighting installation',
+  establishedYear: 2020,
   footerYear: 2026,
   googleMapsEmbedUrl: '',
 
-  heroTitle: 'Professional Roof Replacement in Seattle',
-  heroSubtitle: 'Trusted Forever Roofing serving Seattle. Call today for a free estimate.',
+  heroTitle: 'Professional Permanent Outdoor Lighting in Long Island',
+  heroSubtitle: 'Trusted North Star Permanent Lighting serving Long Island. Call today for a free estimate.',
   heroCta: 'Get a Free Estimate',
   heroImageUrl: '',
-  heroImageAlt: 'Forever Roofing professional service',
+  heroImageAlt: 'North Star Permanent Lighting professional service',
 
   aboutHeadline: 'Why Homeowners Trust Us',
   aboutPoints: [
   {
-    icon: 'ShieldCheck',
-    title: 'Licensed & Insured',
-    description: 'Forever Roofing is fully licensed and insured for your protection.',
+    icon: 'undefined',
+    title: 'undefined',
+    description: 'undefined',
   },
   {
-    icon: 'Clock',
-    title: 'Fast Response Times',
-    description: 'We respond quickly and show up on time, every time.',
+    icon: 'undefined',
+    title: 'undefined',
+    description: 'undefined',
   },
   {
-    icon: 'Award',
-    title: 'Years of Experience',
-    description: 'Serving the Seattle area since 2010.',
+    icon: 'undefined',
+    title: 'undefined',
+    description: 'undefined',
+  },
+  {
+    icon: 'undefined',
+    title: 'undefined',
+    description: 'undefined',
   }
   ] as AboutPoint[],
 
   services: [
   {
     icon: 'Home',
-    title: 'Roof Replacement',
-    description: 'Complete roof replacement with premium materials and professional installation for residential and commercial properties.',
-    features: ['Asphalt Shingle Roofing', 'Cedar Shake & Wood Shingles', 'Metal Roofing', 'Tile Roofing', 'Flat Roofing'],
+    title: 'Permanent Outdoor Lighting',
+    description: 'App-controlled roofline lighting systems with custom aluminum channels that disappear during the day.',
+    features: ['Smartphone app control', 'Color-changing LED systems', 'Custom aluminum channels', 'Weather-resistant installation'],
   },
   {
-    icon: 'Wrench',
-    title: 'Roof Repair',
-    description: 'Expert roof repair services to fix leaks, damaged shingles, and structural issues.',
-    features: ['Storm Damage Repair', 'Leak Repair', 'Shingle Replacement', 'Emergency Repairs'],
+    icon: 'TreePine',
+    title: 'Christmas Light Installation',
+    description: 'Full-service holiday lighting installation, maintenance, and removal for homes and businesses.',
+    features: ['Custom holiday displays', 'Professional installation', 'Seasonal maintenance', 'Complete removal service'],
   },
   {
-    icon: 'Search',
-    title: 'Roof Inspection',
-    description: 'Comprehensive roof inspections to assess condition and identify potential issues.',
-    features: ['Free Roof Inspections', 'Storm Damage Assessment', 'Maintenance Planning', 'Insurance Claims Support'],
+    icon: 'Trees',
+    title: 'Landscape Lighting',
+    description: 'Path lights, uplighting, and accent lighting to highlight landscaping and walkways.',
+    features: ['Low-voltage LED systems', 'Path and walkway lighting', 'Landscape uplighting', 'Security lighting'],
   },
   {
-    icon: 'Shield',
-    title: 'Siding Installation',
-    description: 'Professional siding installation and repair to protect and enhance your home\'s exterior.',
-    features: ['Vinyl Siding', 'Fiber Cement Siding', 'Siding Repair', 'Siding Replacement'],
-  },
-  {
-    icon: 'Square',
-    title: 'Window Installation',
-    description: 'Energy-efficient window installation and replacement services for improved comfort and savings.',
-    features: ['Window Replacement', 'Energy Efficient Windows', 'Window Repair'],
-  },
-  {
-    icon: 'CloudRain',
-    title: 'Gutter Services',
-    description: 'Complete gutter installation, repair, and maintenance to protect your home from water damage.',
-    features: ['Gutter Installation', 'Gutter Repair', 'Gutter Domes', 'Fascia Repair'],
+    icon: 'Lightbulb',
+    title: 'Bistro & Patio Lighting',
+    description: 'Professional string light installation for patios, decks, and outdoor living areas.',
+    features: ['Stainless steel hardware', 'Weather-resistant anchoring', 'Edison or LED options', 'Commercial-grade systems'],
   }
   ] as ServiceItem[],
 
@@ -123,36 +116,36 @@ export const siteConfig = {
 
   pricingTiers: [
   {
-    name: 'Roof Replacement',
+    name: 'Permanent Outdoor Lighting',
     price: 'Free Estimate',
     priceUnit: '',
-    description: 'Complete roof replacement with premium materials and professional installation for residential and commercial properties.',
-    features: ['Asphalt Shingle Roofing', 'Cedar Shake & Wood Shingles', 'Metal Roofing', 'Tile Roofing', 'Flat Roofing'],
+    description: 'App-controlled roofline lighting systems with custom aluminum channels that disappear during the day.',
+    features: ['Smartphone app control', 'Color-changing LED systems', 'Custom aluminum channels', 'Weather-resistant installation'],
     highlighted: true,
     cta: 'Get Free Estimate',
   },
   {
-    name: 'Roof Repair',
+    name: 'Christmas Light Installation',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Expert roof repair services to fix leaks, damaged shingles, and structural issues.',
-    features: ['Storm Damage Repair', 'Leak Repair', 'Shingle Replacement', 'Emergency Repairs'],
+    description: 'Full-service holiday lighting installation, maintenance, and removal for homes and businesses.',
+    features: ['Custom holiday displays', 'Professional installation', 'Seasonal maintenance', 'Complete removal service'],
     highlighted: false,
     cta: 'Contact Us',
   },
   {
-    name: 'Roof Inspection',
+    name: 'Landscape Lighting',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Comprehensive roof inspections to assess condition and identify potential issues.',
-    features: ['Free Roof Inspections', 'Storm Damage Assessment', 'Maintenance Planning', 'Insurance Claims Support'],
+    description: 'Path lights, uplighting, and accent lighting to highlight landscaping and walkways.',
+    features: ['Low-voltage LED systems', 'Path and walkway lighting', 'Landscape uplighting', 'Security lighting'],
     highlighted: false,
     cta: 'Contact Us',
   }
   ] as PricingTier[],
 
   guaranteeHeadline: 'Our Guarantee',
-  guaranteeText: 'At Forever Roofing, we stand behind every job. If you are not 100% satisfied, we will make it right.',
+  guaranteeText: 'At North Star Permanent Lighting, we stand behind every job. If you are not 100% satisfied, we will make it right.',
   guaranteePoints: [
 'Quality workmanship guaranteed', 'Transparent pricing with no hidden fees', 'Friendly, professional service every time'
   ] as string[],
@@ -165,11 +158,11 @@ export const siteConfig = {
   googleReviewCount: 100,
 
   serviceOptions: [
-'Roof Replacement', 'Roof Repair', 'Roof Inspection', 'Siding Installation', 'Window Installation', 'Gutter Services', 'Other'
+'Permanent Outdoor Lighting', 'Christmas Light Installation', 'Landscape Lighting', 'Bistro & Patio Lighting', 'Other'
   ] as string[],
 
   formWebhookUrl: 'https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/',
-  formSource: 'forever-roofing',
+  formSource: 'northstar-holiday-lights',
 
   badges: [
 'Licensed & Insured', 'Free Estimates', '5-Star Rated', 'Locally Owned'
@@ -182,7 +175,7 @@ export const siteConfig = {
   } as Record<string, string>,
 
   footerLinks: {
-    services: ['Roof Replacement', 'Roof Repair', 'Roof Inspection', 'Siding Installation', 'Window Installation', 'Gutter Services'] as string[],
+    services: ['Permanent Outdoor Lighting', 'Christmas Light Installation', 'Landscape Lighting', 'Bistro & Patio Lighting'] as string[],
     company: [
     { label: 'About Us', href: '#about' },
     { label: 'Contact', href: '#contact' },
@@ -191,23 +184,23 @@ export const siteConfig = {
   },
 
   brand: {
-    primary: '#4A5565',
+    primary: '#32373C',
     primaryForeground: '#FFFFFF',
     accent: '#0693E3',
     accentForeground: '#0B1220',
-    warmAccent: '#C7AC43',
-    warmAccentForeground: '#0B1220',
-    border: '#9E9E9E',
-    canvas: '#F4F8FD',
-    foreground: '#4A5565',
-    primaryHsl: '216 15% 34%',
+    warmAccent: '#FCB900',
+    warmAccentForeground: '#32373C',
+    border: '#ABB8C3',
+    canvas: '#FFFFFF',
+    foreground: '#32373C',
+    primaryHsl: '210 9% 22%',
     primaryForegroundHsl: '0 0% 100%',
     accentHsl: '202 95% 46%',
     accentForegroundHsl: '220 49% 8%',
-    warmAccentHsl: '48 54% 52%',
-    warmAccentForegroundHsl: '220 49% 8%',
-    borderHsl: '0 0% 62%',
-    canvasHsl: '213 69% 97%',
-    foregroundHsl: '216 15% 34%',
+    warmAccentHsl: '44 100% 49%',
+    warmAccentForegroundHsl: '210 9% 22%',
+    borderHsl: '207 17% 72%',
+    canvasHsl: '0 0% 100%',
+    foregroundHsl: '210 9% 22%',
   },
 };
