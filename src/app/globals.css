@@ -5,24 +5,24 @@
 
 @theme {
   /* ── Brand primary color ── */
-  --color-primary: hsl(0 0% 19%);
-  --color-primary-foreground: hsl(0 0% 100%);
+  --color-primary: hsl(208 56% 53%);
+  --color-primary-foreground: hsl(220 49% 8%);
 
   /* ── Accent / warm accent ── */
-  --color-accent: hsl(208 56% 53%);
+  --color-accent: hsl(202 95% 46%);
   --color-accent-foreground: hsl(220 49% 8%);
 
   /* ── Warm accent (used for secondary CTAs, highlights) ── */
   --color-warm-accent: hsl(25 100% 50%);
-  --color-warm-accent-foreground: hsl(0 0% 19%);
+  --color-warm-accent-foreground: hsl(220 49% 8%);
 
   /* ── Surfaces ── */
   --color-background: hsl(0 0% 100%);
-  --color-foreground: hsl(0 0% 19%);
+  --color-foreground: hsl(220 49% 8%);
   --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(0 0% 19%);
+  --color-card-foreground: hsl(220 49% 8%);
   --color-popover: hsl(0 0% 100%);
-  --color-popover-foreground: hsl(0 0% 19%);
+  --color-popover-foreground: hsl(220 49% 8%);
 
   /* ── Secondary & muted ── */
   --color-secondary: hsl(0 0% 27%);
@@ -37,7 +37,7 @@
   /* ── Borders & inputs ── */
   --color-border: hsl(0 0% 27%);
   --color-input: hsl(0 0% 27%);
-  --color-ring: hsl(0 0% 19%);
+  --color-ring: hsl(208 56% 53%);
 
   /* ── Radii ── */
   --radius-sm: 0.25rem;

@@ -59,7 +59,7 @@ export const siteConfig = {
   city: 'New York',
   state: 'NY',
   address: 'New York, NY',
-  serviceAreaNote: 'Serving Manhattan and NYC area',
+  serviceAreaNote: 'Serving Manhattan and surrounding NYC areas',
   establishedYear: 2010,
   footerYear: 2026,
   googleMapsEmbedUrl: '',
@@ -67,62 +67,56 @@ export const siteConfig = {
   heroTitle: 'Professional Interior Painting in New York',
   heroSubtitle: 'Trusted JB Painters serving New York. Call today for a free estimate.',
   heroCta: 'Get a Free Estimate',
-  heroImageUrl: 'https://jbpaintersny.com/wp-content/uploads/2018/04/new_hero_1.jpg',
-  heroImageAlt: 'JB Painters hero image',
+  heroImageUrl: '/generated/jb-painters/hero.svg',
+  heroImageAlt: 'JB Painters Interior Painting hero image',
 
   aboutHeadline: 'Why Homeowners Trust Us',
   aboutPoints: [
   {
     icon: 'ShieldCheck',
-    title: 'High quality painting services throughout Manhattan',
-    description: '',
+    title: 'Professional Service',
+    description: 'JB Painters can help with interior painting and related requests.',
   },
   {
-    icon: 'Clock',
-    title: 'Thorough space preparation for every job',
-    description: '',
+    icon: 'MapPinned',
+    title: 'Local Coverage',
+    description: 'Serving Manhattan and surrounding NYC areas',
   },
   {
-    icon: 'Award',
-    title: 'Complete protection of furniture and floors',
-    description: '',
-  },
-  {
-    icon: 'BadgeCheck',
-    title: 'Commercial and residential expertise',
-    description: '',
-  },
-  {
-    icon: 'ShieldCheck',
-    title: 'Professional NYC painting contractors',
-    description: '',
+    icon: 'ClipboardCheck',
+    title: 'Clear Next Steps',
+    description: 'Share the project details and the team can confirm the best next step.',
   }
   ] as AboutPoint[],
 
   services: [
   {
-    icon: 'PaintBucket',
+    icon: 'PaintBrush',
     title: 'Interior Painting',
-    description: 'Professional interior painting with meticulous preparation, priming, and two coats of quality paint.',
-    features: ['Wall and ceiling preparation', 'Furniture and floor protection', 'Priming and two coats', 'Benjamin Moore eco-friendly paint'],
+    description: 'Professional interior painting for homes and commercial spaces with complete preparation and cleanup.',
+      backgroundImage: '/generated/jb-painters/service-interior-painting.svg',
+    features: ['Complete surface preparation', 'Furniture and floor protection', 'Two coats of quality paint', 'Clean-up included'],
   },
   {
     icon: 'Home',
     title: 'Exterior Painting',
-    description: 'Complete exterior painting services for buildings and commercial properties in Manhattan.',
-    features: ['Surface preparation and repairs', 'Weather-resistant coatings', 'Commercial and residential', 'Full cleanup and restoration'],
+    description: 'Exterior painting services for residential and commercial buildings in Manhattan.',
+      backgroundImage: '/generated/jb-painters/service-exterior-painting.svg',
+    features: ['Weather-resistant paint', 'Professional preparation', 'Benjamin Moore quality paint', 'Free estimates'],
   },
   {
-    icon: 'Settings',
-    title: 'Skim Coating & Plaster Work',
-    description: 'Wall repair and smoothing services to prepare surfaces before painting.',
-    features: ['Repair holes and damage', 'Smooth textured surfaces', 'Plaster wall restoration', 'Complete surface preparation'],
+    icon: 'Wallpaper',
+    title: 'Wallpaper Installation & Removal',
+    description: 'Expert wallpaper hanging and removal services with proper wall preparation.',
+      backgroundImage: '/generated/jb-painters/service-wallpaper-installation-removal.svg',
+    features: ['All wallpaper types', 'Steam removal process', 'Wall surface preparation', 'Clean installation'],
   },
   {
-    icon: 'Layers',
-    title: 'Wallpaper Hanging and Removal',
-    description: 'Professional wallpaper installation and removal including vinyl wallpaper.',
-    features: ['Steam and scrape removal', 'Wall cleaning and prep', 'New wallpaper installation', 'All wallpaper types'],
+    icon: 'Wrench',
+    title: 'Skim Coating & Wall Repair',
+    description: 'Professional wall repair and skim coating to create smooth surfaces before painting.',
+      backgroundImage: '/generated/jb-painters/service-skim-coating-wall-repair.svg',
+    features: ['Crack filling and sanding', 'Smooth surface preparation', 'Plaster work repairs', 'Drywall compound application'],
   }
   ] as ServiceItem[],
 
@@ -135,8 +129,8 @@ export const siteConfig = {
     name: 'Interior Painting',
     price: 'Free Estimate',
     priceUnit: '',
-    description: 'Professional interior painting with meticulous preparation, priming, and two coats of quality paint.',
-    features: ['Wall and ceiling preparation', 'Furniture and floor protection', 'Priming and two coats', 'Benjamin Moore eco-friendly paint'],
+    description: 'Professional interior painting for homes and commercial spaces with complete preparation and cleanup.',
+    features: ['Complete surface preparation', 'Furniture and floor protection', 'Two coats of quality paint', 'Clean-up included'],
     highlighted: true,
     cta: 'Get Free Estimate',
   },
@@ -144,17 +138,17 @@ export const siteConfig = {
     name: 'Exterior Painting',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Complete exterior painting services for buildings and commercial properties in Manhattan.',
-    features: ['Surface preparation and repairs', 'Weather-resistant coatings', 'Commercial and residential', 'Full cleanup and restoration'],
+    description: 'Exterior painting services for residential and commercial buildings in Manhattan.',
+    features: ['Weather-resistant paint', 'Professional preparation', 'Benjamin Moore quality paint', 'Free estimates'],
     highlighted: false,
     cta: 'Contact Us',
   },
   {
-    name: 'Skim Coating & Plaster Work',
+    name: 'Wallpaper Installation & Removal',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Wall repair and smoothing services to prepare surfaces before painting.',
-    features: ['Repair holes and damage', 'Smooth textured surfaces', 'Plaster wall restoration', 'Complete surface preparation'],
+    description: 'Expert wallpaper hanging and removal services with proper wall preparation.',
+    features: ['All wallpaper types', 'Steam removal process', 'Wall surface preparation', 'Clean installation'],
     highlighted: false,
     cta: 'Contact Us',
   }
@@ -167,8 +161,10 @@ export const siteConfig = {
   ] as string[],
 
   galleryImages: [
-  { src: 'https://jbpaintersny.com/wp-content/uploads/2018/04/timsays.jpg', alt: 'JB Painters about image' },
-  { src: 'https://jbpaintersny.com/wp-content/uploads/2018/03/y6W25eP-resized.jpg', alt: 'JB Painters services image' }
+  { src: '/generated/jb-painters/service-interior-painting.svg', alt: 'JB Painters Interior Painting service image', caption: 'Interior Painting' },
+  { src: '/generated/jb-painters/service-exterior-painting.svg', alt: 'JB Painters Exterior Painting service image', caption: 'Exterior Painting' },
+  { src: '/generated/jb-painters/service-wallpaper-installation-removal.svg', alt: 'JB Painters Wallpaper Installation & Removal service image', caption: 'Wallpaper Installation & Removal' },
+  { src: '/generated/jb-painters/service-skim-coating-wall-repair.svg', alt: 'JB Painters Skim Coating & Wall Repair service image', caption: 'Skim Coating & Wall Repair' }
   ] as GalleryImage[],
 
   processSteps: [
@@ -194,7 +190,7 @@ export const siteConfig = {
   }
   ] as ProcessStep[],
 
-  serviceAreaTowns: ['New York', 'Manhattan', 'NYC'] as string[],
+  serviceAreaTowns: ['New York', 'Manhattan'] as string[],
 
   faqs: [
 
@@ -204,7 +200,7 @@ export const siteConfig = {
   googleReviewCount: 0,
 
   serviceOptions: [
-'Interior Painting', 'Exterior Painting', 'Skim Coating & Plaster Work', 'Wallpaper Hanging and Removal', 'Other'
+'Interior Painting', 'Exterior Painting', 'Wallpaper Installation & Removal', 'Skim Coating & Wall Repair', 'Other'
   ] as string[],
 
   formWebhookUrl: 'https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/',
@@ -219,7 +215,7 @@ export const siteConfig = {
   } as Record<string, string>,
 
   footerLinks: {
-    services: ['Interior Painting', 'Exterior Painting', 'Skim Coating & Plaster Work', 'Wallpaper Hanging and Removal'] as string[],
+    services: ['Interior Painting', 'Exterior Painting', 'Wallpaper Installation & Removal', 'Skim Coating & Wall Repair'] as string[],
     company: [
     { label: 'About Us', href: '#about' },
     { label: 'Contact', href: '#contact' },
@@ -228,23 +224,23 @@ export const siteConfig = {
   },
 
   brand: {
-    primary: '#313131',
-    primaryForeground: '#FFFFFF',
-    accent: '#428BCA',
+    primary: '#428BCA',
+    primaryForeground: '#0B1220',
+    accent: '#0693E3',
     accentForeground: '#0B1220',
     warmAccent: '#FF6900',
-    warmAccentForeground: '#313131',
+    warmAccentForeground: '#0B1220',
     border: '#444444',
     canvas: '#FFFFFF',
-    foreground: '#313131',
-    primaryHsl: '0 0% 19%',
-    primaryForegroundHsl: '0 0% 100%',
-    accentHsl: '208 56% 53%',
+    foreground: '#0B1220',
+    primaryHsl: '208 56% 53%',
+    primaryForegroundHsl: '220 49% 8%',
+    accentHsl: '202 95% 46%',
     accentForegroundHsl: '220 49% 8%',
     warmAccentHsl: '25 100% 50%',
-    warmAccentForegroundHsl: '0 0% 19%',
+    warmAccentForegroundHsl: '220 49% 8%',
     borderHsl: '0 0% 27%',
     canvasHsl: '0 0% 100%',
-    foregroundHsl: '0 0% 19%',
+    foregroundHsl: '220 49% 8%',
   },
 };
