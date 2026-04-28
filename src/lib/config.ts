@@ -39,74 +39,90 @@ export interface GalleryImage {
   caption?: string;
 }
 
+export interface ProcessStep {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 export const siteConfig = {
-  businessName: 'North Star Permanent Lighting',
-  tagline: 'North Star Permanent Lighting — Permanent Outdoor Lighting',
-  phone: '(516) 400-4316',
-  phoneRaw: '15164004316',
-  email: 'info@northstarholidaylights.com',
-  city: 'Long Island',
+  businessName: 'JB Painters',
+  tagline: 'JB Painters — Interior Painting',
+  phone: '(646) 401-3904',
+  phoneRaw: '16464013904',
+  email: 'jbpaintersny@gmail.com',
+  city: 'New York',
   state: 'NY',
-  address: 'Long Island, NY',
-  serviceAreaNote: 'Serving Long Island and surrounding areas for holiday and outdoor lighting installation',
-  establishedYear: 2020,
+  address: 'New York, NY',
+  serviceAreaNote: 'Serving Manhattan and NYC area',
+  establishedYear: 2010,
   footerYear: 2026,
   googleMapsEmbedUrl: '',
 
-  heroTitle: 'Professional Permanent Outdoor Lighting in Long Island',
-  heroSubtitle: 'Trusted North Star Permanent Lighting serving Long Island. Call today for a free estimate.',
+  heroTitle: 'Professional Interior Painting in New York',
+  heroSubtitle: 'Trusted JB Painters serving New York. Call today for a free estimate.',
   heroCta: 'Get a Free Estimate',
-  heroImageUrl: '',
-  heroImageAlt: 'North Star Permanent Lighting professional service',
+  heroImageUrl: 'https://jbpaintersny.com/wp-content/uploads/2018/04/new_hero_1.jpg',
+  heroImageAlt: 'JB Painters hero image',
 
   aboutHeadline: 'Why Homeowners Trust Us',
   aboutPoints: [
   {
-    icon: 'undefined',
-    title: 'undefined',
-    description: 'undefined',
+    icon: 'ShieldCheck',
+    title: 'High quality painting services throughout Manhattan',
+    description: '',
   },
   {
-    icon: 'undefined',
-    title: 'undefined',
-    description: 'undefined',
+    icon: 'Clock',
+    title: 'Thorough space preparation for every job',
+    description: '',
   },
   {
-    icon: 'undefined',
-    title: 'undefined',
-    description: 'undefined',
+    icon: 'Award',
+    title: 'Complete protection of furniture and floors',
+    description: '',
   },
   {
-    icon: 'undefined',
-    title: 'undefined',
-    description: 'undefined',
+    icon: 'BadgeCheck',
+    title: 'Commercial and residential expertise',
+    description: '',
+  },
+  {
+    icon: 'ShieldCheck',
+    title: 'Professional NYC painting contractors',
+    description: '',
   }
   ] as AboutPoint[],
 
   services: [
   {
+    icon: 'PaintBucket',
+    title: 'Interior Painting',
+    description: 'Professional interior painting with meticulous preparation, priming, and two coats of quality paint.',
+    features: ['Wall and ceiling preparation', 'Furniture and floor protection', 'Priming and two coats', 'Benjamin Moore eco-friendly paint'],
+  },
+  {
     icon: 'Home',
-    title: 'Permanent Outdoor Lighting',
-    description: 'App-controlled roofline lighting systems with custom aluminum channels that disappear during the day.',
-    features: ['Smartphone app control', 'Color-changing LED systems', 'Custom aluminum channels', 'Weather-resistant installation'],
+    title: 'Exterior Painting',
+    description: 'Complete exterior painting services for buildings and commercial properties in Manhattan.',
+    features: ['Surface preparation and repairs', 'Weather-resistant coatings', 'Commercial and residential', 'Full cleanup and restoration'],
   },
   {
-    icon: 'TreePine',
-    title: 'Christmas Light Installation',
-    description: 'Full-service holiday lighting installation, maintenance, and removal for homes and businesses.',
-    features: ['Custom holiday displays', 'Professional installation', 'Seasonal maintenance', 'Complete removal service'],
+    icon: 'Settings',
+    title: 'Skim Coating & Plaster Work',
+    description: 'Wall repair and smoothing services to prepare surfaces before painting.',
+    features: ['Repair holes and damage', 'Smooth textured surfaces', 'Plaster wall restoration', 'Complete surface preparation'],
   },
   {
-    icon: 'Trees',
-    title: 'Landscape Lighting',
-    description: 'Path lights, uplighting, and accent lighting to highlight landscaping and walkways.',
-    features: ['Low-voltage LED systems', 'Path and walkway lighting', 'Landscape uplighting', 'Security lighting'],
-  },
-  {
-    icon: 'Lightbulb',
-    title: 'Bistro & Patio Lighting',
-    description: 'Professional string light installation for patios, decks, and outdoor living areas.',
-    features: ['Stainless steel hardware', 'Weather-resistant anchoring', 'Edison or LED options', 'Commercial-grade systems'],
+    icon: 'Layers',
+    title: 'Wallpaper Hanging and Removal',
+    description: 'Professional wallpaper installation and removal including vinyl wallpaper.',
+    features: ['Steam and scrape removal', 'Wall cleaning and prep', 'New wallpaper installation', 'All wallpaper types'],
   }
   ] as ServiceItem[],
 
@@ -116,66 +132,94 @@ export const siteConfig = {
 
   pricingTiers: [
   {
-    name: 'Permanent Outdoor Lighting',
+    name: 'Interior Painting',
     price: 'Free Estimate',
     priceUnit: '',
-    description: 'App-controlled roofline lighting systems with custom aluminum channels that disappear during the day.',
-    features: ['Smartphone app control', 'Color-changing LED systems', 'Custom aluminum channels', 'Weather-resistant installation'],
+    description: 'Professional interior painting with meticulous preparation, priming, and two coats of quality paint.',
+    features: ['Wall and ceiling preparation', 'Furniture and floor protection', 'Priming and two coats', 'Benjamin Moore eco-friendly paint'],
     highlighted: true,
     cta: 'Get Free Estimate',
   },
   {
-    name: 'Christmas Light Installation',
+    name: 'Exterior Painting',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Full-service holiday lighting installation, maintenance, and removal for homes and businesses.',
-    features: ['Custom holiday displays', 'Professional installation', 'Seasonal maintenance', 'Complete removal service'],
+    description: 'Complete exterior painting services for buildings and commercial properties in Manhattan.',
+    features: ['Surface preparation and repairs', 'Weather-resistant coatings', 'Commercial and residential', 'Full cleanup and restoration'],
     highlighted: false,
     cta: 'Contact Us',
   },
   {
-    name: 'Landscape Lighting',
+    name: 'Skim Coating & Plaster Work',
     price: 'Call for Pricing',
     priceUnit: '',
-    description: 'Path lights, uplighting, and accent lighting to highlight landscaping and walkways.',
-    features: ['Low-voltage LED systems', 'Path and walkway lighting', 'Landscape uplighting', 'Security lighting'],
+    description: 'Wall repair and smoothing services to prepare surfaces before painting.',
+    features: ['Repair holes and damage', 'Smooth textured surfaces', 'Plaster wall restoration', 'Complete surface preparation'],
     highlighted: false,
     cta: 'Contact Us',
   }
   ] as PricingTier[],
 
   guaranteeHeadline: 'Our Guarantee',
-  guaranteeText: 'At North Star Permanent Lighting, we stand behind every job. If you are not 100% satisfied, we will make it right.',
+  guaranteeText: 'At JB Painters, we stand behind every job. If you are not 100% satisfied, we will make it right.',
   guaranteePoints: [
 'Quality workmanship guaranteed', 'Transparent pricing with no hidden fees', 'Friendly, professional service every time'
   ] as string[],
 
   galleryImages: [
-
+  { src: 'https://jbpaintersny.com/wp-content/uploads/2018/04/timsays.jpg', alt: 'JB Painters about image' },
+  { src: 'https://jbpaintersny.com/wp-content/uploads/2018/03/y6W25eP-resized.jpg', alt: 'JB Painters services image' }
   ] as GalleryImage[],
 
-  googleReviewAvg: 4.9,
-  googleReviewCount: 100,
+  processSteps: [
+  {
+    icon: 'MessagesSquare',
+    title: 'Tell us what you need',
+    description: 'Send the form or call so the team can understand your project and service area.',
+  },
+  {
+    icon: 'ClipboardCheck',
+    title: 'Review the details',
+    description: 'We confirm the scope, answer questions, and outline the next practical step.',
+  },
+  {
+    icon: 'CalendarCheck',
+    title: 'Schedule the work',
+    description: 'Pick a time that works and get clear expectations before anyone arrives.',
+  },
+  {
+    icon: 'CheckCircle2',
+    title: 'Get it handled',
+    description: 'The team completes the work and follows up if anything else is needed.',
+  }
+  ] as ProcessStep[],
+
+  serviceAreaTowns: ['New York', 'Manhattan', 'NYC'] as string[],
+
+  faqs: [
+
+  ] as FaqItem[],
+
+  googleReviewAvg: 0,
+  googleReviewCount: 0,
 
   serviceOptions: [
-'Permanent Outdoor Lighting', 'Christmas Light Installation', 'Landscape Lighting', 'Bistro & Patio Lighting', 'Other'
+'Interior Painting', 'Exterior Painting', 'Skim Coating & Plaster Work', 'Wallpaper Hanging and Removal', 'Other'
   ] as string[],
 
   formWebhookUrl: 'https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/',
-  formSource: 'northstar-holiday-lights',
+  formSource: 'jb-painters',
 
   badges: [
-'Licensed & Insured', 'Free Estimates', '5-Star Rated', 'Locally Owned'
+'Free Estimates', 'Local Service Area'
   ] as string[],
 
   socialLinks: {
-    'Google': '',
-    'Yelp': '',
-    'Facebook': ''
+
   } as Record<string, string>,
 
   footerLinks: {
-    services: ['Permanent Outdoor Lighting', 'Christmas Light Installation', 'Landscape Lighting', 'Bistro & Patio Lighting'] as string[],
+    services: ['Interior Painting', 'Exterior Painting', 'Skim Coating & Plaster Work', 'Wallpaper Hanging and Removal'] as string[],
     company: [
     { label: 'About Us', href: '#about' },
     { label: 'Contact', href: '#contact' },
@@ -184,23 +228,23 @@ export const siteConfig = {
   },
 
   brand: {
-    primary: '#32373C',
+    primary: '#313131',
     primaryForeground: '#FFFFFF',
-    accent: '#0693E3',
+    accent: '#428BCA',
     accentForeground: '#0B1220',
-    warmAccent: '#FCB900',
-    warmAccentForeground: '#32373C',
-    border: '#ABB8C3',
+    warmAccent: '#FF6900',
+    warmAccentForeground: '#313131',
+    border: '#444444',
     canvas: '#FFFFFF',
-    foreground: '#32373C',
-    primaryHsl: '210 9% 22%',
+    foreground: '#313131',
+    primaryHsl: '0 0% 19%',
     primaryForegroundHsl: '0 0% 100%',
-    accentHsl: '202 95% 46%',
+    accentHsl: '208 56% 53%',
     accentForegroundHsl: '220 49% 8%',
-    warmAccentHsl: '44 100% 49%',
-    warmAccentForegroundHsl: '210 9% 22%',
-    borderHsl: '207 17% 72%',
+    warmAccentHsl: '25 100% 50%',
+    warmAccentForegroundHsl: '0 0% 19%',
+    borderHsl: '0 0% 27%',
     canvasHsl: '0 0% 100%',
-    foregroundHsl: '210 9% 22%',
+    foregroundHsl: '0 0% 19%',
   },
 };
