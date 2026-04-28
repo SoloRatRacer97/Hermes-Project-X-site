@@ -4,7 +4,7 @@
   "niche": "residential and commercial painting contractor",
   "model": "gpt-5.5",
   "provider": "ascii",
-  "generatedAt": "2026-04-28T21:25:46.635Z",
+  "generatedAt": "2026-04-28T21:36:42.979Z",
   "assets": [
     {
       "key": "hero",
@@ -19,9 +19,9 @@
       "aspectRatio": 1.5,
       "provider": "ascii",
       "model": "deterministic-ascii-svg",
-      "prompt": "Create a photorealistic editorial image static landing page asset for JB Painters, a residential and commercial painting contractor.\nMarket and setting: New York, NY, Serving Manhattan and surrounding NYC areas, Manhattan.\nService focus: Interior Painting.\nUse subtle visual influence from these brand colors: #428BCA, #0693E3, #FF6900, #FFFFFF.\nShow paint rollers, brushes, painter tape, drop cloths, protected furniture, smooth prepared walls, crisp trim lines, ladders, plaster tools, and clean interior or exterior surfaces. Avoid messy spills and avoid showing fake company branding.\nNo readable text, no logos, no watermarks, no fake badges, no distorted hands, no surreal artifacts, no before/after split screen, no exaggerated disasters.\nThe image must be clean, commercially usable, high-end, and specific to this business niche rather than generic home services.\nComposition: wide editorial hero image with clean negative space for copy overlay, premium natural light, professional but understated.\nRequired output aspect: 1536x1024.",
-      "promptHash": "30374c9ef3d8c3c390d07dcc19f09cd295d7c067f5f5849fdf470a678b9681e4",
-      "generatedAt": "2026-04-28T21:25:46.634Z",
+      "prompt": "Create a photorealistic editorial image static landing page asset for JB Painters, a residential and commercial painting contractor.\nMarket and setting: New York, NY, Serving Manhattan and NYC area, Manhattan.\nService focus: Interior Painting.\nUse subtle visual influence from these brand colors: #428BCA, #0693E3, #FF6900, #FFFFFF.\nShow paint rollers, brushes, painter tape, drop cloths, protected furniture, smooth prepared walls, crisp trim lines, ladders, plaster tools, and clean interior or exterior surfaces. Avoid messy spills and avoid showing fake company branding.\nNo readable text, no logos, no watermarks, no fake badges, no distorted hands, no surreal artifacts, no before/after split screen, no exaggerated disasters.\nThe image must be clean, commercially usable, high-end, and specific to this business niche rather than generic home services.\nComposition: wide editorial hero image with clean negative space for copy overlay, premium natural light, professional but understated.\nRequired output aspect: 1536x1024.",
+      "promptHash": "775f6fa686e38a83b74d355809bc9d1e342ea4d38342e631ed8797b6059c6c4b",
+      "generatedAt": "2026-04-28T21:36:42.969Z",
       "reused": false
     },
     {
@@ -37,9 +37,9 @@
       "aspectRatio": 1.5,
       "provider": "ascii",
       "model": "deterministic-ascii-svg",
-      "prompt": "Create a photorealistic service image static landing page asset for JB Painters, a residential and commercial painting contractor.\nMarket and setting: New York, NY, Serving Manhattan and surrounding NYC areas, Manhattan.\nService focus: Interior Painting.\nUse subtle visual influence from these brand colors: #428BCA, #0693E3, #FF6900, #FFFFFF.\nShow paint rollers, brushes, painter tape, drop cloths, protected furniture, smooth prepared walls, crisp trim lines, ladders, plaster tools, and clean interior or exterior surfaces. Avoid messy spills and avoid showing fake company branding.\nNo readable text, no logos, no watermarks, no fake badges, no distorted hands, no surreal artifacts, no before/after split screen, no exaggerated disasters.\nThe image must be clean, commercially usable, high-end, and specific to this business niche rather than generic home services.\nComposition: detailed service-card image focused on Interior Painting; close enough to communicate the craft, still clean when cropped with CSS background-size cover.\nRequired output aspect: 1536x1024.",
-      "promptHash": "61cffcffce3813aca19d3a2d23a132759eead401732c7002fa878cf3b097fd4a",
-      "generatedAt": "2026-04-28T21:25:46.635Z",
+      "prompt": "Create a photorealistic service image static landing page asset for JB Painters, a residential and commercial painting contractor.\nMarket and setting: New York, NY, Serving Manhattan and NYC area, Manhattan.\nService focus: Interior Painting.\nUse subtle visual influence from these brand colors: #428BCA, #0693E3, #FF6900, #FFFFFF.\nShow paint rollers, brushes, painter tape, drop cloths, protected furniture, smooth prepared walls, crisp trim lines, ladders, plaster tools, and clean interior or exterior surfaces. Avoid messy spills and avoid showing fake company branding.\nNo readable text, no logos, no watermarks, no fake badges, no distorted hands, no surreal artifacts, no before/after split screen, no exaggerated disasters.\nThe image must be clean, commercially usable, high-end, and specific to this business niche rather than generic home services.\nComposition: detailed service-card image focused on Interior Painting; close enough to communicate the craft, still clean when cropped with CSS background-size cover.\nRequired output aspect: 1536x1024.",
+      "promptHash": "55a71450225f6da3c222336ca72a2a2d6290b7a7eabab22b99d10b17991eb088",
+      "generatedAt": "2026-04-28T21:36:42.972Z",
       "reused": false
     },
     {
@@ -55,9 +55,9 @@
       "aspectRatio": 1.5,
       "provider": "ascii",
       "model": "deterministic-ascii-svg",
-      "prompt": "Create a photorealistic service image static landing page asset for JB Painters, a residential and commercial painting contractor.\nMarket and setting: New York, NY, Serving Manhattan and surrounding NYC areas, Manhattan.\nService focus: Exterior Painting.\nUse subtle visual influence from these brand colors: #428BCA, #0693E3, #FF6900, #FFFFFF.\nShow paint rollers, brushes, painter tape, drop cloths, protected furniture, smooth prepared walls, crisp trim lines, ladders, plaster tools, and clean interior or exterior surfaces. Avoid messy spills and avoid showing fake company branding.\nNo readable text, no logos, no watermarks, no fake badges, no distorted hands, no surreal artifacts, no before/after split screen, no exaggerated disasters.\nThe image must be clean, commercially usable, high-end, and specific to this business niche rather than generic home services.\nComposition: detailed service-card image focused on Exterior Painting; close enough to communicate the craft, still clean when cropped with CSS background-size cover.\nRequired output aspect: 1536x1024.",
-      "promptHash": "355dfd8be0a59c223ad59e9fcb3a9a780bcb0e9878ba24cafcf22ced00e4c910",
-      "generatedAt": "2026-04-28T21:25:46.635Z",
+      "prompt": "Create a photorealistic service image static landing page asset for JB Painters, a residential and commercial painting contractor.\nMarket and setting: New York, NY, Serving Manhattan and NYC area, Manhattan.\nService focus: Exterior Painting.\nUse subtle visual influence from these brand colors: #428BCA, #0693E3, #FF6900, #FFFFFF.\nShow paint rollers, brushes, painter tape, drop cloths, protected furniture, smooth prepared walls, crisp trim lines, ladders, plaster tools, and clean interior or exterior surfaces. Avoid messy spills and avoid showing fake company branding.\nNo readable text, no logos, no watermarks, no fake badges, no distorted hands, no surreal artifacts, no before/after split screen, no exaggerated disasters.\nThe image must be clean, commercially usable, high-end, and specific to this business niche rather than generic home services.\nComposition: detailed service-card image focused on Exterior Painting; close enough to communicate the craft, still clean when cropped with CSS background-size cover.\nRequired output aspect: 1536x1024.",
+      "promptHash": "20075d27e2ef1ac73faeacd3becb7c7f54c32e10fc65663019bf44e2c5b693c5",
+      "generatedAt": "2026-04-28T21:36:42.974Z",
       "reused": false
     },
     {
@@ -73,9 +73,9 @@
       "aspectRatio": 1.5,
       "provider": "ascii",
       "model": "deterministic-ascii-svg",
-      "prompt": "Create a photorealistic service image static landing page asset for JB Painters, a residential and commercial painting contractor.\nMarket and setting: New York, NY, Serving Manhattan and surrounding NYC areas, Manhattan.\nService focus: Wallpaper Installation & Removal.\nUse subtle visual influence from these brand colors: #428BCA, #0693E3, #FF6900, #FFFFFF.\nShow paint rollers, brushes, painter tape, drop cloths, protected furniture, smooth prepared walls, crisp trim lines, ladders, plaster tools, and clean interior or exterior surfaces. Avoid messy spills and avoid showing fake company branding.\nNo readable text, no logos, no watermarks, no fake badges, no distorted hands, no surreal artifacts, no before/after split screen, no exaggerated disasters.\nThe image must be clean, commercially usable, high-end, and specific to this business niche rather than generic home services.\nComposition: detailed service-card image focused on Wallpaper Installation & Removal; close enough to communicate the craft, still clean when cropped with CSS background-size cover.\nRequired output aspect: 1536x1024.",
-      "promptHash": "79369d3b1116734b015e6caa647321c9c547a96a2353ccf3493dd923a305fe4f",
-      "generatedAt": "2026-04-28T21:25:46.635Z",
+      "prompt": "Create a photorealistic service image static landing page asset for JB Painters, a residential and commercial painting contractor.\nMarket and setting: New York, NY, Serving Manhattan and NYC area, Manhattan.\nService focus: Wallpaper Installation & Removal.\nUse subtle visual influence from these brand colors: #428BCA, #0693E3, #FF6900, #FFFFFF.\nShow paint rollers, brushes, painter tape, drop cloths, protected furniture, smooth prepared walls, crisp trim lines, ladders, plaster tools, and clean interior or exterior surfaces. Avoid messy spills and avoid showing fake company branding.\nNo readable text, no logos, no watermarks, no fake badges, no distorted hands, no surreal artifacts, no before/after split screen, no exaggerated disasters.\nThe image must be clean, commercially usable, high-end, and specific to this business niche rather than generic home services.\nComposition: detailed service-card image focused on Wallpaper Installation & Removal; close enough to communicate the craft, still clean when cropped with CSS background-size cover.\nRequired output aspect: 1536x1024.",
+      "promptHash": "fc1a3ef48f80354d38c9d2e69a8de03591156eb392d0a2762ae392897f126d97",
+      "generatedAt": "2026-04-28T21:36:42.976Z",
       "reused": false
     },
     {
@@ -91,9 +91,9 @@
       "aspectRatio": 1.5,
       "provider": "ascii",
       "model": "deterministic-ascii-svg",
-      "prompt": "Create a photorealistic service image static landing page asset for JB Painters, a residential and commercial painting contractor.\nMarket and setting: New York, NY, Serving Manhattan and surrounding NYC areas, Manhattan.\nService focus: Skim Coating & Wall Repair.\nUse subtle visual influence from these brand colors: #428BCA, #0693E3, #FF6900, #FFFFFF.\nShow paint rollers, brushes, painter tape, drop cloths, protected furniture, smooth prepared walls, crisp trim lines, ladders, plaster tools, and clean interior or exterior surfaces. Avoid messy spills and avoid showing fake company branding.\nNo readable text, no logos, no watermarks, no fake badges, no distorted hands, no surreal artifacts, no before/after split screen, no exaggerated disasters.\nThe image must be clean, commercially usable, high-end, and specific to this business niche rather than generic home services.\nComposition: detailed service-card image focused on Skim Coating & Wall Repair; close enough to communicate the craft, still clean when cropped with CSS background-size cover.\nRequired output aspect: 1536x1024.",
-      "promptHash": "eaeec28d7f6ab7a51232693c14747af545f6b46c60ab2e84d6c43fb48174fd9b",
-      "generatedAt": "2026-04-28T21:25:46.635Z",
+      "prompt": "Create a photorealistic service image static landing page asset for JB Painters, a residential and commercial painting contractor.\nMarket and setting: New York, NY, Serving Manhattan and NYC area, Manhattan.\nService focus: Skim Coating & Wall Repair.\nUse subtle visual influence from these brand colors: #428BCA, #0693E3, #FF6900, #FFFFFF.\nShow paint rollers, brushes, painter tape, drop cloths, protected furniture, smooth prepared walls, crisp trim lines, ladders, plaster tools, and clean interior or exterior surfaces. Avoid messy spills and avoid showing fake company branding.\nNo readable text, no logos, no watermarks, no fake badges, no distorted hands, no surreal artifacts, no before/after split screen, no exaggerated disasters.\nThe image must be clean, commercially usable, high-end, and specific to this business niche rather than generic home services.\nComposition: detailed service-card image focused on Skim Coating & Wall Repair; close enough to communicate the craft, still clean when cropped with CSS background-size cover.\nRequired output aspect: 1536x1024.",
+      "promptHash": "dceef2886a95885d4909abb5cc4da313fdd5a6be0ecefd2e173107a0fd837d67",
+      "generatedAt": "2026-04-28T21:36:42.978Z",
       "reused": false
     },
     {
@@ -109,9 +109,9 @@
       "aspectRatio": 1,
       "provider": "ascii",
       "model": "deterministic-ascii-svg",
-      "prompt": "Create a photorealistic branded illustration static landing page asset for JB Painters, a residential and commercial painting contractor.\nMarket and setting: New York, NY, Serving Manhattan and surrounding NYC areas, Manhattan.\nService focus: Interior Painting.\nUse subtle visual influence from these brand colors: #428BCA, #0693E3, #FF6900, #FFFFFF.\nShow paint rollers, brushes, painter tape, drop cloths, protected furniture, smooth prepared walls, crisp trim lines, ladders, plaster tools, and clean interior or exterior surfaces. Avoid messy spills and avoid showing fake company branding.\nNo readable text, no logos, no watermarks, no fake badges, no distorted hands, no surreal artifacts, no before/after split screen, no exaggerated disasters.\nThe image must be clean, commercially usable, high-end, and specific to this business niche rather than generic home services.\nComposition: premium branded illustration blended with photorealistic service materials, abstract shapes allowed, no text, suitable as a supporting marketing graphic.\nRequired output aspect: 1024x1024.",
-      "promptHash": "cee980b2c3db3fab7338a1f702584ab6c0a1482f771f630eff0cd80c3e1c66dd",
-      "generatedAt": "2026-04-28T21:25:46.635Z",
+      "prompt": "Create a photorealistic branded illustration static landing page asset for JB Painters, a residential and commercial painting contractor.\nMarket and setting: New York, NY, Serving Manhattan and NYC area, Manhattan.\nService focus: Interior Painting.\nUse subtle visual influence from these brand colors: #428BCA, #0693E3, #FF6900, #FFFFFF.\nShow paint rollers, brushes, painter tape, drop cloths, protected furniture, smooth prepared walls, crisp trim lines, ladders, plaster tools, and clean interior or exterior surfaces. Avoid messy spills and avoid showing fake company branding.\nNo readable text, no logos, no watermarks, no fake badges, no distorted hands, no surreal artifacts, no before/after split screen, no exaggerated disasters.\nThe image must be clean, commercially usable, high-end, and specific to this business niche rather than generic home services.\nComposition: premium branded illustration blended with photorealistic service materials, abstract shapes allowed, no text, suitable as a supporting marketing graphic.\nRequired output aspect: 1024x1024.",
+      "promptHash": "630d8ca7f1e59cd9030a8f15c5d4ccde9efc3e5d8a05117d9176373a0adbfc52",
+      "generatedAt": "2026-04-28T21:36:42.979Z",
       "reused": false
     }
   ]
