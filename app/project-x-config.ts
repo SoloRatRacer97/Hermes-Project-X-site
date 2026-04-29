@@ -65,8 +65,8 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 }
 
 export const projectXConfig = {
-  hydratedFrom: "https://commercialpaintingcompany.com/",
-  hydratedAt: "2026-04-29T16:22:18.677Z",
+  hydratedFrom: "https://estarshvac.com/",
+  hydratedAt: "2026-04-29T20:16:42.521Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -74,8 +74,8 @@ export const projectXConfig = {
     "Use professional local-service imagery for every instance; do not ship text-only or layout-rebuilt variants.",
   ],
   brand: {
-    name: "Commercial Painting Company",
-    mark: "CP",
+    name: "Energy Stars Heating & Cooling",
+    mark: "ES",
     poweredBy: "Project X by Hopper-Hermes",
     footerDescription: "Fast follow-up interface powered by Hopper-Hermes.",
   },
@@ -85,7 +85,7 @@ export const projectXConfig = {
   }),
   integration: {
     formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/",
-    formSource: "commercial-painting-company",
+    formSource: "energy-stars-heating-cooling",
   },
   images: {
     hero: "/images/hero-blue-collar-team.png",
@@ -122,17 +122,15 @@ export const projectXConfig = {
     ] satisfies readonly ProjectXCarouselItem[],
   },
   industries: [
-    "Interior & Exterior Painting",
-    "Metal Stud Framing",
-    "Structural Trusses",
-    "Drywall Installation",
-    "Vinyl Wall Coverings",
-    "Insulation & Weatherproofing",
-    "EIFS Exterior Finishes",
-    "Construction Management"
+    "Air Conditioner Repair & Installation",
+    "Furnace & Boiler Services",
+    "Heat Pump Services",
+    "Insulation & Air Sealing",
+    "Duct Cleaning & Maintenance",
+    "Emergency HVAC Repair"
   ],
   proofPoints: [
-    "Hydrated from commercialpaintingcompany.com",
+    "Hydrated from estarshvac.com",
     "Locked professional layout",
     "Mobile-first contact flow",
   ],
