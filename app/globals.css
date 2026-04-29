@@ -461,8 +461,9 @@ h1 {
 }
 
 .form-success {
-  background: rgba(20, 126, 89, 0.1);
-  color: #09633f;
+  background: #107a54;
+  color: var(--white);
+  box-shadow: 0 12px 26px rgba(16, 122, 84, 0.22);
 }
 
 .form-error {

@@ -66,7 +66,7 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 
 export const projectXConfig = {
   hydratedFrom: "https://commercialpaintingcompany.com/",
-  hydratedAt: "2026-04-29T16:16:01.385Z",
+  hydratedAt: "2026-04-29T16:22:18.677Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
