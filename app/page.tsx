@@ -246,13 +246,15 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
 
       <label className="sms-consent">
         <input
+          className="sms-consent-input"
           required
           type="checkbox"
           name="smsConsent"
           checked={formState.smsConsent}
           onChange={(event) => updateSmsConsent(event.target.checked)}
         />
-        <span>
+        <span className="sms-consent-box" aria-hidden="true" />
+        <span className="sms-consent-text">
           I agree to receive SMS follow-up about this request from {brand.name}. Message and data rates may apply.
         </span>
       </label>
@@ -301,10 +303,10 @@ export default function Home() {
         </a>
 
         <nav className="nav-links" aria-label="Page sections">
-          <a href="#about">About</a>
+          <a className="mobile-hidden-nav" href="#about">About</a>
           <a href="#why">Why Choose This</a>
           <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
+          <a className="mobile-hidden-nav" href="#contact">Contact</a>
         </nav>
 
         <a className="nav-cta" href="#lead-form">
