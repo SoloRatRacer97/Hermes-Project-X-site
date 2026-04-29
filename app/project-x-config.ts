@@ -65,8 +65,8 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 }
 
 export const projectXConfig = {
-  hydratedFrom: "https://dallasplumbing.com/",
-  hydratedAt: "2026-04-29T15:42:53.889Z",
+  hydratedFrom: "https://commercialpaintingcompany.com/",
+  hydratedAt: "2026-04-29T16:16:01.385Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -74,8 +74,8 @@ export const projectXConfig = {
     "Use professional local-service imagery for every instance; do not ship text-only or layout-rebuilt variants.",
   ],
   brand: {
-    name: "Dallas Plumbing",
-    mark: "DP",
+    name: "Commercial Painting Company",
+    mark: "CP",
     poweredBy: "Project X by Hopper-Hermes",
     footerDescription: "Fast follow-up interface powered by Hopper-Hermes.",
   },
@@ -85,7 +85,7 @@ export const projectXConfig = {
   }),
   integration: {
     formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/",
-    formSource: "dallas-plumbing",
+    formSource: "commercial-painting-company",
   },
   images: {
     hero: "/images/hero-blue-collar-team.png",
@@ -122,15 +122,17 @@ export const projectXConfig = {
     ] satisfies readonly ProjectXCarouselItem[],
   },
   industries: [
-    "Emergency Plumbing",
-    "Drain Cleaning",
-    "Water Heater Service",
-    "AC Repair",
-    "AC Installation",
-    "Heating Repair"
+    "Interior & Exterior Painting",
+    "Metal Stud Framing",
+    "Structural Trusses",
+    "Drywall Installation",
+    "Vinyl Wall Coverings",
+    "Insulation & Weatherproofing",
+    "EIFS Exterior Finishes",
+    "Construction Management"
   ],
   proofPoints: [
-    "Hydrated from dallasplumbing.com",
+    "Hydrated from commercialpaintingcompany.com",
     "Locked professional layout",
     "Mobile-first contact flow",
   ],

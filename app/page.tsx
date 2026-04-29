@@ -293,26 +293,28 @@ export default function Home() {
 
   return (
     <main style={themeStyle}>
-      <header className="site-header" aria-label="Primary navigation">
-        <a className="brand" href="#top" aria-label={`${brand.name} home`}>
-          <span className="brand-mark">{brand.mark}</span>
-          <span>
-            <strong>{brand.name}</strong>
-            <small>{brand.poweredBy}</small>
-          </span>
-        </a>
+      <div className="site-header-shell">
+        <header className="site-header" aria-label="Primary navigation">
+          <a className="brand" href="#top" aria-label={`${brand.name} home`}>
+            <span className="brand-mark">{brand.mark}</span>
+            <span>
+              <strong>{brand.name}</strong>
+              <small>{brand.poweredBy}</small>
+            </span>
+          </a>
 
-        <nav className="nav-links" aria-label="Page sections">
-          <a className="mobile-hidden-nav" href="#about">About</a>
-          <a href="#why">Why Choose This</a>
-          <a href="#gallery">Gallery</a>
-          <a className="mobile-hidden-nav" href="#contact">Contact</a>
-        </nav>
+          <nav className="nav-links" aria-label="Page sections">
+            <a className="mobile-hidden-nav" href="#about">About</a>
+            <a href="#why">Why Choose This</a>
+            <a href="#gallery">Gallery</a>
+            <a className="mobile-hidden-nav" href="#contact">Contact</a>
+          </nav>
 
-        <a className="nav-cta" href="#lead-form">
-          Get Demo
-        </a>
-      </header>
+          <a className="nav-cta" href="#lead-form">
+            Get Demo
+          </a>
+        </header>
+      </div>
 
       <section className="hero" id="top">
         <div className="hero-background" aria-hidden="true" />
