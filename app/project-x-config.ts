@@ -66,7 +66,7 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 
 export const projectXConfig = {
   hydratedFrom: "https://dallasplumbing.com/",
-  hydratedAt: "2026-04-29T15:21:57.376Z",
+  hydratedAt: "2026-04-29T15:26:32.002Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -122,11 +122,12 @@ export const projectXConfig = {
     ] satisfies readonly ProjectXCarouselItem[],
   },
   industries: [
-    "Emergency Plumbing Repairs",
     "Drain Cleaning",
-    "Water Heater Service",
-    "AC Repair & Installation",
-    "Heating Repair & Installation",
+    "Water Heater Services",
+    "Emergency Plumbing",
+    "AC Repair",
+    "AC Installation",
+    "Heating Repair",
     "Slab Leak Detection"
   ],
   proofPoints: [
