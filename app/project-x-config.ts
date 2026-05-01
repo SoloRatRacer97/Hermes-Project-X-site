@@ -66,7 +66,7 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 
 export const projectXConfig = {
   hydratedFrom: "https://estarshvac.com/",
-  hydratedAt: "2026-04-29T20:16:42.521Z",
+  hydratedAt: "2026-04-29T21:47:31.459Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -76,8 +76,8 @@ export const projectXConfig = {
   brand: {
     name: "Energy Stars Heating & Cooling",
     mark: "ES",
-    poweredBy: "Project X by Hopper-Hermes",
-    footerDescription: "Fast follow-up interface powered by Hopper-Hermes.",
+    poweredBy: "St. Louis & Metro East HVAC",
+    footerDescription: "Heating, cooling, insulation, and energy-efficiency service for the Metro East and St. Louis area.",
   },
   theme: createProjectXTheme({
     primary: "#27a4ff",
@@ -92,30 +92,30 @@ export const projectXConfig = {
     contact: "/images/service-handshake.png",
     carousel: [
       {
-        "eyebrow": "HVAC + Plumbing",
-        "title": "Emergency jobs, tune-ups, installs, and repair requests.",
-        "description": "Show prospects that your business is responsive, professional, and ready to book the job before they call the next company.",
+        "eyebrow": "Cooling",
+        "title": "AC repair, replacement, and tune-ups when the house will not stay comfortable.",
+        "description": "Energy Stars handles warm-weather breakdowns, new air conditioner installs, and seasonal maintenance for homes across St. Louis and the Metro East.",
         "image": "/images/hvac-plumbing.png",
         "alt": "HVAC and plumbing technicians working in a clean residential service setting"
       },
       {
-        "eyebrow": "Cleaning + Pool Service",
-        "title": "Recurring routes, one-time cleans, and seasonal service work.",
-        "description": "A flexible visual system that fits home services, commercial maintenance, and route-based local operators.",
-        "image": "/images/cleaning-pool.png",
-        "alt": "Cleaning professionals and a pool technician performing service work"
+        "eyebrow": "Heating",
+        "title": "Furnaces, boilers, and heat pumps serviced before winter makes it urgent.",
+        "description": "From repairs to replacements, the team keeps families warm and safe with heating service built around the home, not guesswork.",
+        "image": "/images/hvac-plumbing.png",
+        "alt": "Residential HVAC technicians servicing heating and cooling equipment"
       },
       {
-        "eyebrow": "Construction + Handyman",
-        "title": "Bigger projects still start with a simple lead capture.",
-        "description": "Position your company as organized and trustworthy from the first page view through the first booked estimate.",
+        "eyebrow": "Home Comfort",
+        "title": "Insulation, air sealing, ductwork, and crawl space solutions.",
+        "description": "Energy Stars takes a whole-house approach to comfort, finding the places where air leaks, poor ductwork, or under-insulation cost homeowners money.",
         "image": "/images/construction-handyman.png",
-        "alt": "Construction and handyman professionals collaborating over project plans"
+        "alt": "Home service professionals reviewing project plans for comfort improvements"
       },
       {
-        "eyebrow": "Customer Experience",
-        "title": "A better first impression at the exact moment intent is highest.",
-        "description": "Use the landing page as the front door for Project X, then let Hopper-Hermes handle fast follow-up and qualification.",
+        "eyebrow": "Efficiency + Safety",
+        "title": "Right-sized systems, Ameren incentives, and safety testing.",
+        "description": "As an Ameren Program Ally, Energy Stars helps customers navigate qualifying efficiency incentives while prioritizing gas leak and carbon monoxide safety.",
         "image": "/images/service-handshake.png",
         "alt": "Friendly service professional shaking hands with a homeowner at the door"
       }
@@ -130,8 +130,8 @@ export const projectXConfig = {
     "Emergency HVAC Repair"
   ],
   proofPoints: [
-    "Hydrated from estarshvac.com",
-    "Locked professional layout",
-    "Mobile-first contact flow",
+    "YORK Diamond Club Dealer",
+    "10 Years No Worries Warranty",
+    "Ameren Program Ally",
   ],
 } as const;

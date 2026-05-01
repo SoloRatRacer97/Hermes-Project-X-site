@@ -22,6 +22,7 @@ type ThemeStyle = CSSProperties & Record<`--${string}`, string>;
 const { brand, images, industries, integration, proofPoints, theme } = projectXConfig;
 const carouselItems = images.carousel;
 const serviceOptions = ["", ...industries, "Other"];
+const callNowDisplay = "(618) 477-8337";
 
 const themeStyle: ThemeStyle = {
   "--bg": theme.bg,
@@ -52,34 +53,34 @@ const themeStyle: ThemeStyle = {
 
 const whyCards = [
   {
-    title: "Lead capture above the fold",
+    title: "Whole-home comfort approach",
     description:
-      "Your contact form sits directly in the hero so every visitor has a clear next step without hunting around the page.",
+      "Energy Stars looks beyond the equipment with HVAC service, insulation, air sealing, ductwork, crawl space solutions, and home comfort assessments.",
   },
   {
-    title: "Works across every trade",
+    title: "Right-sized installations",
     description:
-      "The copy stays flexible for HVAC, plumbing, cleaning, construction, handyman, pool service, and more.",
+      "Their team sizes replacement systems to the home instead of overselling oversized equipment that can waste energy and money.",
   },
   {
-    title: "Built for Hopper-Hermes",
+    title: "Safety comes first",
     description:
-      "The page is structured to hand off clean intent, service type, contact details, and urgency to your follow-up stack.",
+      "Gas leak testing and carbon monoxide testing are part of the way Energy Stars keeps homes safer, healthier, and more comfortable.",
   },
   {
-    title: "Trust-first positioning",
+    title: "Efficiency incentives",
     description:
-      "Professional imagery, direct benefits, and no overcomplicated jargon make the offer easy for blue-collar owners to understand.",
+      "As an Ameren Illinois Program Ally, Energy Stars helps customers understand incentives for qualifying high-efficiency upgrades.",
   },
   {
-    title: "Controlled personalization",
+    title: "Bilingual support",
     description:
-      "Future instances can inherit the same page form while only swapping palettes, professional photo sets, and service choices.",
+      "Se habla Espanol, so more Metro East and St. Louis homeowners can get clear help when heating or cooling problems show up.",
   },
   {
-    title: "Ready to deploy",
+    title: "Local service coverage",
     description:
-      "This is a focused Next.js home page starter with local images, sticky nav, responsive CSS, and production-friendly structure.",
+      "They serve St. Louis plus Madison, St. Clair, Monroe, and nearby Metro East communities with repair, install, and maintenance work.",
   },
 ];
 
@@ -171,9 +172,9 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
     <form className={className} id={id} onSubmit={handleSubmit}>
       <div className="lead-card-header">
         <p className="eyebrow">Start here</p>
-        <h2>Get a fast follow-up flow demo</h2>
+        <h2>Request heating or cooling help</h2>
         <p>
-          Capture the basics now. Route the conversation into your real Hopper-Hermes workflow later.
+          Tell us what is going on and Energy Stars will follow up with the right next step.
         </p>
       </div>
 
@@ -234,11 +235,11 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
       </label>
 
       <label>
-        What should we know?
+        What should we know about the job?
         <textarea
           name="message"
           rows={4}
-          placeholder="Tell us what kind of business, offer, or lead flow you want to showcase."
+          placeholder="Tell us what is happening, where you are located, and how soon you need help."
           value={formState.message}
           onChange={(event) => updateField("message", event.target.value)}
         />
@@ -260,12 +261,12 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
       </label>
 
       <button className="submit-button" type="submit" disabled={status === "submitting"}>
-        {status === "submitting" ? "Sending request..." : "Send demo request"}
+        {status === "submitting" ? "Sending request..." : "Request appointment"}
       </button>
 
       {status === "success" ? (
         <p className="form-success" role="status">
-          Thanks. Your request was captured and routed into the Project X follow-up flow.
+          Thanks. Energy Stars received your request and will follow up soon.
         </p>
       ) : null}
 
@@ -304,14 +305,14 @@ export default function Home() {
           </a>
 
           <nav className="nav-links" aria-label="Page sections">
-            <a className="mobile-hidden-nav" href="#about">About</a>
-            <a href="#why">Why Choose This</a>
+            <a className="mobile-hidden-nav" href="#about">Services</a>
+            <a href="#why">Why Energy Stars</a>
             <a href="#gallery">Gallery</a>
             <a className="mobile-hidden-nav" href="#contact">Contact</a>
           </nav>
 
           <a className="nav-cta" href="#lead-form">
-            Get Demo
+            Schedule
           </a>
         </header>
       </div>
@@ -322,18 +323,18 @@ export default function Home() {
 
         <div className="hero-inner section-shell">
           <div className="hero-copy">
-            <p className="eyebrow">Industry-agnostic service business landing page</p>
-            <h1>Win the job before your competitors even reply.</h1>
+            <p className="eyebrow">Heating, cooling, and home comfort in St. Louis & the Metro East</p>
+            <h1>Reliable HVAC service that keeps your home safe, efficient, and comfortable.</h1>
             <p className="hero-subtitle">
-              A polished {brand.name} home page built for showcasing Hopper-Hermes to blue-collar businesses — from HVAC and plumbing to cleaning, construction, pool service, handyman work, and anything in between.
+              {brand.name} handles AC repair and replacement, furnaces, boilers, heat pumps, ductwork, insulation, air sealing, and efficiency upgrades for homeowners, landlords, and property managers.
             </p>
 
             <div className="hero-actions">
               <a className="primary-button" href="#lead-form">
-                Request a demo
+                Schedule service
               </a>
               <a className="secondary-button" href="#why">
-                See how it works
+                See what we do
               </a>
             </div>
 
@@ -348,7 +349,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="logo-strip" aria-label="Industries supported">
+      <section className="logo-strip" aria-label="Services offered">
         <div className="section-shell industry-strip">
           {industries.map((industry) => (
             <span key={industry}>{industry}</span>
@@ -358,15 +359,15 @@ export default function Home() {
 
       <section className="section-shell split-section" id="about">
         <div>
-          <p className="eyebrow">About us</p>
-          <h2>One clean interface for showing local service businesses what fast follow-up feels like.</h2>
+          <p className="eyebrow">About Energy Stars</p>
+          <h2>A whole-home comfort company for Metro East and St. Louis homeowners.</h2>
         </div>
         <div className="rich-copy">
           <p>
-            {brand.name} is a flexible landing page concept for service companies that rely on calls, forms, texts, estimate requests, and speed-to-lead. It is intentionally industry agnostic, so you can use the same foundation for plumbers, HVAC companies, cleaners, pool routes, remodelers, roofers, landscapers, electricians, and more.
+            {brand.name} provides heating, cooling, and home comfort services across St. Louis and the Metro East. Their team works on AC systems, furnaces, boilers, heat pumps, insulation, air sealing, ductwork, and crawl space comfort problems.
           </p>
           <p>
-            The page gives you a modern front end for demos while Hopper-Hermes can sit behind the scenes to qualify leads, respond quickly, collect missing details, and hand the conversation to the right person when the customer is ready.
+            The company is a YORK Diamond Club Dealer and backs qualifying installs with a 10 Years No Worries Warranty covering parts and labor. Their Golden Rule philosophy keeps the focus on respectful service, fair upfront pricing, and thorough installation practices.
           </p>
         </div>
       </section>
@@ -374,10 +375,10 @@ export default function Home() {
       <section className="why-section" id="why">
         <div className="section-shell">
           <div className="section-heading centered">
-            <p className="eyebrow">Why choose this</p>
-            <h2>A practical home page for companies that make money by answering first.</h2>
+            <p className="eyebrow">Why Energy Stars</p>
+            <h2>Comfort, safety, and energy savings handled under one roof.</h2>
             <p>
-              Built for clear messaging, fast conversion, and easy adaptation across multiple blue-collar verticals.
+              From urgent repairs to full-system replacements, Energy Stars connects the service call to the bigger picture of home performance.
             </p>
           </div>
 
@@ -395,10 +396,10 @@ export default function Home() {
 
       <section className="section-shell carousel-section" id="gallery">
         <div className="section-heading">
-          <p className="eyebrow">Blue-collar image carousel</p>
-          <h2>Built to feel familiar to every trade.</h2>
+          <p className="eyebrow">Services</p>
+          <h2>Heating, cooling, and comfort work under one roof.</h2>
           <p>
-            Keep the same polished visual system across instances, then swap in client-specific crews or approved professional trade photography when available.
+            Repair the system that is down today, plan the right replacement, or tighten up the home so comfort lasts longer.
           </p>
         </div>
 
@@ -441,10 +442,10 @@ export default function Home() {
       <section className="contact-band" id="contact">
         <div className="section-shell contact-grid">
           <div>
-            <p className="eyebrow">Contact</p>
-            <h2>Ready to plug this into your {brand.name} demo flow?</h2>
+            <p className="eyebrow">Schedule service</p>
+            <h2>Need heating, cooling, or efficiency help?</h2>
             <p>
-              Use the form to capture the demo request, then connect it to your CRM, webhook, or Hopper-Hermes intake flow when you are ready.
+              Send the basics here or call {callNowDisplay}. Energy Stars serves homeowners, landlords, and property managers across St. Louis and the Metro East.
             </p>
           </div>
 
@@ -460,7 +461,7 @@ export default function Home() {
           </div>
           <div className="footer-links">
             <a href="#top">Top</a>
-            <a href="#about">About</a>
+            <a href="#about">Services</a>
             <a href="#why">Why</a>
             <a href="#contact">Contact</a>
           </div>

@@ -3,9 +3,9 @@ import { projectXConfig } from "./project-x-config";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: `${projectXConfig.brand.name} | Blue-Collar Business Growth Landing Page`,
+  title: `${projectXConfig.brand.name} | HVAC Service in St. Louis & Metro East`,
   description:
-    "An industry-agnostic landing page for service businesses showcasing Hopper-Hermes speed-to-lead automation.",
+    "Heating, cooling, insulation, ductwork, and home comfort service for St. Louis and Metro East homeowners, landlords, and property managers.",
 };
 
 export default function RootLayout({
