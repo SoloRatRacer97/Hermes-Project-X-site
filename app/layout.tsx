@@ -3,9 +3,9 @@ import { projectXConfig } from "./project-x-config";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: `${projectXConfig.brand.name} | HVAC Service in St. Louis & Metro East`,
+  title: `${projectXConfig.brand.name} | AI Follow-Up Comparison`,
   description:
-    "Heating, cooling, insulation, ductwork, and home comfort service for St. Louis and Metro East homeowners, landlords, and property managers.",
+    "A side-by-side landing page comparing ChatSales and Hermes for speed-to-lead, qualification, handoff, and service-business sales follow-up.",
 };
 
 export default function RootLayout({

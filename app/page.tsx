@@ -22,7 +22,6 @@ type ThemeStyle = CSSProperties & Record<`--${string}`, string>;
 const { brand, images, industries, integration, proofPoints, theme } = projectXConfig;
 const carouselItems = images.carousel;
 const serviceOptions = ["", ...industries, "Other"];
-const callNowDisplay = "(618) 477-8337";
 
 const themeStyle: ThemeStyle = {
   "--bg": theme.bg,
@@ -53,34 +52,34 @@ const themeStyle: ThemeStyle = {
 
 const whyCards = [
   {
-    title: "Whole-home comfort approach",
+    title: "Speed-to-lead clarity",
     description:
-      "Energy Stars looks beyond the equipment with HVAC service, insulation, air sealing, ductwork, crawl space solutions, and home comfort assessments.",
+      "ChatSales versus Hermes shows what changes when every new inquiry gets an immediate, useful response instead of waiting for manual follow-up.",
   },
   {
-    title: "Right-sized installations",
+    title: "Qualification without friction",
     description:
-      "Their team sizes replacement systems to the home instead of overselling oversized equipment that can waste energy and money.",
+      "Compare how each workflow gathers missing details, keeps the lead engaged, and avoids making customers repeat information they already gave you.",
   },
   {
-    title: "Safety comes first",
+    title: "Cleaner human handoff",
     description:
-      "Gas leak testing and carbon monoxide testing are part of the way Energy Stars keeps homes safer, healthier, and more comfortable.",
+      "The page highlights when automation should keep working and when the conversation should move to an owner, estimator, or sales rep.",
   },
   {
-    title: "Efficiency incentives",
+    title: "Service-business fit",
     description:
-      "As an Ameren Illinois Program Ally, Energy Stars helps customers understand incentives for qualifying high-efficiency upgrades.",
+      "Use the comparison for HVAC, plumbing, roofing, cleaning, construction, and other local-service teams where missed calls become missed revenue.",
   },
   {
-    title: "Bilingual support",
+    title: "Fallbacks that keep working",
     description:
-      "Se habla Espanol, so more Metro East and St. Louis homeowners can get clear help when heating or cooling problems show up.",
+      "ChatSales versus Hermes makes reliability visible: routing, escalation, and recovery matter when the first automation path is unavailable.",
   },
   {
-    title: "Local service coverage",
+    title: "Demo-ready positioning",
     description:
-      "They serve St. Louis plus Madison, St. Clair, Monroe, and nearby Metro East communities with repair, install, and maintenance work.",
+      "The landing page gives prospects a focused way to understand the difference before booking a deeper walkthrough.",
   },
 ];
 
@@ -172,9 +171,9 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
     <form className={className} id={id} onSubmit={handleSubmit}>
       <div className="lead-card-header">
         <p className="eyebrow">Start here</p>
-        <h2>Request heating or cooling help</h2>
+        <h2>Request the ChatSales versus Hermes walkthrough</h2>
         <p>
-          Tell us what is going on and Energy Stars will follow up with the right next step.
+          Tell us where your follow-up breaks down and we will map how the two approaches compare.
         </p>
       </div>
 
@@ -235,11 +234,11 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
       </label>
 
       <label>
-        What should we know about the job?
+        What should we know about your sales flow?
         <textarea
           name="message"
           rows={4}
-          placeholder="Tell us what is happening, where you are located, and how soon you need help."
+          placeholder="Tell us how leads come in, who follows up, and what currently gets missed."
           value={formState.message}
           onChange={(event) => updateField("message", event.target.value)}
         />
@@ -261,12 +260,12 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
       </label>
 
       <button className="submit-button" type="submit" disabled={status === "submitting"}>
-        {status === "submitting" ? "Sending request..." : "Request appointment"}
+        {status === "submitting" ? "Sending request..." : "Request comparison"}
       </button>
 
       {status === "success" ? (
         <p className="form-success" role="status">
-          Thanks. Energy Stars received your request and will follow up soon.
+          Thanks. Your ChatSales versus Hermes request was captured.
         </p>
       ) : null}
 
@@ -305,14 +304,14 @@ export default function Home() {
           </a>
 
           <nav className="nav-links" aria-label="Page sections">
-            <a className="mobile-hidden-nav" href="#about">Services</a>
-            <a href="#why">Why Energy Stars</a>
+            <a className="mobile-hidden-nav" href="#about">Comparison</a>
+            <a href="#why">Why it matters</a>
             <a href="#gallery">Gallery</a>
             <a className="mobile-hidden-nav" href="#contact">Contact</a>
           </nav>
 
           <a className="nav-cta" href="#lead-form">
-            Schedule
+            Compare
           </a>
         </header>
       </div>
@@ -323,18 +322,18 @@ export default function Home() {
 
         <div className="hero-inner section-shell">
           <div className="hero-copy">
-            <p className="eyebrow">Heating, cooling, and home comfort in St. Louis & the Metro East</p>
-            <h1>Reliable HVAC service that keeps your home safe, efficient, and comfortable.</h1>
+            <p className="eyebrow">ChatSales versus Hermes</p>
+            <h1>See the follow-up difference before the next lead slips away.</h1>
             <p className="hero-subtitle">
-              {brand.name} handles AC repair and replacement, furnaces, boilers, heat pumps, ductwork, insulation, air sealing, and efficiency upgrades for homeowners, landlords, and property managers.
+              A focused comparison page for showing how ChatSales captures, qualifies, and routes service leads against the older Hermes follow-up workflow.
             </p>
 
             <div className="hero-actions">
               <a className="primary-button" href="#lead-form">
-                Schedule service
+                Get the comparison
               </a>
               <a className="secondary-button" href="#why">
-                See what we do
+                See the differences
               </a>
             </div>
 
@@ -359,15 +358,15 @@ export default function Home() {
 
       <section className="section-shell split-section" id="about">
         <div>
-          <p className="eyebrow">About Energy Stars</p>
-          <h2>A whole-home comfort company for Metro East and St. Louis homeowners.</h2>
+          <p className="eyebrow">About the comparison</p>
+          <h2>ChatSales versus Hermes explains what happens after the form submission.</h2>
         </div>
         <div className="rich-copy">
           <p>
-            {brand.name} provides heating, cooling, and home comfort services across St. Louis and the Metro East. Their team works on AC systems, furnaces, boilers, heat pumps, insulation, air sealing, ductwork, and crawl space comfort problems.
+            {brand.name} is built to make the difference between legacy automation and modern conversational sales follow-up easy to understand. The page keeps the focus on the moments that decide whether a lead turns into a booked conversation.
           </p>
           <p>
-            The company is a YORK Diamond Club Dealer and backs qualifying installs with a 10 Years No Worries Warranty covering parts and labor. Their Golden Rule philosophy keeps the focus on respectful service, fair upfront pricing, and thorough installation practices.
+            Instead of selling abstract AI, the copy walks through response speed, qualification, handoff timing, fallback reliability, and the customer experience owners actually care about.
           </p>
         </div>
       </section>
@@ -375,10 +374,10 @@ export default function Home() {
       <section className="why-section" id="why">
         <div className="section-shell">
           <div className="section-heading centered">
-            <p className="eyebrow">Why Energy Stars</p>
-            <h2>Comfort, safety, and energy savings handled under one roof.</h2>
+            <p className="eyebrow">Why it matters</p>
+            <h2>The difference is not a prettier form. It is what happens next.</h2>
             <p>
-              From urgent repairs to full-system replacements, Energy Stars connects the service call to the bigger picture of home performance.
+              The comparison shows how a lead moves from first contact to qualified handoff without losing momentum.
             </p>
           </div>
 
@@ -396,10 +395,10 @@ export default function Home() {
 
       <section className="section-shell carousel-section" id="gallery">
         <div className="section-heading">
-          <p className="eyebrow">Services</p>
-          <h2>Heating, cooling, and comfort work under one roof.</h2>
+          <p className="eyebrow">Comparison areas</p>
+          <h2>Show the difference in the moments that decide the sale.</h2>
           <p>
-            Repair the system that is down today, plan the right replacement, or tighten up the home so comfort lasts longer.
+            Use each section to explain where ChatSales improves the lead journey versus the older Hermes workflow.
           </p>
         </div>
 
@@ -442,10 +441,10 @@ export default function Home() {
       <section className="contact-band" id="contact">
         <div className="section-shell contact-grid">
           <div>
-            <p className="eyebrow">Schedule service</p>
-            <h2>Need heating, cooling, or efficiency help?</h2>
+            <p className="eyebrow">Book the walkthrough</p>
+            <h2>Ready to compare ChatSales versus Hermes on your own lead flow?</h2>
             <p>
-              Send the basics here or call {callNowDisplay}. Energy Stars serves homeowners, landlords, and property managers across St. Louis and the Metro East.
+              Send the basics and we will walk through where your current follow-up slows down, where automation should help, and where a human should step in.
             </p>
           </div>
 
@@ -461,7 +460,7 @@ export default function Home() {
           </div>
           <div className="footer-links">
             <a href="#top">Top</a>
-            <a href="#about">Services</a>
+            <a href="#about">Comparison</a>
             <a href="#why">Why</a>
             <a href="#contact">Contact</a>
           </div>

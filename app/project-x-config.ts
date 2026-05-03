@@ -74,10 +74,10 @@ export const projectXConfig = {
     "Use professional local-service imagery for every instance; do not ship text-only or layout-rebuilt variants.",
   ],
   brand: {
-    name: "Energy Stars Heating & Cooling",
-    mark: "ES",
-    poweredBy: "St. Louis & Metro East HVAC",
-    footerDescription: "Heating, cooling, insulation, and energy-efficiency service for the Metro East and St. Louis area.",
+    name: "ChatSales versus Hermes",
+    mark: "CS",
+    poweredBy: "AI sales follow-up comparison",
+    footerDescription: "A side-by-side landing page for comparing fast ChatSales follow-up against the Hermes workflow.",
   },
   theme: createProjectXTheme({
     primary: "#27a4ff",
@@ -85,53 +85,53 @@ export const projectXConfig = {
   }),
   integration: {
     formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/",
-    formSource: "energy-stars-heating-cooling",
+    formSource: "chatsales-versus-hermes",
   },
   images: {
     hero: "/images/hero-blue-collar-team.png",
     contact: "/images/service-handshake.png",
     carousel: [
       {
-        "eyebrow": "Cooling",
-        "title": "AC repair, replacement, and tune-ups when the house will not stay comfortable.",
-        "description": "Energy Stars handles warm-weather breakdowns, new air conditioner installs, and seasonal maintenance for homes across St. Louis and the Metro East.",
+        "eyebrow": "Speed-to-lead",
+        "title": "Respond while the lead is still thinking about the job.",
+        "description": "ChatSales versus Hermes starts with the first minute: how quickly the system acknowledges intent, asks the right question, and keeps the customer moving.",
         "image": "/images/hvac-plumbing.png",
-        "alt": "HVAC and plumbing technicians working in a clean residential service setting"
+        "alt": "Service technicians preparing for a fast customer follow-up workflow"
       },
       {
-        "eyebrow": "Heating",
-        "title": "Furnaces, boilers, and heat pumps serviced before winter makes it urgent.",
-        "description": "From repairs to replacements, the team keeps families warm and safe with heating service built around the home, not guesswork.",
+        "eyebrow": "Qualification",
+        "title": "Collect useful details without sounding like a script.",
+        "description": "The comparison highlights how ChatSales can qualify intent, urgency, location, and service fit while avoiding repeated questions and dead-end form logic.",
         "image": "/images/hvac-plumbing.png",
-        "alt": "Residential HVAC technicians servicing heating and cooling equipment"
+        "alt": "Residential service professionals reviewing customer details before handoff"
       },
       {
-        "eyebrow": "Home Comfort",
-        "title": "Insulation, air sealing, ductwork, and crawl space solutions.",
-        "description": "Energy Stars takes a whole-house approach to comfort, finding the places where air leaks, poor ductwork, or under-insulation cost homeowners money.",
+        "eyebrow": "Handoff",
+        "title": "Move qualified conversations to the right human at the right time.",
+        "description": "Show where Hermes-style automation stops, where ChatSales keeps context intact, and how owners or estimators get cleaner conversations.",
         "image": "/images/construction-handyman.png",
-        "alt": "Home service professionals reviewing project plans for comfort improvements"
+        "alt": "Service team reviewing a qualified lead handoff"
       },
       {
-        "eyebrow": "Efficiency + Safety",
-        "title": "Right-sized systems, Ameren incentives, and safety testing.",
-        "description": "As an Ameren Program Ally, Energy Stars helps customers navigate qualifying efficiency incentives while prioritizing gas leak and carbon monoxide safety.",
+        "eyebrow": "Reliability",
+        "title": "Keep the workflow useful when one path fails.",
+        "description": "A good comparison includes fallback behavior, escalation rules, and recovery paths so prospects can see how the system behaves under pressure.",
         "image": "/images/service-handshake.png",
-        "alt": "Friendly service professional shaking hands with a homeowner at the door"
+        "alt": "Friendly service professional confirming a reliable customer handoff"
       }
     ] satisfies readonly ProjectXCarouselItem[],
   },
   industries: [
-    "Air Conditioner Repair & Installation",
-    "Furnace & Boiler Services",
-    "Heat Pump Services",
-    "Insulation & Air Sealing",
-    "Duct Cleaning & Maintenance",
-    "Emergency HVAC Repair"
+    "Speed-to-Lead",
+    "AI Text Follow-Up",
+    "Lead Qualification",
+    "Human Handoff",
+    "Fallback Routing",
+    "Service Business Sales"
   ],
   proofPoints: [
-    "YORK Diamond Club Dealer",
-    "10 Years No Worries Warranty",
-    "Ameren Program Ally",
+    "ChatSales versus Hermes",
+    "Built for service leads",
+    "Demo-ready comparison",
   ],
 } as const;
