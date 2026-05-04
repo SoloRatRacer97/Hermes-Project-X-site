@@ -3,9 +3,9 @@ import { projectXConfig } from "./project-x-config";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: `${projectXConfig.brand.name} | AI Follow-Up Comparison`,
+  title: `${projectXConfig.brand.name} | Blue-Collar Business Growth Landing Page`,
   description:
-    "A side-by-side landing page comparing ChatSales and Hermes for speed-to-lead, qualification, handoff, and service-business sales follow-up.",
+    "An industry-agnostic landing page for service businesses showcasing Hopper-Hermes speed-to-lead automation.",
 };
 
 export default function RootLayout({

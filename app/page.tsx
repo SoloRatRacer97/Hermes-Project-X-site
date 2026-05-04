@@ -52,34 +52,34 @@ const themeStyle: ThemeStyle = {
 
 const whyCards = [
   {
-    title: "Speed-to-lead clarity",
+    title: "Lead capture above the fold",
     description:
-      "ChatSales versus Hermes shows what changes when every new inquiry gets an immediate, useful response instead of waiting for manual follow-up.",
+      "Your contact form sits directly in the hero so every visitor has a clear next step without hunting around the page.",
   },
   {
-    title: "Qualification without friction",
+    title: "Works across every trade",
     description:
-      "Compare how each workflow gathers missing details, keeps the lead engaged, and avoids making customers repeat information they already gave you.",
+      "The copy stays flexible for HVAC, plumbing, cleaning, construction, handyman, pool service, and more.",
   },
   {
-    title: "Cleaner human handoff",
+    title: "Built for Hopper-Hermes",
     description:
-      "The page highlights when automation should keep working and when the conversation should move to an owner, estimator, or sales rep.",
+      "The page is structured to hand off clean intent, service type, contact details, and urgency to your follow-up stack.",
   },
   {
-    title: "Service-business fit",
+    title: "Trust-first positioning",
     description:
-      "Use the comparison for HVAC, plumbing, roofing, cleaning, construction, and other local-service teams where missed calls become missed revenue.",
+      "Professional imagery, direct benefits, and no overcomplicated jargon make the offer easy for blue-collar owners to understand.",
   },
   {
-    title: "Fallbacks that keep working",
+    title: "Controlled personalization",
     description:
-      "ChatSales versus Hermes makes reliability visible: routing, escalation, and recovery matter when the first automation path is unavailable.",
+      "Future instances can inherit the same page form while only swapping palettes, professional photo sets, and service choices.",
   },
   {
-    title: "Demo-ready positioning",
+    title: "Ready to deploy",
     description:
-      "The landing page gives prospects a focused way to understand the difference before booking a deeper walkthrough.",
+      "This is a focused Next.js home page starter with local images, sticky nav, responsive CSS, and production-friendly structure.",
   },
 ];
 
@@ -171,9 +171,9 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
     <form className={className} id={id} onSubmit={handleSubmit}>
       <div className="lead-card-header">
         <p className="eyebrow">Start here</p>
-        <h2>Request the ChatSales versus Hermes walkthrough</h2>
+        <h2>Get a fast follow-up flow demo</h2>
         <p>
-          Tell us where your follow-up breaks down and we will map how the two approaches compare.
+          Capture the basics now. Route the conversation into your real Hopper-Hermes workflow later.
         </p>
       </div>
 
@@ -234,11 +234,11 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
       </label>
 
       <label>
-        What should we know about your sales flow?
+        What should we know?
         <textarea
           name="message"
           rows={4}
-          placeholder="Tell us how leads come in, who follows up, and what currently gets missed."
+          placeholder="Tell us what kind of business, offer, or lead flow you want to showcase."
           value={formState.message}
           onChange={(event) => updateField("message", event.target.value)}
         />
@@ -260,12 +260,12 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
       </label>
 
       <button className="submit-button" type="submit" disabled={status === "submitting"}>
-        {status === "submitting" ? "Sending request..." : "Request comparison"}
+        {status === "submitting" ? "Sending request..." : "Send demo request"}
       </button>
 
       {status === "success" ? (
         <p className="form-success" role="status">
-          Thanks. Your ChatSales versus Hermes request was captured.
+          Thanks. Your request was captured and routed into the Project X follow-up flow.
         </p>
       ) : null}
 
@@ -304,14 +304,14 @@ export default function Home() {
           </a>
 
           <nav className="nav-links" aria-label="Page sections">
-            <a className="mobile-hidden-nav" href="#about">Comparison</a>
-            <a href="#why">Why it matters</a>
+            <a className="mobile-hidden-nav" href="#about">About</a>
+            <a href="#why">Why Choose This</a>
             <a href="#gallery">Gallery</a>
             <a className="mobile-hidden-nav" href="#contact">Contact</a>
           </nav>
 
           <a className="nav-cta" href="#lead-form">
-            Compare
+            Get Demo
           </a>
         </header>
       </div>
@@ -322,18 +322,18 @@ export default function Home() {
 
         <div className="hero-inner section-shell">
           <div className="hero-copy">
-            <p className="eyebrow">ChatSales versus Hermes</p>
-            <h1>See the follow-up difference before the next lead slips away.</h1>
+            <p className="eyebrow">Industry-agnostic service business landing page</p>
+            <h1>Win the job before your competitors even reply.</h1>
             <p className="hero-subtitle">
-              A focused comparison page for showing how ChatSales captures, qualifies, and routes service leads against the older Hermes follow-up workflow.
+              A polished {brand.name} home page built for showcasing Hopper-Hermes to blue-collar businesses — from HVAC and plumbing to cleaning, construction, pool service, handyman work, and anything in between.
             </p>
 
             <div className="hero-actions">
               <a className="primary-button" href="#lead-form">
-                Get the comparison
+                Request a demo
               </a>
               <a className="secondary-button" href="#why">
-                See the differences
+                See how it works
               </a>
             </div>
 
@@ -348,7 +348,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="logo-strip" aria-label="Services offered">
+      <section className="logo-strip" aria-label="Industries supported">
         <div className="section-shell industry-strip">
           {industries.map((industry) => (
             <span key={industry}>{industry}</span>
@@ -358,15 +358,15 @@ export default function Home() {
 
       <section className="section-shell split-section" id="about">
         <div>
-          <p className="eyebrow">About the comparison</p>
-          <h2>ChatSales versus Hermes explains what happens after the form submission.</h2>
+          <p className="eyebrow">About us</p>
+          <h2>One clean interface for showing local service businesses what fast follow-up feels like.</h2>
         </div>
         <div className="rich-copy">
           <p>
-            {brand.name} is built to make the difference between legacy automation and modern conversational sales follow-up easy to understand. The page keeps the focus on the moments that decide whether a lead turns into a booked conversation.
+            {brand.name} is a flexible landing page concept for service companies that rely on calls, forms, texts, estimate requests, and speed-to-lead. It is intentionally industry agnostic, so you can use the same foundation for plumbers, HVAC companies, cleaners, pool routes, remodelers, roofers, landscapers, electricians, and more.
           </p>
           <p>
-            Instead of selling abstract AI, the copy walks through response speed, qualification, handoff timing, fallback reliability, and the customer experience owners actually care about.
+            The page gives you a modern front end for demos while Hopper-Hermes can sit behind the scenes to qualify leads, respond quickly, collect missing details, and hand the conversation to the right person when the customer is ready.
           </p>
         </div>
       </section>
@@ -374,10 +374,10 @@ export default function Home() {
       <section className="why-section" id="why">
         <div className="section-shell">
           <div className="section-heading centered">
-            <p className="eyebrow">Why it matters</p>
-            <h2>The difference is not a prettier form. It is what happens next.</h2>
+            <p className="eyebrow">Why choose this</p>
+            <h2>A practical home page for companies that make money by answering first.</h2>
             <p>
-              The comparison shows how a lead moves from first contact to qualified handoff without losing momentum.
+              Built for clear messaging, fast conversion, and easy adaptation across multiple blue-collar verticals.
             </p>
           </div>
 
@@ -395,10 +395,10 @@ export default function Home() {
 
       <section className="section-shell carousel-section" id="gallery">
         <div className="section-heading">
-          <p className="eyebrow">Comparison areas</p>
-          <h2>Show the difference in the moments that decide the sale.</h2>
+          <p className="eyebrow">Blue-collar image carousel</p>
+          <h2>Built to feel familiar to every trade.</h2>
           <p>
-            Use each section to explain where ChatSales improves the lead journey versus the older Hermes workflow.
+            Keep the same polished visual system across instances, then swap in client-specific crews or approved professional trade photography when available.
           </p>
         </div>
 
@@ -441,10 +441,10 @@ export default function Home() {
       <section className="contact-band" id="contact">
         <div className="section-shell contact-grid">
           <div>
-            <p className="eyebrow">Book the walkthrough</p>
-            <h2>Ready to compare ChatSales versus Hermes on your own lead flow?</h2>
+            <p className="eyebrow">Contact</p>
+            <h2>Ready to plug this into your {brand.name} demo flow?</h2>
             <p>
-              Send the basics and we will walk through where your current follow-up slows down, where automation should help, and where a human should step in.
+              Use the form to capture the demo request, then connect it to your CRM, webhook, or Hopper-Hermes intake flow when you are ready.
             </p>
           </div>
 
@@ -460,7 +460,7 @@ export default function Home() {
           </div>
           <div className="footer-links">
             <a href="#top">Top</a>
-            <a href="#about">Comparison</a>
+            <a href="#about">About</a>
             <a href="#why">Why</a>
             <a href="#contact">Contact</a>
           </div>

@@ -65,8 +65,8 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 }
 
 export const projectXConfig = {
-  hydratedFrom: "https://estarshvac.com/",
-  hydratedAt: "2026-04-29T21:47:31.459Z",
+  hydratedFrom: "https://www.newdayconstruction.co/",
+  hydratedAt: "2026-05-04T15:42:11.463Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -74,10 +74,10 @@ export const projectXConfig = {
     "Use professional local-service imagery for every instance; do not ship text-only or layout-rebuilt variants.",
   ],
   brand: {
-    name: "ChatSales versus Hermes",
-    mark: "CS",
-    poweredBy: "AI sales follow-up comparison",
-    footerDescription: "A side-by-side landing page for comparing fast ChatSales follow-up against the Hermes workflow.",
+    name: "New Day Construction",
+    mark: "ND",
+    poweredBy: "Project X by Hopper-Hermes",
+    footerDescription: "Fast follow-up interface powered by Hopper-Hermes.",
   },
   theme: createProjectXTheme({
     primary: "#27a4ff",
@@ -85,53 +85,53 @@ export const projectXConfig = {
   }),
   integration: {
     formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/",
-    formSource: "chatsales-versus-hermes",
+    formSource: "new-day-construction",
   },
   images: {
     hero: "/images/hero-blue-collar-team.png",
     contact: "/images/service-handshake.png",
     carousel: [
       {
-        "eyebrow": "Speed-to-lead",
-        "title": "Respond while the lead is still thinking about the job.",
-        "description": "ChatSales versus Hermes starts with the first minute: how quickly the system acknowledges intent, asks the right question, and keeps the customer moving.",
+        "eyebrow": "HVAC + Plumbing",
+        "title": "Emergency jobs, tune-ups, installs, and repair requests.",
+        "description": "Show prospects that your business is responsive, professional, and ready to book the job before they call the next company.",
         "image": "/images/hvac-plumbing.png",
-        "alt": "Service technicians preparing for a fast customer follow-up workflow"
+        "alt": "HVAC and plumbing technicians working in a clean residential service setting"
       },
       {
-        "eyebrow": "Qualification",
-        "title": "Collect useful details without sounding like a script.",
-        "description": "The comparison highlights how ChatSales can qualify intent, urgency, location, and service fit while avoiding repeated questions and dead-end form logic.",
-        "image": "/images/hvac-plumbing.png",
-        "alt": "Residential service professionals reviewing customer details before handoff"
+        "eyebrow": "Cleaning + Pool Service",
+        "title": "Recurring routes, one-time cleans, and seasonal service work.",
+        "description": "A flexible visual system that fits home services, commercial maintenance, and route-based local operators.",
+        "image": "/images/cleaning-pool.png",
+        "alt": "Cleaning professionals and a pool technician performing service work"
       },
       {
-        "eyebrow": "Handoff",
-        "title": "Move qualified conversations to the right human at the right time.",
-        "description": "Show where Hermes-style automation stops, where ChatSales keeps context intact, and how owners or estimators get cleaner conversations.",
+        "eyebrow": "Construction + Handyman",
+        "title": "Bigger projects still start with a simple lead capture.",
+        "description": "Position your company as organized and trustworthy from the first page view through the first booked estimate.",
         "image": "/images/construction-handyman.png",
-        "alt": "Service team reviewing a qualified lead handoff"
+        "alt": "Construction and handyman professionals collaborating over project plans"
       },
       {
-        "eyebrow": "Reliability",
-        "title": "Keep the workflow useful when one path fails.",
-        "description": "A good comparison includes fallback behavior, escalation rules, and recovery paths so prospects can see how the system behaves under pressure.",
+        "eyebrow": "Customer Experience",
+        "title": "A better first impression at the exact moment intent is highest.",
+        "description": "Use the landing page as the front door for Project X, then let Hopper-Hermes handle fast follow-up and qualification.",
         "image": "/images/service-handshake.png",
-        "alt": "Friendly service professional confirming a reliable customer handoff"
+        "alt": "Friendly service professional shaking hands with a homeowner at the door"
       }
     ] satisfies readonly ProjectXCarouselItem[],
   },
   industries: [
-    "Speed-to-Lead",
-    "AI Text Follow-Up",
-    "Lead Qualification",
-    "Human Handoff",
-    "Fallback Routing",
-    "Service Business Sales"
+    "Kitchen Remodeling",
+    "Bathroom Remodeling",
+    "Home Additions",
+    "ADU Construction",
+    "Custom Homes",
+    "Full Home Remodeling"
   ],
   proofPoints: [
-    "ChatSales versus Hermes",
-    "Built for service leads",
-    "Demo-ready comparison",
+    "Hydrated from newdayconstruction.co",
+    "Locked professional layout",
+    "Mobile-first contact flow",
   ],
 } as const;
