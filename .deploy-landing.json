@@ -1,8 +1,8 @@
 {
-  "deployedAt": "2026-05-04T19:21:21.138Z",
+  "deployedAt": "2026-05-04T20:22:49.904Z",
   "sourceRepo": "/Users/toddanderson/workspace-hermes-projectx",
   "hostname": "Gaius-Mainframe.local",
   "webhookConfigured": true,
   "formSource": "new-day-construction",
-  "templateSource": "manual-patch:/Users/toddanderson/workspace-hermes-projectx/landing-site"
+  "templateSource": "https://github.com/SoloRatRacer97/Hermes-Project-X-template.git#main"
 }
