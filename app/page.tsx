@@ -52,34 +52,34 @@ const themeStyle: ThemeStyle = {
 
 const whyCards = [
   {
-    title: "Lead capture above the fold",
+    title: "Clear project requests",
     description:
-      "Your contact form sits directly in the hero so every visitor has a clear next step without hunting around the page.",
+      "Homeowners can ask about remodels, additions, ADUs, or custom homes without hunting around the page.",
   },
   {
-    title: "Works across every trade",
+    title: "Remodeling focused",
     description:
-      "The copy stays flexible for HVAC, plumbing, cleaning, construction, handyman, pool service, and more.",
+      "The copy stays centered on kitchens, baths, additions, ADUs, custom homes, and whole-home remodels.",
   },
   {
-    title: "Built for Hopper-Hermes",
+    title: "Fast owner follow-up",
     description:
-      "The page is structured to hand off clean intent, service type, contact details, and urgency to your follow-up stack.",
+      "The page collects service type, contact details, and project notes so New Day can respond quickly.",
   },
   {
-    title: "Trust-first positioning",
+    title: "Bellevue-area trust",
     description:
-      "Professional imagery, direct benefits, and no overcomplicated jargon make the offer easy for blue-collar owners to understand.",
+      "Straightforward wording and professional visuals help homeowners feel confident before requesting an estimate.",
   },
   {
-    title: "Controlled personalization",
+    title: "Scope-aware details",
     description:
-      "Future instances can inherit the same page form while only swapping palettes, professional photo sets, and service choices.",
+      "The form gives room for project goals, timing, and context without asking for too much upfront.",
   },
   {
-    title: "Ready to deploy",
+    title: "Ready to quote",
     description:
-      "This is a focused Next.js home page starter with local images, sticky nav, responsive CSS, and production-friendly structure.",
+      "A focused page for remodeling inquiries, with mobile-friendly sections and a simple request form.",
   },
 ];
 
@@ -171,9 +171,9 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
     <form className={className} id={id} onSubmit={handleSubmit}>
       <div className="lead-card-header">
         <p className="eyebrow">Start here</p>
-        <h2>Get a fast follow-up flow demo</h2>
+        <h2>Request a project estimate</h2>
         <p>
-          Capture the basics now. Route the conversation into your real Hopper-Hermes workflow later.
+          Share the basics and New Day can follow up about fit, timing, and next steps.
         </p>
       </div>
 
@@ -238,7 +238,7 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
         <textarea
           name="message"
           rows={4}
-          placeholder="Tell us what kind of business, offer, or lead flow you want to showcase."
+          placeholder="Tell us about the remodel, addition, ADU, or custom home."
           value={formState.message}
           onChange={(event) => updateField("message", event.target.value)}
         />
@@ -260,12 +260,12 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
       </label>
 
       <button className="submit-button" type="submit" disabled={status === "submitting"}>
-        {status === "submitting" ? "Sending request..." : "Send demo request"}
+        {status === "submitting" ? "Sending request..." : "Send request"}
       </button>
 
       {status === "success" ? (
         <p className="form-success" role="status">
-          Thanks. Your request was captured and routed into the Project X follow-up flow.
+          Thanks. New Day Construction received your request and will follow up soon.
         </p>
       ) : null}
 
@@ -305,13 +305,13 @@ export default function Home() {
 
           <nav className="nav-links" aria-label="Page sections">
             <a className="mobile-hidden-nav" href="#about">About</a>
-            <a href="#why">Why Choose This</a>
+            <a href="#why">Why New Day</a>
             <a href="#gallery">Gallery</a>
             <a className="mobile-hidden-nav" href="#contact">Contact</a>
           </nav>
 
           <a className="nav-cta" href="#lead-form">
-            Get Demo
+            Estimate
           </a>
         </header>
       </div>
@@ -322,18 +322,18 @@ export default function Home() {
 
         <div className="hero-inner section-shell">
           <div className="hero-copy">
-            <p className="eyebrow">Industry-agnostic service business landing page</p>
-            <h1>Win the job before your competitors even reply.</h1>
+            <p className="eyebrow">Bellevue remodeling and custom construction</p>
+            <h1>Remodel your home with a clear, capable team.</h1>
             <p className="hero-subtitle">
-              A polished {brand.name} home page built for showcasing Hopper-Hermes to blue-collar businesses — from HVAC and plumbing to cleaning, construction, pool service, handyman work, and anything in between.
+              New Day Construction helps Bellevue-area homeowners plan kitchen remodels, bathroom remodels, additions, ADUs, custom homes, and full-home renovations with straightforward next steps.
             </p>
 
             <div className="hero-actions">
               <a className="primary-button" href="#lead-form">
-                Request a demo
+                Request quote
               </a>
               <a className="secondary-button" href="#why">
-                See how it works
+                View services
               </a>
             </div>
 
@@ -359,14 +359,14 @@ export default function Home() {
       <section className="section-shell split-section" id="about">
         <div>
           <p className="eyebrow">About us</p>
-          <h2>One clean interface for showing local service businesses what fast follow-up feels like.</h2>
+          <h2>Bellevue remodelers for kitchens, baths, additions, ADUs, and custom homes.</h2>
         </div>
         <div className="rich-copy">
           <p>
-            {brand.name} is a flexible landing page concept for service companies that rely on calls, forms, texts, estimate requests, and speed-to-lead. It is intentionally industry agnostic, so you can use the same foundation for plumbers, HVAC companies, cleaners, pool routes, remodelers, roofers, landscapers, electricians, and more.
+            New Day Construction serves Bellevue and nearby areas with remodeling and custom construction work, including kitchens, bathrooms, additions, ADUs, custom homes, and full-home renovations.
           </p>
           <p>
-            The page gives you a modern front end for demos while Hopper-Hermes can sit behind the scenes to qualify leads, respond quickly, collect missing details, and hand the conversation to the right person when the customer is ready.
+            The form keeps the first step simple: share the project type, contact details, timing, and notes so the team can follow up about the right next step.
           </p>
         </div>
       </section>
@@ -374,10 +374,10 @@ export default function Home() {
       <section className="why-section" id="why">
         <div className="section-shell">
           <div className="section-heading centered">
-            <p className="eyebrow">Why choose this</p>
-            <h2>A practical home page for companies that make money by answering first.</h2>
+            <p className="eyebrow">Why New Day</p>
+            <h2>A practical home page for homeowners ready to start a real project.</h2>
             <p>
-              Built for clear messaging, fast conversion, and easy adaptation across multiple blue-collar verticals.
+              Built for clear remodel requests, fast follow-up, and easy service selection.
             </p>
           </div>
 
@@ -395,10 +395,10 @@ export default function Home() {
 
       <section className="section-shell carousel-section" id="gallery">
         <div className="section-heading">
-          <p className="eyebrow">Blue-collar image carousel</p>
-          <h2>Built to feel familiar to every trade.</h2>
+          <p className="eyebrow">Project gallery</p>
+          <h2>Built around New Day's core services.</h2>
           <p>
-            Keep the same polished visual system across instances, then swap in client-specific crews or approved professional trade photography when available.
+            Browse the same service focus New Day shows on its site, from remodeling and additions to ADUs and custom homes.
           </p>
         </div>
 
@@ -442,9 +442,9 @@ export default function Home() {
         <div className="section-shell contact-grid">
           <div>
             <p className="eyebrow">Contact</p>
-            <h2>Ready to plug this into your {brand.name} demo flow?</h2>
+            <h2>Ready to talk through your New Day project?</h2>
             <p>
-              Use the form to capture the demo request, then connect it to your CRM, webhook, or Hopper-Hermes intake flow when you are ready.
+              Use the form to share your project type, timing, and contact details so the team can follow up.
             </p>
           </div>
 
