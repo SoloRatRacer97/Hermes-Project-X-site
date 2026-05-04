@@ -76,8 +76,8 @@ export const projectXConfig = {
   brand: {
     name: "New Day Construction",
     mark: "ND",
-    poweredBy: "Project X by Hopper-Hermes",
-    footerDescription: "Fast follow-up interface powered by Hopper-Hermes.",
+    poweredBy: "Bellevue remodeling contractor",
+    footerDescription: "Family-owned Bellevue remodeling, additions, ADUs, and custom homes.",
   },
   theme: createProjectXTheme({
     primary: "#27a4ff",
@@ -92,45 +92,47 @@ export const projectXConfig = {
     contact: "/images/service-handshake.png",
     carousel: [
       {
-        "eyebrow": "HVAC + Plumbing",
-        "title": "Emergency jobs, tune-ups, installs, and repair requests.",
-        "description": "Show prospects that your business is responsive, professional, and ready to book the job before they call the next company.",
+        "eyebrow": "Kitchen + Bath",
+        "title": "Kitchens and baths designed around daily life.",
+        "description": "Custom layouts, premium finishes, and careful installation for the rooms your family uses most.",
         "image": "/images/hvac-plumbing.png",
-        "alt": "HVAC and plumbing technicians working in a clean residential service setting"
+        "alt": "Remodeling professionals reviewing a kitchen and bathroom project"
       },
       {
-        "eyebrow": "Cleaning + Pool Service",
-        "title": "Recurring routes, one-time cleans, and seasonal service work.",
-        "description": "A flexible visual system that fits home services, commercial maintenance, and route-based local operators.",
+        "eyebrow": "Additions + ADUs",
+        "title": "More space without leaving the neighborhood you love.",
+        "description": "Room additions, second stories, garage conversions, and ADUs planned from permits to walkthrough.",
         "image": "/images/cleaning-pool.png",
-        "alt": "Cleaning professionals and a pool technician performing service work"
+        "alt": "Home addition and ADU project planning for a Bellevue property"
       },
       {
-        "eyebrow": "Construction + Handyman",
-        "title": "Bigger projects still start with a simple lead capture.",
-        "description": "Position your company as organized and trustworthy from the first page view through the first booked estimate.",
+        "eyebrow": "Custom Homes",
+        "title": "Design-build support from first plan to final walkthrough.",
+        "description": "One team coordinates design, materials, construction, and finish details for a home built around you.",
         "image": "/images/construction-handyman.png",
-        "alt": "Construction and handyman professionals collaborating over project plans"
+        "alt": "Construction team reviewing plans for a custom home project"
       },
       {
-        "eyebrow": "Customer Experience",
-        "title": "A better first impression at the exact moment intent is highest.",
-        "description": "Use the landing page as the front door for Project X, then let Hopper-Hermes handle fast follow-up and qualification.",
+        "eyebrow": "Whole-Home + Siding",
+        "title": "Full-home updates with clean, respectful crews.",
+        "description": "Improve layout, curb appeal, efficiency, and comfort with work designed to fit the original home.",
         "image": "/images/service-handshake.png",
-        "alt": "Friendly service professional shaking hands with a homeowner at the door"
+        "alt": "Friendly remodeling contractor meeting with a homeowner"
       }
     ] satisfies readonly ProjectXCarouselItem[],
   },
   industries: [
     "Kitchen Remodeling",
     "Bathroom Remodeling",
-    "Home Additions",
-    "ADU Construction",
-    "Custom Homes"
+    "Home Remodeling",
+    "Home & Room Additions",
+    "ADU Builders",
+    "Custom Homes",
+    "Siding Replacement"
   ],
   proofPoints: [
-    "Hydrated from newdayconstruction.co",
-    "Locked professional layout",
-    "Mobile-first contact flow",
+    "Family owned",
+    "Licensed & insured",
+    "Free estimates",
   ],
 } as const;

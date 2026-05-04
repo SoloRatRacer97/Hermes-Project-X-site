@@ -52,34 +52,34 @@ const themeStyle: ThemeStyle = {
 
 const whyCards = [
   {
-    title: "Lead capture above the fold",
+    title: "Free, no-pressure estimates",
     description:
-      "Your contact form sits directly in the hero so every visitor has a clear next step without hunting around the page.",
+      "Clear, upfront pricing with no hidden costs before the work begins.",
   },
   {
-    title: "Works across every trade",
+    title: "21+ years of experience",
     description:
-      "The copy stays flexible for HVAC, plumbing, cleaning, construction, handyman, pool service, and more.",
+      "Local Bellevue and Seattle-area remodeling craftsmanship trusted for decades.",
   },
   {
-    title: "Built for Hopper-Hermes",
+    title: "Licensed and insured",
     description:
-      "The page is structured to hand off clean intent, service type, contact details, and urgency to your follow-up stack.",
+      "Confidence and protection from consultation through final walkthrough.",
   },
   {
-    title: "Trust-first positioning",
+    title: "Design-build planning",
     description:
-      "Professional imagery, direct benefits, and no overcomplicated jargon make the offer easy for blue-collar owners to understand.",
+      "One team for layouts, 3D renderings, permits, materials, and construction.",
   },
   {
-    title: "Controlled personalization",
+    title: "Clean, respectful crews",
     description:
-      "Future instances can inherit the same page form while only swapping palettes, professional photo sets, and service choices.",
+      "Your home is treated carefully, with organized updates and job sites.",
   },
   {
-    title: "Ready to deploy",
+    title: "Premium materials",
     description:
-      "This is a focused Next.js home page starter with local images, sticky nav, responsive CSS, and production-friendly structure.",
+      "Kohler, Cambria, Waypoint, James Hardie, and finishes built to last.",
   },
 ];
 
@@ -170,10 +170,10 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
   return (
     <form className={className} id={id} onSubmit={handleSubmit}>
       <div className="lead-card-header">
-        <p className="eyebrow">Start here</p>
-        <h2>Get a fast follow-up flow demo</h2>
+        <p className="eyebrow">Free estimate</p>
+        <h2>Request Bellevue remodeling pricing</h2>
         <p>
-          Capture the basics now. Route the conversation into your real Hopper-Hermes workflow later.
+          Tell us what you want to build or remodel. New Day will follow up about scope, timing, and next steps.
         </p>
       </div>
 
@@ -210,7 +210,7 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
             type="email"
             name="email"
             autoComplete="email"
-            placeholder="you@company.com"
+            placeholder="you@email.com"
             value={formState.email}
             onChange={(event) => updateField("email", event.target.value)}
           />
@@ -238,7 +238,7 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
         <textarea
           name="message"
           rows={4}
-          placeholder="Tell us what kind of business, offer, or lead flow you want to showcase."
+          placeholder="Tell us about the room, addition, ADU, custom home, or siding project."
           value={formState.message}
           onChange={(event) => updateField("message", event.target.value)}
         />
@@ -260,12 +260,12 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
       </label>
 
       <button className="submit-button" type="submit" disabled={status === "submitting"}>
-        {status === "submitting" ? "Sending request..." : "Send demo request"}
+        {status === "submitting" ? "Sending request..." : "Request free estimate"}
       </button>
 
       {status === "success" ? (
         <p className="form-success" role="status">
-          Thanks. Your request was captured and routed into the Project X follow-up flow.
+          Thanks. Your request was sent to New Day Construction.
         </p>
       ) : null}
 
@@ -305,13 +305,13 @@ export default function Home() {
 
           <nav className="nav-links" aria-label="Page sections">
             <a className="mobile-hidden-nav" href="#about">About</a>
-            <a href="#why">Why Choose This</a>
-            <a href="#gallery">Gallery</a>
+            <a href="#why">Why New Day</a>
+            <a href="#gallery">Services</a>
             <a className="mobile-hidden-nav" href="#contact">Contact</a>
           </nav>
 
           <a className="nav-cta" href="#lead-form">
-            Get Demo
+            Get Estimate
           </a>
         </header>
       </div>
@@ -322,18 +322,18 @@ export default function Home() {
 
         <div className="hero-inner section-shell">
           <div className="hero-copy">
-            <p className="eyebrow">Industry-agnostic service business landing page</p>
-            <h1>Win the job before your competitors even reply.</h1>
+            <p className="eyebrow">Bellevue remodeling, additions, ADUs, and custom homes</p>
+            <h1>Build a home that fits the way you live.</h1>
             <p className="hero-subtitle">
-              A polished {brand.name} home page built for showcasing Hopper-Hermes to blue-collar businesses — from HVAC and plumbing to cleaning, construction, pool service, handyman work, and anything in between.
+              Kitchen, bath, whole-home remodeling, additions, ADUs, custom homes, and siding from a family-owned Bellevue contractor with 21+ years of experience.
             </p>
 
             <div className="hero-actions">
               <a className="primary-button" href="#lead-form">
-                Request a demo
+                Get free estimate
               </a>
               <a className="secondary-button" href="#why">
-                See how it works
+                Why New Day
               </a>
             </div>
 
@@ -358,15 +358,15 @@ export default function Home() {
 
       <section className="section-shell split-section" id="about">
         <div>
-          <p className="eyebrow">About us</p>
-          <h2>One clean interface for showing local service businesses what fast follow-up feels like.</h2>
+          <p className="eyebrow">About New Day</p>
+          <h2>Family-owned remodeling craftsmanship for Bellevue and the greater Seattle area.</h2>
         </div>
         <div className="rich-copy">
           <p>
-            {brand.name} is a flexible landing page concept for service companies that rely on calls, forms, texts, estimate requests, and speed-to-lead. It is intentionally industry agnostic, so you can use the same foundation for plumbers, HVAC companies, cleaners, pool routes, remodelers, roofers, landscapers, electricians, and more.
+            {brand.name} has spent 21+ years helping homeowners transform kitchens, bathrooms, additions, ADUs, custom homes, and full-home renovations.
           </p>
           <p>
-            The page gives you a modern front end for demos while Hopper-Hermes can sit behind the scenes to qualify leads, respond quickly, collect missing details, and hand the conversation to the right person when the customer is ready.
+            From consultation to final walkthrough, the team focuses on clear communication, quality materials, respectful crews, and spaces designed around your lifestyle.
           </p>
         </div>
       </section>
@@ -374,10 +374,10 @@ export default function Home() {
       <section className="why-section" id="why">
         <div className="section-shell">
           <div className="section-heading centered">
-            <p className="eyebrow">Why choose this</p>
-            <h2>A practical home page for companies that make money by answering first.</h2>
+            <p className="eyebrow">Why choose us</p>
+            <h2>Clear planning, premium materials, and craftsmanship built to last.</h2>
             <p>
-              Built for clear messaging, fast conversion, and easy adaptation across multiple blue-collar verticals.
+              Local design-build support for Bellevue homeowners who want the remodel handled cleanly from start to finish.
             </p>
           </div>
 
@@ -395,10 +395,10 @@ export default function Home() {
 
       <section className="section-shell carousel-section" id="gallery">
         <div className="section-heading">
-          <p className="eyebrow">Blue-collar image carousel</p>
-          <h2>Built to feel familiar to every trade.</h2>
+          <p className="eyebrow">Services</p>
+          <h2>Remodeling work tailored to how your family lives.</h2>
           <p>
-            Keep the same polished visual system across instances, then swap in client-specific crews or approved professional trade photography when available.
+            Explore the core services New Day highlights for Bellevue homeowners without stretching the layout.
           </p>
         </div>
 
@@ -441,10 +441,10 @@ export default function Home() {
       <section className="contact-band" id="contact">
         <div className="section-shell contact-grid">
           <div>
-            <p className="eyebrow">Contact</p>
-            <h2>Ready to plug this into your {brand.name} demo flow?</h2>
+            <p className="eyebrow">Free estimate</p>
+            <h2>Ready to talk through your {brand.name} project?</h2>
             <p>
-              Use the form to capture the demo request, then connect it to your CRM, webhook, or Hopper-Hermes intake flow when you are ready.
+              Use the form to share the basics. The team can review scope, timing, and the right next step.
             </p>
           </div>
 
