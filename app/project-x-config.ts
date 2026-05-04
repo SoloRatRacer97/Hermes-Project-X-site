@@ -66,7 +66,7 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 
 export const projectXConfig = {
   hydratedFrom: "https://www.newdayconstruction.co/",
-  hydratedAt: "2026-05-04T15:42:11.463Z",
+  hydratedAt: "2026-05-04T15:55:54.445Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -125,8 +125,8 @@ export const projectXConfig = {
     "Kitchen Remodeling",
     "Bathroom Remodeling",
     "Home Additions",
-    "ADU Construction",
-    "Custom Homes",
+    "ADUs (Accessory Dwelling Units)",
+    "Custom Home Building",
     "Full Home Remodeling"
   ],
   proofPoints: [
