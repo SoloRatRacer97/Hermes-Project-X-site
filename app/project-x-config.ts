@@ -65,8 +65,8 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 }
 
 export const projectXConfig = {
-  hydratedFrom: "https://newdayconstruction.co/",
-  hydratedAt: "2026-05-05T14:58:57.596Z",
+  hydratedFrom: "https://www.allegriahotelny.com/",
+  hydratedAt: "2026-05-05T15:40:49.666Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -74,8 +74,8 @@ export const projectXConfig = {
     "Use professional local-service imagery for every instance; do not ship text-only or layout-rebuilt variants.",
   ],
   brand: {
-    name: "New Day Construction",
-    mark: "ND",
+    name: "The Allegria Hotel",
+    mark: "AH",
     poweredBy: "Project X by Hopper-Hermes",
     footerDescription: "Fast follow-up interface powered by Hopper-Hermes.",
   },
@@ -85,7 +85,7 @@ export const projectXConfig = {
   }),
   integration: {
     formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/",
-    formSource: "new-day-construction",
+    formSource: "the-allegria-hotel",
   },
   images: {
     hero: "/images/hero-blue-collar-team.png",
@@ -122,15 +122,13 @@ export const projectXConfig = {
     ] satisfies readonly ProjectXCarouselItem[],
   },
   industries: [
-    "Kitchen Remodeling",
-    "Bathroom Remodeling",
-    "Home Additions",
-    "ADU Construction",
-    "Custom Homes",
-    "Full Home Remodeling"
+    "Corporate Meetings",
+    "Hotel Accommodations",
+    "Weddings & Events",
+    "Dining & Restaurant"
   ],
   proofPoints: [
-    "Hydrated from newdayconstruction.co",
+    "Hydrated from allegriahotelny.com",
     "Locked professional layout",
     "Mobile-first contact flow",
   ],
