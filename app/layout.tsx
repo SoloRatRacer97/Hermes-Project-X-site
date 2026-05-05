@@ -3,9 +3,9 @@ import { projectXConfig } from "./project-x-config";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: `${projectXConfig.brand.name} | Bellevue Remodeling Contractor`,
+  title: `${projectXConfig.brand.name} | Blue-Collar Business Growth Landing Page`,
   description:
-    "Kitchen, bath, whole-home remodeling, additions, ADUs, custom homes, and siding in Bellevue.",
+    "An industry-agnostic landing page for service businesses showcasing Hopper-Hermes speed-to-lead automation.",
 };
 
 export default function RootLayout({
