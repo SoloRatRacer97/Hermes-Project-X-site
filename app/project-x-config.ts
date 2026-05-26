@@ -65,8 +65,8 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 }
 
 export const projectXConfig = {
-  hydratedFrom: "https://www.allegriahotelny.com/",
-  hydratedAt: "2026-05-05T16:15:55.481Z",
+  hydratedFrom: "https://dandtlawns.com/",
+  hydratedAt: "2026-05-26T19:48:09.146Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -74,8 +74,8 @@ export const projectXConfig = {
     "Use professional local-service imagery for every instance; do not ship text-only or layout-rebuilt variants.",
   ],
   brand: {
-    name: "The Allegria Hotel",
-    mark: "AH",
+    name: "D&T Property Maintenance",
+    mark: "DT",
     poweredBy: "Project X by Hopper-Hermes",
     footerDescription: "Fast follow-up interface powered by Hopper-Hermes.",
   },
@@ -84,8 +84,8 @@ export const projectXConfig = {
     secondary: "#0b2542",
   }),
   integration: {
-    formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/uvv8ksd/",
-    formSource: "the-allegria-hotel",
+    formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/",
+    formSource: "dandt-lawns",
   },
   images: {
     hero: "/images/hero-blue-collar-team.png",
@@ -122,13 +122,12 @@ export const projectXConfig = {
     ] satisfies readonly ProjectXCarouselItem[],
   },
   industries: [
-    "Corporate Meetings",
-    "Hotel Accommodations",
-    "Weddings & Events",
-    "Dining & Restaurant"
+    "Lawn Care",
+    "Landscape Installation",
+    "Snow Removal"
   ],
   proofPoints: [
-    "Hydrated from allegriahotelny.com",
+    "Hydrated from dandtlawns.com",
     "Locked professional layout",
     "Mobile-first contact flow",
   ],
