@@ -65,8 +65,8 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 }
 
 export const projectXConfig = {
-  hydratedFrom: "https://dandtlawns.com/",
-  hydratedAt: "2026-05-26T19:48:09.146Z",
+  hydratedFrom: "https://www.weedman.com/en-us/boise",
+  hydratedAt: "2026-05-27T23:28:40.113Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -74,8 +74,8 @@ export const projectXConfig = {
     "Use professional local-service imagery for every instance; do not ship text-only or layout-rebuilt variants.",
   ],
   brand: {
-    name: "D&T Property Maintenance",
-    mark: "DT",
+    name: "Weed Man",
+    mark: "WM",
     poweredBy: "Project X by Hopper-Hermes",
     footerDescription: "Fast follow-up interface powered by Hopper-Hermes.",
   },
@@ -85,7 +85,7 @@ export const projectXConfig = {
   }),
   integration: {
     formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/",
-    formSource: "dandt-lawns",
+    formSource: "weed-man-boise",
   },
   images: {
     hero: "/images/hero-blue-collar-team.png",
@@ -122,12 +122,13 @@ export const projectXConfig = {
     ] satisfies readonly ProjectXCarouselItem[],
   },
   industries: [
-    "Lawn Care",
-    "Landscape Installation",
-    "Snow Removal"
+    "Weed Control",
+    "Aeration",
+    "Lawn Fertilization",
+    "Pest Solutions"
   ],
   proofPoints: [
-    "Hydrated from dandtlawns.com",
+    "Hydrated from weedman.com",
     "Locked professional layout",
     "Mobile-first contact flow",
   ],
