@@ -66,7 +66,7 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 
 export const projectXConfig = {
   hydratedFrom: "https://www.weedman.com/en-us/boise",
-  hydratedAt: "2026-05-27T23:28:40.113Z",
+  hydratedAt: "2026-05-27T23:45:37.525Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -84,7 +84,7 @@ export const projectXConfig = {
     secondary: "#0b2542",
   }),
   integration: {
-    formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/",
+    formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/4bos6ew/",
     formSource: "weed-man-boise",
   },
   images: {
