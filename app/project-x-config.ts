@@ -66,7 +66,7 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 
 export const projectXConfig = {
   hydratedFrom: "https://myskoop.com/",
-  hydratedAt: "2026-06-09T20:59:35.457Z",
+  hydratedAt: "2026-06-09T21:07:54.433Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -122,8 +122,8 @@ export const projectXConfig = {
     ] satisfies readonly ProjectXCarouselItem[],
   },
   industries: [
-    "Lead Generation",
-    "Client Reactivation",
+    "AI Lead Generation",
+    "Past Client Reactivation",
     "Lead Nurturing"
   ],
   proofPoints: [
