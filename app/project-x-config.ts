@@ -65,8 +65,8 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 }
 
 export const projectXConfig = {
-  hydratedFrom: "https://www.weedman.com/en-us/boise",
-  hydratedAt: "2026-05-27T23:45:37.525Z",
+  hydratedFrom: "https://myskoop.com/",
+  hydratedAt: "2026-06-09T20:59:35.457Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -74,8 +74,8 @@ export const projectXConfig = {
     "Use professional local-service imagery for every instance; do not ship text-only or layout-rebuilt variants.",
   ],
   brand: {
-    name: "Weed Man",
-    mark: "WM",
+    name: "Skoop",
+    mark: "S",
     poweredBy: "Project X by Hopper-Hermes",
     footerDescription: "Fast follow-up interface powered by Hopper-Hermes.",
   },
@@ -84,8 +84,8 @@ export const projectXConfig = {
     secondary: "#0b2542",
   }),
   integration: {
-    formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/4bos6ew/",
-    formSource: "weed-man-boise",
+    formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/",
+    formSource: "myskoop",
   },
   images: {
     hero: "/images/hero-blue-collar-team.png",
@@ -122,13 +122,12 @@ export const projectXConfig = {
     ] satisfies readonly ProjectXCarouselItem[],
   },
   industries: [
-    "Weed Control",
-    "Aeration",
-    "Lawn Fertilization",
-    "Pest Solutions"
+    "Lead Generation",
+    "Client Reactivation",
+    "Lead Nurturing"
   ],
   proofPoints: [
-    "Hydrated from weedman.com",
+    "Hydrated from myskoop.com",
     "Locked professional layout",
     "Mobile-first contact flow",
   ],
