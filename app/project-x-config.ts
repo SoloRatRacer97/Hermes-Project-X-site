@@ -66,7 +66,7 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 
 export const projectXConfig = {
   hydratedFrom: "https://www.huronautomotivegb.com/",
-  hydratedAt: "2026-06-10T19:01:48.749Z",
+  hydratedAt: "2026-06-10T19:35:05.086Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -84,7 +84,7 @@ export const projectXConfig = {
     secondary: "#0b2542",
   }),
   integration: {
-    formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/",
+    formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/436ykxu/",
     formSource: "huron-automotive",
   },
   images: {
