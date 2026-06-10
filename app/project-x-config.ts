@@ -65,8 +65,8 @@ function createProjectXTheme({ primary, secondary }: { primary: HexColor; second
 }
 
 export const projectXConfig = {
-  hydratedFrom: "https://myskoop.com/",
-  hydratedAt: "2026-06-09T21:07:54.433Z",
+  hydratedFrom: "https://www.huronautomotivegb.com/",
+  hydratedAt: "2026-06-10T19:01:48.749Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -74,8 +74,8 @@ export const projectXConfig = {
     "Use professional local-service imagery for every instance; do not ship text-only or layout-rebuilt variants.",
   ],
   brand: {
-    name: "Skoop",
-    mark: "S",
+    name: "Huron Automotive Service Center",
+    mark: "HA",
     poweredBy: "Project X by Hopper-Hermes",
     footerDescription: "Fast follow-up interface powered by Hopper-Hermes.",
   },
@@ -85,7 +85,7 @@ export const projectXConfig = {
   }),
   integration: {
     formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/uj1eyis/",
-    formSource: "myskoop",
+    formSource: "huron-automotive",
   },
   images: {
     hero: "/images/hero-blue-collar-team.png",
@@ -122,12 +122,14 @@ export const projectXConfig = {
     ] satisfies readonly ProjectXCarouselItem[],
   },
   industries: [
-    "AI Lead Generation",
-    "Past Client Reactivation",
-    "Lead Nurturing"
+    "Oil Change & Maintenance",
+    "Brake Repair & Service",
+    "Engine Diagnostics & Repair",
+    "Tire Installation & Alignment",
+    "Fleet Vehicle Service"
   ],
   proofPoints: [
-    "Hydrated from myskoop.com",
+    "Hydrated from huronautomotivegb.com",
     "Locked professional layout",
     "Mobile-first contact flow",
   ],
