@@ -3,9 +3,9 @@ import { projectXConfig } from "./project-x-config";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: `${projectXConfig.brand.name} | Blue-Collar Business Growth Landing Page`,
+  title: `${projectXConfig.brand.name} | Auto Repair & Tire Service in Green Bay, WI`,
   description:
-    "An industry-agnostic landing page for service businesses showcasing Hopper-Hermes speed-to-lead automation.",
+    "Huron Automotive is the local choice for auto repair and tires in Green Bay, WI, delivering honest and professional service you can trust.",
 };
 
 export default function RootLayout({

@@ -42,7 +42,7 @@ const themeStyle: ThemeStyle = {
   "--blue-600": theme.primary,
   "--blue-500": theme.primary,
   "--cyan": theme.tertiary,
-  "--orange": theme.tertiary,
+  "--orange": theme.warmAccent,
   "--hero-image": `url("${images.hero}")`,
   "--hero-overlay": theme.heroOverlay,
   "--hero-overlay-mobile": theme.heroOverlayMobile,
@@ -52,34 +52,34 @@ const themeStyle: ThemeStyle = {
 
 const whyCards = [
   {
-    title: "Lead capture above the fold",
+    title: "Two Green Bay locations",
     description:
-      "Your contact form sits directly in the hero so every visitor has a clear next step without hunting around the page.",
+      "Visit Huron Automotive on S Huron Road or Velp Avenue for convenient auto maintenance, tire service, and repairs.",
   },
   {
-    title: "Works across every trade",
+    title: "ASE-certified mechanics",
     description:
-      "The copy stays flexible for HVAC, plumbing, cleaning, construction, handyman, pool service, and more.",
+      "The team handles everyday maintenance and complex diagnostics with the training modern vehicles require.",
   },
   {
-    title: "Built for Hopper-Hermes",
+    title: "No surprise work",
     description:
-      "The page is structured to hand off clean intent, service type, contact details, and urgency to your follow-up stack.",
+      "Huron walks you through what your car needs and does not move forward with hidden charges or unapproved repairs.",
   },
   {
-    title: "Trust-first positioning",
+    title: "Tire and wheel center",
     description:
-      "Professional imagery, direct benefits, and no overcomplicated jargon make the offer easy for blue-collar owners to understand.",
+      "Shop name-brand tires and get installation, repair, rotation, balancing, and wheel alignment support in one place.",
   },
   {
-    title: "Controlled personalization",
+    title: "Comfortable amenities",
     description:
-      "Future instances can inherit the same page form while only swapping palettes, professional photo sets, and service choices.",
+      "24-hour drop-off, free loaner vehicles, local shuttle service, Wi-Fi, coffee, and bottled water help keep your day moving.",
   },
   {
-    title: "Ready to deploy",
+    title: "Fleet-ready support",
     description:
-      "This is a focused Next.js home page starter with local images, sticky nav, responsive CSS, and production-friendly structure.",
+      "Business vehicles get maintenance and repair support focused on reducing downtime and keeping work on schedule.",
   },
 ];
 
@@ -171,9 +171,9 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
     <form className={className} id={id} onSubmit={handleSubmit}>
       <div className="lead-card-header">
         <p className="eyebrow">Start here</p>
-        <h2>Get a fast follow-up flow demo</h2>
+        <h2>Request service</h2>
         <p>
-          Capture the basics now. Route the conversation into your real Hopper-Hermes workflow later.
+          Tell us what is going on with your vehicle and the Huron Automotive team will follow up.
         </p>
       </div>
 
@@ -210,7 +210,7 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
             type="email"
             name="email"
             autoComplete="email"
-            placeholder="you@company.com"
+            placeholder="you@example.com"
             value={formState.email}
             onChange={(event) => updateField("email", event.target.value)}
           />
@@ -238,7 +238,7 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
         <textarea
           name="message"
           rows={4}
-          placeholder="Tell us what kind of business, offer, or lead flow you want to showcase."
+          placeholder="Tell us what your vehicle needs, any warning lights, or when you would like to come in."
           value={formState.message}
           onChange={(event) => updateField("message", event.target.value)}
         />
@@ -260,12 +260,12 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
       </label>
 
       <button className="submit-button" type="submit" disabled={status === "submitting"}>
-        {status === "submitting" ? "Sending request..." : "Send demo request"}
+        {status === "submitting" ? "Sending request..." : "Send service request"}
       </button>
 
       {status === "success" ? (
         <p className="form-success" role="status">
-          Thanks. Your request was captured and routed into the Project X follow-up flow.
+          Thanks. Your request was sent to Huron Automotive and our team will follow up.
         </p>
       ) : null}
 
@@ -305,13 +305,13 @@ export default function Home() {
 
           <nav className="nav-links" aria-label="Page sections">
             <a className="mobile-hidden-nav" href="#about">About</a>
-            <a href="#why">Why Choose This</a>
-            <a href="#gallery">Gallery</a>
+            <a href="#why">Why Huron</a>
+            <a href="#gallery">Services</a>
             <a className="mobile-hidden-nav" href="#contact">Contact</a>
           </nav>
 
           <a className="nav-cta" href="#lead-form">
-            Get Demo
+            Request Service
           </a>
         </header>
       </div>
@@ -322,18 +322,18 @@ export default function Home() {
 
         <div className="hero-inner section-shell">
           <div className="hero-copy">
-            <p className="eyebrow">Industry-agnostic service business landing page</p>
-            <h1>Win the job before your competitors even reply.</h1>
+            <p className="eyebrow">Green Bay auto repair & tire services</p>
+            <h1>Auto maintenance and tire service you can trust.</h1>
             <p className="hero-subtitle">
-              A polished {brand.name} home page built for showcasing Hopper-Hermes to blue-collar businesses — from HVAC and plumbing to cleaning, construction, pool service, handyman work, and anything in between.
+              Huron Automotive helps Green Bay drivers with honest maintenance, diagnostics, repairs, tires, and fleet service from two convenient locations.
             </p>
 
             <div className="hero-actions">
               <a className="primary-button" href="#lead-form">
-                Request a demo
+                Request service
               </a>
               <a className="secondary-button" href="#why">
-                See how it works
+                Why choose Huron
               </a>
             </div>
 
@@ -348,7 +348,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="logo-strip" aria-label="Industries supported">
+      <section className="logo-strip" aria-label="Services offered">
         <div className="section-shell industry-strip">
           {industries.map((industry) => (
             <span key={industry}>{industry}</span>
@@ -359,14 +359,14 @@ export default function Home() {
       <section className="section-shell split-section" id="about">
         <div>
           <p className="eyebrow">About us</p>
-          <h2>One clean interface for showing local service businesses what fast follow-up feels like.</h2>
+          <h2>Your trusted auto service experts in Green Bay since 2010.</h2>
         </div>
         <div className="rich-copy">
           <p>
-            {brand.name} is a flexible landing page concept for service companies that rely on calls, forms, texts, estimate requests, and speed-to-lead. It is intentionally industry agnostic, so you can use the same foundation for plumbers, HVAC companies, cleaners, pool routes, remodelers, roofers, landscapers, electricians, and more.
+            Founded by brothers Dell Jr. and DJ Lubenske, {brand.name} was built as a neighborhood auto repair and tire center focused on dependable service, clear communication, and long-term trust.
           </p>
           <p>
-            The page gives you a modern front end for demos while Hopper-Hermes can sit behind the scenes to qualify leads, respond quickly, collect missing details, and hand the conversation to the right person when the customer is ready.
+            From routine oil changes to check engine diagnostics, brake repairs, tire installation, and fleet maintenance, Huron gives Green Bay drivers a reliable alternative to the dealership without extended waits or surprise charges.
           </p>
         </div>
       </section>
@@ -374,10 +374,10 @@ export default function Home() {
       <section className="why-section" id="why">
         <div className="section-shell">
           <div className="section-heading centered">
-            <p className="eyebrow">Why choose this</p>
-            <h2>A practical home page for companies that make money by answering first.</h2>
+            <p className="eyebrow">Why choose Huron</p>
+            <h2>Straightforward service from a local team that keeps your day moving.</h2>
             <p>
-              Built for clear messaging, fast conversion, and easy adaptation across multiple blue-collar verticals.
+              Huron Automotive combines ASE-certified expertise, two Green Bay locations, transparent approvals, and practical amenities that make vehicle service easier.
             </p>
           </div>
 
@@ -395,10 +395,10 @@ export default function Home() {
 
       <section className="section-shell carousel-section" id="gallery">
         <div className="section-heading">
-          <p className="eyebrow">Blue-collar image carousel</p>
-          <h2>Built to feel familiar to every trade.</h2>
+          <p className="eyebrow">Featured services</p>
+          <h2>Maintenance, repairs, tires, and fleet support under one roof.</h2>
           <p>
-            Keep the same polished visual system across instances, then swap in client-specific crews or approved professional trade photography when available.
+            Whether your car needs a simple oil change or help with a warning light, Huron Automotive can help you understand the next step and get service scheduled.
           </p>
         </div>
 
@@ -442,9 +442,9 @@ export default function Home() {
         <div className="section-shell contact-grid">
           <div>
             <p className="eyebrow">Contact</p>
-            <h2>Ready to plug this into your {brand.name} demo flow?</h2>
+            <h2>Need help with your vehicle?</h2>
             <p>
-              Use the form to capture the demo request, then connect it to your CRM, webhook, or Hopper-Hermes intake flow when you are ready.
+              Send a service request and the Huron Automotive team will follow up. You can also visit either Green Bay location on S Huron Road or Velp Avenue.
             </p>
           </div>
 
@@ -461,7 +461,8 @@ export default function Home() {
           <div className="footer-links">
             <a href="#top">Top</a>
             <a href="#about">About</a>
-            <a href="#why">Why</a>
+            <a href="#why">Why Huron</a>
+            <a href="#gallery">Services</a>
             <a href="#contact">Contact</a>
           </div>
         </div>

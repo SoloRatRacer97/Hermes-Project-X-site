@@ -42,25 +42,36 @@ function alpha(hex: HexColor, opacity: number) {
   return `rgba(${r}, ${g}, ${b}, ${opacity})`;
 }
 
-function createProjectXTheme({ primary, secondary }: { primary: HexColor; secondary: HexColor }) {
+function createProjectXTheme({
+  primary,
+  secondary,
+  warmAccent,
+}: {
+  primary: HexColor;
+  secondary: HexColor;
+  warmAccent?: HexColor;
+}) {
   const tertiary = mixHexColors(primary, FIXED_WHITE, 0.24);
+  const accent = warmAccent || tertiary;
 
   return {
     primary,
     secondary,
     tertiary,
+    warmAccent: accent,
     white: FIXED_WHITE,
     black: FIXED_BLACK,
-    bg: mixHexColors(primary, FIXED_WHITE, 0.94),
-    bgSoft: mixHexColors(primary, FIXED_WHITE, 0.86),
+    bg: "#faf8f2",
+    bgSoft: "#fff5cb",
     muted: alpha(FIXED_BLACK, 0.66),
     muted2: alpha(FIXED_BLACK, 0.5),
     line: alpha(FIXED_BLACK, 0.12),
     heroOverlay:
-      `radial-gradient(circle at 78% 34%, ${alpha(primary, 0.16)}, transparent 25%), ` +
-      `linear-gradient(90deg, ${alpha(FIXED_BLACK, 0.92)} 0%, ${alpha(secondary, 0.82)} 38%, ${alpha(secondary, 0.34)} 67%, ${alpha(FIXED_BLACK, 0.32)} 100%)`,
-    heroOverlayMobile: `linear-gradient(90deg, ${alpha(FIXED_BLACK, 0.92)}, ${alpha(secondary, 0.72)})`,
-    contactOverlay: `linear-gradient(135deg, ${alpha(secondary, 0.88)}, ${alpha(secondary, 0.78)})`,
+      `radial-gradient(circle at 74% 26%, ${alpha(accent, 0.34)}, transparent 22%), ` +
+      `radial-gradient(circle at 18% 78%, rgba(236, 34, 39, 0.22), transparent 26%), ` +
+      `linear-gradient(90deg, ${alpha(FIXED_BLACK, 0.9)} 0%, ${alpha(secondary, 0.72)} 42%, ${alpha(secondary, 0.22)} 72%, ${alpha(FIXED_BLACK, 0.18)} 100%)`,
+    heroOverlayMobile: `linear-gradient(90deg, ${alpha(FIXED_BLACK, 0.9)}, ${alpha(secondary, 0.74)})`,
+    contactOverlay: `linear-gradient(135deg, ${alpha(FIXED_BLACK, 0.86)}, rgba(236, 34, 39, 0.7))`,
   };
 }
 
@@ -70,54 +81,55 @@ export const projectXConfig = {
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
-    "The blue Project X visual system is fixed because the image set and overlays are designed around it.",
+    "Use the client brand palette and professional service imagery without changing the landing-page structure.",
     "Use professional local-service imagery for every instance; do not ship text-only or layout-rebuilt variants.",
   ],
   brand: {
     name: "Huron Automotive Service Center",
     mark: "HA",
-    poweredBy: "Project X by Hopper-Hermes",
-    footerDescription: "Fast follow-up interface powered by Hopper-Hermes.",
+    poweredBy: "Green Bay, WI",
+    footerDescription: "Auto maintenance, repair, and tire service for Green Bay drivers since 2010.",
   },
   theme: createProjectXTheme({
-    primary: "#27a4ff",
-    secondary: "#0b2542",
+    primary: "#283C92",
+    secondary: "#2D3940",
+    warmAccent: "#FACE61",
   }),
   integration: {
     formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/436ykxu/",
     formSource: "huron-automotive",
   },
   images: {
-    hero: "/images/hero-blue-collar-team.png",
-    contact: "/images/service-handshake.png",
+    hero: "https://cdn-ilcjgcd.nitrocdn.com/SrKwTohklcgfLSfKwkxrFBZLcDTlTBNe/assets/images/optimized/rev-83c8686/www.huronautomotivegb.com/wp-content/uploads/2025/10/Huron-Automotive-Storefront.jpg",
+    contact: "https://cdn-ilcjgcd.nitrocdn.com/SrKwTohklcgfLSfKwkxrFBZLcDTlTBNe/assets/images/optimized/rev-83c8686/www.huronautomotivegb.com/wp-content/uploads/2026/01/%E2%80%A2260430-2233-scaled.jpg",
     carousel: [
       {
-        "eyebrow": "HVAC + Plumbing",
-        "title": "Emergency jobs, tune-ups, installs, and repair requests.",
-        "description": "Show prospects that your business is responsive, professional, and ready to book the job before they call the next company.",
-        "image": "/images/hvac-plumbing.png",
-        "alt": "HVAC and plumbing technicians working in a clean residential service setting"
+        "eyebrow": "Auto Maintenance",
+        "title": "Oil changes, scheduled maintenance, and everyday vehicle care.",
+        "description": "Keep your car running smoothly with a local Green Bay team that explains the work clearly before anything moves forward.",
+        "image": "https://cdn-ilcjgcd.nitrocdn.com/SrKwTohklcgfLSfKwkxrFBZLcDTlTBNe/assets/images/optimized/rev-83c8686/www.huronautomotivegb.com/wp-content/uploads/2026/05/%E2%80%A2260430-2368-1-scaled.jpg",
+        "alt": "Huron Automotive technician working on a vehicle in the shop"
       },
       {
-        "eyebrow": "Cleaning + Pool Service",
-        "title": "Recurring routes, one-time cleans, and seasonal service work.",
-        "description": "A flexible visual system that fits home services, commercial maintenance, and route-based local operators.",
-        "image": "/images/cleaning-pool.png",
-        "alt": "Cleaning professionals and a pool technician performing service work"
+        "eyebrow": "Tires + Wheels",
+        "title": "Tire installation, repair, rotation, balancing, and alignment.",
+        "description": "Huron Automotive sells name-brand tires and handles the tire services Green Bay drivers need through every season.",
+        "image": "https://cdn-ilcjgcd.nitrocdn.com/SrKwTohklcgfLSfKwkxrFBZLcDTlTBNe/assets/images/optimized/rev-83c8686/www.huronautomotivegb.com/wp-content/uploads/2025/08/ban-range.png",
+        "alt": "Vehicle tires and wheels representing Huron Automotive tire services"
       },
       {
-        "eyebrow": "Construction + Handyman",
-        "title": "Bigger projects still start with a simple lead capture.",
-        "description": "Position your company as organized and trustworthy from the first page view through the first booked estimate.",
-        "image": "/images/construction-handyman.png",
-        "alt": "Construction and handyman professionals collaborating over project plans"
+        "eyebrow": "Diagnostics + Repair",
+        "title": "Check engine lights, brake repairs, cooling systems, and more.",
+        "description": "ASE-certified mechanics help pinpoint what is going on and walk you through the service your vehicle needs.",
+        "image": "https://cdn-ilcjgcd.nitrocdn.com/SrKwTohklcgfLSfKwkxrFBZLcDTlTBNe/assets/images/optimized/rev-83c8686/www.huronautomotivegb.com/wp-content/uploads/2026/05/%E2%80%A2260430-2275-scaled.jpg",
+        "alt": "Huron Automotive shop team diagnosing and repairing a vehicle"
       },
       {
-        "eyebrow": "Customer Experience",
-        "title": "A better first impression at the exact moment intent is highest.",
-        "description": "Use the landing page as the front door for Project X, then let Hopper-Hermes handle fast follow-up and qualification.",
-        "image": "/images/service-handshake.png",
-        "alt": "Friendly service professional shaking hands with a homeowner at the door"
+        "eyebrow": "Fleet Support",
+        "title": "Maintenance and repair support for business vehicles.",
+        "description": "Fleet service helps Green Bay businesses reduce downtime and keep trucks, vans, and daily drivers on the road.",
+        "image": "https://cdn-ilcjgcd.nitrocdn.com/SrKwTohklcgfLSfKwkxrFBZLcDTlTBNe/assets/images/optimized/rev-83c8686/www.huronautomotivegb.com/wp-content/uploads/2025/10/Huron-Automotive-Storefront.jpg",
+        "alt": "Huron Automotive storefront in Green Bay"
       }
     ] satisfies readonly ProjectXCarouselItem[],
   },
@@ -129,8 +141,8 @@ export const projectXConfig = {
     "Fleet Vehicle Service"
   ],
   proofPoints: [
-    "Hydrated from huronautomotivegb.com",
-    "Locked professional layout",
-    "Mobile-first contact flow",
+    "Two Green Bay locations",
+    "ASE-certified mechanics",
+    "No surprise work without approval",
   ],
 } as const;
