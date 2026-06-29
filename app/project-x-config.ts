@@ -85,7 +85,7 @@ export const projectXConfig = {
     "Use professional local-service imagery for every instance; do not ship text-only or layout-rebuilt variants.",
   ],
   brand: {
-    name: "Huron Automotive Service Center",
+    name: "Huron Automotive",
     mark: "HA",
     poweredBy: "Green Bay, WI",
     footerDescription: "Auto maintenance, repair, and tire service for Green Bay drivers since 2010.",

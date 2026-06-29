@@ -22,8 +22,8 @@ type ThemeStyle = CSSProperties & Record<`--${string}`, string>;
 const { brand, images, industries, integration, proofPoints, theme } = projectXConfig;
 const serviceOptions = ["", ...industries, "Other"];
 
-const phoneDisplay = "(920) 406-2860";
-const phoneHref = "tel:+19204062860";
+const phoneDisplay = "(509) 204-3409";
+const phoneHref = "tel:+15092043409";
 
 const themeStyle: ThemeStyle = {
   "--bg": theme.bg,
