@@ -76,8 +76,8 @@ function createProjectXTheme({
 }
 
 export const projectXConfig = {
-  hydratedFrom: "https://www.huronautomotivegb.com/",
-  hydratedAt: "2026-06-10T19:35:05.086Z",
+  hydratedFrom: "https://example.com/golden-gate-mortgage-advisors",
+  hydratedAt: "2026-07-01T00:00:00.000Z",
   templateContract: [
     "Keep the section order, component structure, and form fields consistent across instances.",
     "Only business labels, service options, image assets, and form routing should change per business.",
@@ -85,64 +85,64 @@ export const projectXConfig = {
     "Use professional local-service imagery for every instance; do not ship text-only or layout-rebuilt variants.",
   ],
   brand: {
-    name: "Huron Automotive",
-    mark: "HA",
-    poweredBy: "Green Bay, WI",
-    footerDescription: "Auto maintenance, repair, and tire service for Green Bay drivers since 2010.",
+    name: "Golden Gate Mortgage Advisors",
+    mark: "GG",
+    poweredBy: "San Francisco, CA",
+    footerDescription: "Mortgage guidance for San Francisco buyers, homeowners, and investors.",
   },
   theme: createProjectXTheme({
-    primary: "#283C92",
-    secondary: "#2D3940",
-    warmAccent: "#FACE61",
+    primary: "#12355B",
+    secondary: "#0E2238",
+    warmAccent: "#C8A45D",
   }),
   integration: {
-    formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/436ykxu/",
-    formSource: "huron-automotive",
+    formWebhookUrl: "server",
+    formSource: "golden-gate-mortgage-advisors",
   },
   images: {
-    hero: "https://cdn-ilcjgcd.nitrocdn.com/SrKwTohklcgfLSfKwkxrFBZLcDTlTBNe/assets/images/optimized/rev-83c8686/www.huronautomotivegb.com/wp-content/uploads/2025/10/Huron-Automotive-Storefront.jpg",
-    contact: "https://cdn-ilcjgcd.nitrocdn.com/SrKwTohklcgfLSfKwkxrFBZLcDTlTBNe/assets/images/optimized/rev-83c8686/www.huronautomotivegb.com/wp-content/uploads/2026/01/%E2%80%A2260430-2233-scaled.jpg",
+    hero: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1800&q=80",
+    contact: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=80",
     carousel: [
       {
-        "eyebrow": "Auto Maintenance",
-        "title": "Oil changes, scheduled maintenance, and everyday vehicle care.",
-        "description": "Keep your car running smoothly with a local Green Bay team that explains the work clearly before anything moves forward.",
-        "image": "https://cdn-ilcjgcd.nitrocdn.com/SrKwTohklcgfLSfKwkxrFBZLcDTlTBNe/assets/images/optimized/rev-83c8686/www.huronautomotivegb.com/wp-content/uploads/2026/05/%E2%80%A2260430-2368-1-scaled.jpg",
-        "alt": "Huron Automotive technician working on a vehicle in the shop"
+        "eyebrow": "Purchase Loans",
+        "title": "Pre-approval support for competitive San Francisco offers.",
+        "description": "Get the next lending step organized before the offer deadline, document request, or agent conversation gets rushed.",
+        "image": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Residential homes representing San Francisco mortgage purchase guidance"
       },
       {
-        "eyebrow": "Tires + Wheels",
-        "title": "Tire installation, repair, rotation, balancing, and alignment.",
-        "description": "Huron Automotive sells name-brand tires and handles the tire services Green Bay drivers need through every season.",
-        "image": "https://cdn-ilcjgcd.nitrocdn.com/SrKwTohklcgfLSfKwkxrFBZLcDTlTBNe/assets/images/optimized/rev-83c8686/www.huronautomotivegb.com/wp-content/uploads/2025/08/ban-range.png",
-        "alt": "Vehicle tires and wheels representing Huron Automotive tire services"
+        "eyebrow": "Refinance Review",
+        "title": "Compare payment, term, and cash-out refinance goals.",
+        "description": "Talk through why you are refinancing and what details the lending team needs before numbers get serious.",
+        "image": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Financial paperwork representing refinance loan guidance"
       },
       {
-        "eyebrow": "Diagnostics + Repair",
-        "title": "Check engine lights, brake repairs, cooling systems, and more.",
-        "description": "ASE-certified mechanics help pinpoint what is going on and walk you through the service your vehicle needs.",
-        "image": "https://cdn-ilcjgcd.nitrocdn.com/SrKwTohklcgfLSfKwkxrFBZLcDTlTBNe/assets/images/optimized/rev-83c8686/www.huronautomotivegb.com/wp-content/uploads/2026/05/%E2%80%A2260430-2275-scaled.jpg",
-        "alt": "Huron Automotive shop team diagnosing and repairing a vehicle"
+        "eyebrow": "Jumbo + Complex Files",
+        "title": "Loan scenario review for Bay Area price points.",
+        "description": "Jumbo, condo, TIC, and complex-income files need careful routing before anyone promises a path forward.",
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
+        "alt": "San Francisco financial district buildings representing jumbo mortgage guidance"
       },
       {
-        "eyebrow": "Fleet Support",
-        "title": "Maintenance and repair support for business vehicles.",
-        "description": "Fleet service helps Green Bay businesses reduce downtime and keep trucks, vans, and daily drivers on the road.",
-        "image": "https://cdn-ilcjgcd.nitrocdn.com/SrKwTohklcgfLSfKwkxrFBZLcDTlTBNe/assets/images/optimized/rev-83c8686/www.huronautomotivegb.com/wp-content/uploads/2025/10/Huron-Automotive-Storefront.jpg",
-        "alt": "Huron Automotive storefront in Green Bay"
+        "eyebrow": "Investor Scenarios",
+        "title": "Rental, second-home, and investment property loan conversations.",
+        "description": "Sort out loan purpose, property type, down payment assumptions, and timing before the file moves deeper.",
+        "image": "https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Mortgage documents and keys representing investment property loan guidance"
       }
     ] satisfies readonly ProjectXCarouselItem[],
   },
   industries: [
-    "Oil Change & Maintenance",
-    "Brake Repair & Service",
-    "Engine Diagnostics & Repair",
-    "Tire Installation & Alignment",
-    "Fleet Vehicle Service"
+    "Home Purchase Loans",
+    "Mortgage Pre-Approval",
+    "Refinance Loans",
+    "Jumbo Loan Guidance",
+    "Investment Property Loans"
   ],
   proofPoints: [
-    "Two Green Bay locations",
-    "ASE-certified mechanics",
-    "No surprise work without approval",
+    "San Francisco mortgage guidance",
+    "Purchase and refinance support",
+    "No rate or approval promises over text",
   ],
 } as const;

@@ -22,8 +22,8 @@ type ThemeStyle = CSSProperties & Record<`--${string}`, string>;
 const { brand, images, industries, integration, proofPoints, theme } = projectXConfig;
 const serviceOptions = ["", ...industries, "Other"];
 
-const phoneDisplay = "(509) 204-3409";
-const phoneHref = "tel:+15092043409";
+const phoneDisplay = "(415) 555-0198";
+const phoneHref = "tel:+14155550198";
 
 const themeStyle: ThemeStyle = {
   "--bg": theme.bg,
@@ -44,57 +44,57 @@ const themeStyle: ThemeStyle = {
 
 const trustCards = [
   {
-    title: "Local shop, practical answers",
+    title: "Local mortgage context",
     description:
-      "Talk with a Green Bay team that explains the next step before any work moves forward.",
+      "Talk through San Francisco purchase, refinance, jumbo, condo, TIC, and investment scenarios with a practical first step.",
   },
   {
-    title: "ASE-certified mechanics",
+    title: "Careful pre-approval routing",
     description:
-      "Routine maintenance, warning lights, brake work, tire service, and fleet support are handled under one roof.",
+      "Offer deadlines, document requests, and closing timelines get routed quickly without promising approval over text.",
   },
   {
-    title: "No surprise work",
+    title: "No rate promises by text",
     description:
-      "Huron reviews what your vehicle needs and waits for approval before starting repairs.",
+      "Rates, payments, and approval depend on borrower profile, property details, market conditions, and lender review.",
   },
 ];
 
 const serviceCards = [
   {
-    title: "Oil Change & Maintenance",
-    description: "Oil changes, scheduled maintenance, filters, inspections, and everyday vehicle care.",
+    title: "Home Purchase Loans",
+    description: "Purchase mortgage guidance for condos, TICs, single-family homes, and multi-unit properties.",
   },
   {
-    title: "Brake Repair & Service",
-    description: "Brake pads, rotors, fluid service, inspections, and repair for safe stopping power.",
+    title: "Mortgage Pre-Approval",
+    description: "A clear path for buyers who need next steps before making an offer or calling an agent.",
   },
   {
-    title: "Engine Diagnostics & Repair",
-    description: "Check engine lights, performance issues, electrical concerns, and troubleshooting.",
+    title: "Refinance Loans",
+    description: "Rate-and-term, payment, term, and cash-out refinance conversations for homeowners.",
   },
   {
-    title: "Tires, Alignment & Wheels",
-    description: "Tire installation, repair, rotation, balancing, and wheel alignment for Wisconsin roads.",
+    title: "Jumbo Loan Guidance",
+    description: "Scenario review for high-balance Bay Area loans, complex income, and reserve questions.",
   },
   {
-    title: "Fleet Vehicle Service",
-    description: "Maintenance and repair support that helps business vehicles reduce downtime.",
+    title: "Investment Property Loans",
+    description: "Loan conversations for rental, second-home, and investor property scenarios.",
   },
 ];
 
 const processSteps = [
   {
     title: "Send the request",
-    description: "Tell us what is going on, which vehicle needs help, and how soon you want service.",
+    description: "Tell us whether this is purchase, refinance, jumbo, pre-approval, or investment-property related.",
   },
   {
     title: "Get a follow-up",
-    description: "The team reviews the details and follows up with a practical next step.",
+    description: "The team reviews the property location, timing, and loan goal before the conversation gets deeper.",
   },
   {
-    title: "Approve the work",
-    description: "You get clear communication before repairs or maintenance move forward.",
+    title: "Prepare the file",
+    description: "If it fits, the next step is document review, a lending conversation, or a pre-approval path.",
   },
 ];
 
@@ -162,13 +162,14 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
 
     try {
       if (integration.formWebhookUrl) {
-        const response = await fetch(integration.formWebhookUrl, {
+        const response = await fetch("/api/lead", {
           method: "POST",
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
         });
 
         if (!response.ok) {
-          throw new Error(`Zapier webhook returned HTTP ${response.status}`);
+          throw new Error(`Lead intake returned HTTP ${response.status}`);
         }
       } else {
         console.info(`${brand.name} landing page lead`, payload);
@@ -185,10 +186,10 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
   return (
     <form className={className} id={id} onSubmit={handleSubmit}>
       <div className="lead-card-header">
-        <p className="eyebrow">Service request</p>
-        <h2>Tell us what your vehicle needs.</h2>
+        <p className="eyebrow">Mortgage request</p>
+        <h2>Tell us what kind of loan help you need.</h2>
         <p>
-          Share the basics and the Huron Automotive team will follow up with the next step.
+          Share the basics and the Golden Gate Mortgage team will follow up with the next step.
         </p>
       </div>
 
@@ -233,7 +234,7 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
       </div>
 
       <label>
-        Service type
+        Loan type
         <select
           required
           name="service"
@@ -242,7 +243,7 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
         >
           {serviceOptions.map((option) => (
             <option key={option || "placeholder"} value={option} disabled={option === ""}>
-              {option || "Choose a service"}
+              {option || "Choose a loan type"}
             </option>
           ))}
         </select>
@@ -253,7 +254,7 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
         <textarea
           name="message"
           rows={4}
-          placeholder="Tell us what your vehicle needs, any warning lights, or when you would like to come in."
+          placeholder="Tell us the property city, timeline, purchase or refinance goal, and anything deadline-related."
           value={formState.message}
           onChange={(event) => updateField("message", event.target.value)}
         />
@@ -275,12 +276,12 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
       </label>
 
       <button className="submit-button" type="submit" disabled={status === "submitting"}>
-        {status === "submitting" ? "Sending request..." : "Request service"}
+        {status === "submitting" ? "Sending request..." : "Request mortgage help"}
       </button>
 
       {status === "success" ? (
         <p className="form-success" role="status">
-          Thanks. Your request was sent to Huron Automotive and our team will follow up.
+          Thanks. Your request was sent to Golden Gate Mortgage Advisors and our team will follow up.
         </p>
       ) : null}
 
@@ -296,9 +297,9 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
 export default function Home() {
   return (
     <main style={themeStyle}>
-      <div className="utility-bar">
-        <div className="section-shell utility-inner">
-          <span>Green Bay auto repair, tire service, and fleet maintenance</span>
+        <div className="utility-bar">
+          <div className="section-shell utility-inner">
+          <span>San Francisco mortgage guidance for purchase, refinance, jumbo, and investor scenarios</span>
           <a href={phoneHref}>{phoneDisplay}</a>
         </div>
       </div>
@@ -313,14 +314,14 @@ export default function Home() {
         </a>
 
         <nav className="nav-links" aria-label="Page sections">
-          <a href="#services">Services</a>
-          <a href="#why">Why Huron</a>
-          <a href="#shop">The shop</a>
+          <a href="#services">Loan Help</a>
+          <a href="#why">Why Golden Gate</a>
+          <a href="#shop">Process</a>
           <a href="#contact">Contact</a>
         </nav>
 
         <a className="nav-cta" href="#lead-form">
-          Request Service
+          Request Help
         </a>
       </header>
 
@@ -330,15 +331,15 @@ export default function Home() {
 
         <div className="section-shell hero-inner">
           <div className="hero-copy">
-            <p className="eyebrow">Local Green Bay auto shop</p>
-            <h1>Keep your car moving without the runaround.</h1>
+            <p className="eyebrow">San Francisco mortgage broker</p>
+            <h1>Mortgage guidance without the runaround.</h1>
             <p className="hero-subtitle">
-              Huron Automotive helps drivers with maintenance, repairs, tires, diagnostics, and fleet support from two Green Bay locations.
+              Golden Gate Mortgage Advisors helps buyers, homeowners, and investors sort through purchase, refinance, jumbo, and pre-approval questions.
             </p>
 
             <div className="hero-actions">
               <a className="primary-button" href="#lead-form">
-                Request service
+                Request mortgage help
               </a>
               <a className="secondary-button" href={phoneHref}>
                 Call {phoneDisplay}
@@ -367,9 +368,9 @@ export default function Home() {
       <section className="section-shell services-section" id="services">
         <div className="section-kicker">What we handle</div>
         <div className="section-heading two-column-heading">
-          <h2>Auto service for daily drivers, work vehicles, and everything between.</h2>
+          <h2>Mortgage support for offers, refinances, jumbo files, and investor plans.</h2>
           <p>
-            From a quick oil change to a warning light you do not want to ignore, Huron keeps the process straightforward.
+            From a first pre-approval to a complex refinance, Golden Gate keeps the first step focused on fit, timing, and what needs review.
           </p>
         </div>
 
@@ -386,10 +387,10 @@ export default function Home() {
       <section className="why-band" id="why">
         <div className="section-shell why-grid">
           <div>
-            <p className="eyebrow">Why Huron</p>
-            <h2>Straight answers from a shop built around local drivers.</h2>
+            <p className="eyebrow">Why Golden Gate</p>
+            <h2>Straight answers before mortgage details get complicated.</h2>
             <p>
-              Founded by brothers Dell Jr. and DJ Lubenske, Huron Automotive was built as a neighborhood auto repair and tire center focused on dependable service, clear communication, and long-term trust.
+              San Francisco mortgage scenarios can move quickly. The first conversation should sort out loan purpose, property location, timing, and whether a lender review is the right next step.
             </p>
           </div>
 
@@ -408,7 +409,7 @@ export default function Home() {
         <div className="shop-image-card">
           <Image
             src={images.contact}
-            alt="Huron Automotive technician in the shop"
+            alt="Mortgage paperwork and calculator on a desk"
             fill
             sizes="(max-width: 960px) 100vw, 48vw"
             className="shop-image"
@@ -416,13 +417,13 @@ export default function Home() {
         </div>
 
         <div className="shop-copy">
-          <p className="eyebrow">The shop</p>
-          <h2>Convenient service without surprise approvals.</h2>
+          <p className="eyebrow">Process</p>
+          <h2>Practical routing before anyone talks rates or approval.</h2>
           <p>
-            Huron Automotive gives Green Bay drivers a reliable alternative to dealership waits, with 24-hour drop-off, free loaner vehicles, shuttle service, Wi-Fi, coffee, bottled water, and practical follow-up from the team.
+            Golden Gate Mortgage Advisors uses the first request to understand whether this is purchase, refinance, jumbo, pre-approval, or investment related, then gets the right context in front of the team.
           </p>
           <a className="text-link" href="#contact">
-            Send a service request
+            Send a mortgage request
           </a>
         </div>
       </section>
@@ -431,7 +432,7 @@ export default function Home() {
         <div className="section-shell">
           <div className="section-heading centered">
             <p className="eyebrow">How it works</p>
-            <h2>A simple path from request to repair.</h2>
+            <h2>A simple path from request to lending review.</h2>
           </div>
 
           <div className="process-grid">
@@ -450,9 +451,9 @@ export default function Home() {
         <div className="section-shell contact-grid">
           <div className="contact-copy">
             <p className="eyebrow">Get started</p>
-            <h2>Need help with your vehicle?</h2>
+            <h2>Need help with a mortgage scenario?</h2>
             <p>
-              Send a service request and the Huron Automotive team will follow up. You can also call or visit either Green Bay location on S Huron Road or Velp Avenue.
+              Send a request and the Golden Gate Mortgage team will follow up. Specific rates, payments, and approval details require a full review.
             </p>
             <a className="secondary-button dark" href={phoneHref}>
               Call {phoneDisplay}
@@ -471,9 +472,9 @@ export default function Home() {
           </div>
           <div className="footer-links">
             <a href="#top">Top</a>
-            <a href="#services">Services</a>
-            <a href="#why">Why Huron</a>
-            <a href="#shop">The shop</a>
+            <a href="#services">Loan Help</a>
+            <a href="#why">Why Golden Gate</a>
+            <a href="#shop">Process</a>
             <a href="#contact">Contact</a>
           </div>
         </div>

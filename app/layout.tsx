@@ -3,9 +3,9 @@ import { projectXConfig } from "./project-x-config";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: `${projectXConfig.brand.name} | Auto Repair & Tire Service in Green Bay, WI`,
+  title: `${projectXConfig.brand.name} | Mortgage Broker in San Francisco, CA`,
   description:
-    "Huron Automotive is the local choice for auto repair and tires in Green Bay, WI, delivering honest and professional service you can trust.",
+    "Golden Gate Mortgage Advisors helps San Francisco buyers, homeowners, and investors with purchase, refinance, jumbo, and pre-approval scenarios.",
 };
 
 export default function RootLayout({

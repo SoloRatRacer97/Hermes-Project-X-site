@@ -14,6 +14,11 @@ const nextConfig: NextConfig = {
         hostname: "cdn-ilcjgcd.nitrocdn.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      },
     ],
   },
 };
