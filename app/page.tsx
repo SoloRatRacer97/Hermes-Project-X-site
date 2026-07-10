@@ -254,7 +254,7 @@ function LeadForm({ id, className = "lead-card" }: { id: string; className?: str
         <textarea
           name="message"
           rows={4}
-          placeholder="Tell us the property city, timeline, purchase or refinance goal, and anything deadline-related."
+          placeholder="Tell us the property address or cross streets, timeline, loan goal, and anything deadline-related."
           value={formState.message}
           onChange={(event) => updateField("message", event.target.value)}
         />
