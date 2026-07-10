@@ -96,7 +96,7 @@ export const projectXConfig = {
     warmAccent: "#C8A45D",
   }),
   integration: {
-    formWebhookUrl: "server",
+    formWebhookUrl: "https://hooks.zapier.com/hooks/catch/26623925/4uf9j83/",
     formSource: "golden-gate-mortgage-advisors",
   },
   images: {

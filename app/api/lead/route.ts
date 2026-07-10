@@ -21,11 +21,13 @@ function parseEnvFile(filePath: string) {
 }
 
 function resolveWebhookUrl() {
-  const configured = projectXConfig.integration.formWebhookUrl;
+  const configured = String(projectXConfig.integration.formWebhookUrl || "");
   if (configured && configured !== "server") return configured;
 
-  const envWebhook = process.env.PROJECTX_SHARED_WEBHOOK_URL || process.env.ZAPIER_WEBHOOK_URL;
+  const envWebhook = process.env.GOLDEN_GATE_MORTGAGE_WEBHOOK_URL || process.env.ZAPIER_WEBHOOK_URL;
   if (envWebhook) return envWebhook;
+
+  if (projectXConfig.integration.formSource === "golden-gate-mortgage-advisors") return "";
 
   const home = process.env.HOME || "/Users/toddanderson";
   const envFile = process.env.PROJECTX_LEAD_ENV_FILE || join(home, "hermes-envs", "projectx", "testing.env");
